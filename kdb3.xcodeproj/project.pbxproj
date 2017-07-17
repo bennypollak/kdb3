@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22F91101F1D046E00E5E6AC /* fu.png in Resources */ = {isa = PBXBuildFile; fileRef = B22F910D1F1D046E00E5E6AC /* fu.png */; };
+		B22F91111F1D046E00E5E6AC /* noay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910E1F1D046E00E5E6AC /* noay.jpg */; };
+		B22F91121F1D046E00E5E6AC /* ok.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910F1F1D046E00E5E6AC /* ok.jpg */; };
+		B22F91161F1D0C0200E5E6AC /* images in Resources */ = {isa = PBXBuildFile; fileRef = B22F91151F1D0C0200E5E6AC /* images */; };
+		B22F91171F1D0C0200E5E6AC /* images in Resources */ = {isa = PBXBuildFile; fileRef = B22F91151F1D0C0200E5E6AC /* images */; };
+		B22F91181F1D0C2100E5E6AC /* noay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910E1F1D046E00E5E6AC /* noay.jpg */; };
+		B22F91191F1D0C2800E5E6AC /* fu.png in Resources */ = {isa = PBXBuildFile; fileRef = B22F910D1F1D046E00E5E6AC /* fu.png */; };
+		B22F911A1F1D0C3000E5E6AC /* ok.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910F1F1D046E00E5E6AC /* ok.jpg */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
 		B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FED7CE1F1BB261005AA45F /* Main.storyboard */; };
@@ -14,6 +22,9 @@
 		B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FED7D31F1BB261005AA45F /* LaunchScreen.storyboard */; };
 		B2FED7E01F1BB261005AA45F /* kdb3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7DF1F1BB261005AA45F /* kdb3Tests.swift */; };
 		B2FED7EB1F1BB261005AA45F /* kdb3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7EA1F1BB261005AA45F /* kdb3UITests.swift */; };
+		B2FED7FF1F1BB37B005AA45F /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */; };
+		B2FED8031F1BB37B005AA45F /* AC Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2FED7FC1F1BB37B005AA45F /* AC Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2FED8091F1BB6EF005AA45F /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +42,34 @@
 			remoteGlobalIDString = B2FED7C61F1BB261005AA45F;
 			remoteInfo = kdb3;
 		};
+		B2FED8011F1BB37B005AA45F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2FED7BF1F1BB261005AA45F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2FED7FB1F1BB37B005AA45F;
+			remoteInfo = "AC Keyboard";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B2FED8071F1BB37B005AA45F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B2FED8031F1BB37B005AA45F /* AC Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B22F910D1F1D046E00E5E6AC /* fu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fu.png; path = kdb3/images/fu.png; sourceTree = "<group>"; };
+		B22F910E1F1D046E00E5E6AC /* noay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = noay.jpg; path = kdb3/images/noay.jpg; sourceTree = "<group>"; };
+		B22F910F1F1D046E00E5E6AC /* ok.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ok.jpg; path = kdb3/images/ok.jpg; sourceTree = "<group>"; };
+		B22F91151F1D0C0200E5E6AC /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = kdb3/images; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2FED7CC1F1BB261005AA45F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +83,10 @@
 		B2FED7E61F1BB261005AA45F /* kdb3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kdb3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7EA1F1BB261005AA45F /* kdb3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kdb3UITests.swift; sourceTree = "<group>"; };
 		B2FED7EC1F1BB261005AA45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2FED7FC1F1BB37B005AA45F /* AC Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AC Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		B2FED8001F1BB37B005AA45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +111,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2FED7F91F1BB37B005AA45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22F910C1F1D035300E5E6AC /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B22F91151F1D0C0200E5E6AC /* images */,
+				B22F910D1F1D046E00E5E6AC /* fu.png */,
+				B22F910E1F1D046E00E5E6AC /* noay.jpg */,
+				B22F910F1F1D046E00E5E6AC /* ok.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		B2FED7BE1F1BB261005AA45F = {
 			isa = PBXGroup;
 			children = (
+				B22F910C1F1D035300E5E6AC /* images */,
 				B2FED7C91F1BB261005AA45F /* kdb3 */,
 				B2FED7DE1F1BB261005AA45F /* kdb3Tests */,
 				B2FED7E91F1BB261005AA45F /* kdb3UITests */,
+				B2FED7FD1F1BB37B005AA45F /* AC Keyboard */,
 				B2FED7C81F1BB261005AA45F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +150,7 @@
 				B2FED7C71F1BB261005AA45F /* kdb3.app */,
 				B2FED7DB1F1BB261005AA45F /* kdb3Tests.xctest */,
 				B2FED7E61F1BB261005AA45F /* kdb3UITests.xctest */,
+				B2FED7FC1F1BB37B005AA45F /* AC Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +186,16 @@
 			path = kdb3UITests;
 			sourceTree = "<group>";
 		};
+		B2FED7FD1F1BB37B005AA45F /* AC Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */,
+				B2FED8001F1BB37B005AA45F /* Info.plist */,
+				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
+			);
+			path = "AC Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +206,12 @@
 				B2FED7C31F1BB261005AA45F /* Sources */,
 				B2FED7C41F1BB261005AA45F /* Frameworks */,
 				B2FED7C51F1BB261005AA45F /* Resources */,
+				B2FED8071F1BB37B005AA45F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B2FED8021F1BB37B005AA45F /* PBXTargetDependency */,
 			);
 			name = kdb3;
 			productName = kdb3;
@@ -181,6 +254,23 @@
 			productReference = B2FED7E61F1BB261005AA45F /* kdb3UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B2FED7FB1F1BB37B005AA45F /* AC Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2FED8041F1BB37B005AA45F /* Build configuration list for PBXNativeTarget "AC Keyboard" */;
+			buildPhases = (
+				B2FED7F81F1BB37B005AA45F /* Sources */,
+				B2FED7F91F1BB37B005AA45F /* Frameworks */,
+				B2FED7FA1F1BB37B005AA45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AC Keyboard";
+			productName = "AC Keyboard";
+			productReference = B2FED7FC1F1BB37B005AA45F /* AC Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +298,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = B2FED7C61F1BB261005AA45F;
 					};
+					B2FED7FB1F1BB37B005AA45F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 388X7HA3JM;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B2FED7C21F1BB261005AA45F /* Build configuration list for PBXProject "kdb3" */;
@@ -226,6 +321,7 @@
 				B2FED7C61F1BB261005AA45F /* kdb3 */,
 				B2FED7DA1F1BB261005AA45F /* kdb3Tests */,
 				B2FED7E51F1BB261005AA45F /* kdb3UITests */,
+				B2FED7FB1F1BB37B005AA45F /* AC Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -235,8 +331,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22F91101F1D046E00E5E6AC /* fu.png in Resources */,
+				B22F91121F1D046E00E5E6AC /* ok.jpg in Resources */,
+				B22F91111F1D046E00E5E6AC /* noay.jpg in Resources */,
 				B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
+				B22F91161F1D0C0200E5E6AC /* images in Resources */,
 				B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +352,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2FED7FA1F1BB37B005AA45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22F911A1F1D0C3000E5E6AC /* ok.jpg in Resources */,
+				B22F91191F1D0C2800E5E6AC /* fu.png in Resources */,
+				B22F91171F1D0C0200E5E6AC /* images in Resources */,
+				B22F91181F1D0C2100E5E6AC /* noay.jpg in Resources */,
+				B2FED8091F1BB6EF005AA45F /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +395,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2FED7F81F1BB37B005AA45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FED7FF1F1BB37B005AA45F /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +415,11 @@
 			isa = PBXTargetDependency;
 			target = B2FED7C61F1BB261005AA45F /* kdb3 */;
 			targetProxy = B2FED7E71F1BB261005AA45F /* PBXContainerItemProxy */;
+		};
+		B2FED8021F1BB37B005AA45F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2FED7FB1F1BB37B005AA45F /* AC Keyboard */;
+			targetProxy = B2FED8011F1BB37B005AA45F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,6 +541,7 @@
 		B2FED7F01F1BB261005AA45F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = kdb3/Info.plist;
@@ -429,6 +555,7 @@
 		B2FED7F11F1BB261005AA45F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = kdb3/Info.plist;
@@ -497,6 +624,32 @@
 			};
 			name = Release;
 		};
+		B2FED8051F1BB37B005AA45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 388X7HA3JM;
+				INFOPLIST_FILE = "AC Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.t1.kdb3.AC-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2FED8061F1BB37B005AA45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 388X7HA3JM;
+				INFOPLIST_FILE = "AC Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.t1.kdb3.AC-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +669,7 @@
 				B2FED7F11F1BB261005AA45F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2FED7F21F1BB261005AA45F /* Build configuration list for PBXNativeTarget "kdb3Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +678,7 @@
 				B2FED7F41F1BB261005AA45F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2FED7F51F1BB261005AA45F /* Build configuration list for PBXNativeTarget "kdb3UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +687,16 @@
 				B2FED7F71F1BB261005AA45F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2FED8041F1BB37B005AA45F /* Build configuration list for PBXNativeTarget "AC Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2FED8051F1BB37B005AA45F /* Debug */,
+				B2FED8061F1BB37B005AA45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

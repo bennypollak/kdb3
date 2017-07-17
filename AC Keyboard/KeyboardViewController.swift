@@ -34,6 +34,10 @@ class KeyboardViewController: UIInputViewController {
         
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        
+        let nib = UINib(nibName: "KeyboardView", bundle: nil)
+        let objects = nib.instantiate(withOwner: self, options: nil)
+        view = objects[0] as! UIView;
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,5 +61,34 @@ class KeyboardViewController: UIInputViewController {
         }
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
     }
+    @IBAction func keyPressed(_ button: UIButton) {
+        let bstring = button.titleLabel!.text
+        var string = "?"
+        if bstring == "Y" {
+            string = "yo372002@yahoo.com"
+        } else if (bstring == "B") {
+            string = "babenzi1"
+        } else if (bstring == "G") {
+            string = "bpollak@gmail.com"
+        } else if (bstring == "P") {
+            string = "347-416-1525"
+        }
+        (textDocumentProxy as UIKeyInput).insertText("\(string)")
+    }
+    @IBAction func ijomePressed(_ button: UIButton) {
+        let bstring = button.titleLabel!.text
+        let string = ""+bstring!
+        (textDocumentProxy as UIKeyInput).insertText("\(string) ")
+        advanceToNextInputMode()
+    }
+    @IBAction func nextKeyboardPressed(_ sender: Any) {
+        advanceToNextInputMode()
+        
+    }
+    @IBAction func dismissKeyboardPressed(_ sender: Any) {
+        dismissKeyboard()
+        
+    }
+    
 
 }
