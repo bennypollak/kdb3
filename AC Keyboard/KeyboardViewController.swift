@@ -77,10 +77,12 @@ class KeyboardViewController: UIInputViewController {
             string = "347-416-1525"
         }
         (textDocumentProxy as UIKeyInput).insertText("\(string)")
+        UIDevice.current.playInputClick()
     }
     @IBAction func ijomePressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
         let string = ""+bstring!
+        UIDevice.current.playInputClick()
         (textDocumentProxy as UIKeyInput).insertText("\(string) ")
         //advanceToNextInputMode()
     }

@@ -51,6 +51,7 @@
 		B22F91181F1D0C2100E5E6AC /* noay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910E1F1D046E00E5E6AC /* noay.jpg */; };
 		B22F91191F1D0C2800E5E6AC /* fu.png in Resources */ = {isa = PBXBuildFile; fileRef = B22F910D1F1D046E00E5E6AC /* fu.png */; };
 		B22F911A1F1D0C3000E5E6AC /* ok.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910F1F1D046E00E5E6AC /* ok.jpg */; };
+		B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F4441F21627900804898 /* KeyboardView.swift */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
 		B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FED7CE1F1BB261005AA45F /* Main.storyboard */; };
@@ -126,6 +127,7 @@
 		B22F910D1F1D046E00E5E6AC /* fu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fu.png; path = kdb3/images/fu.png; sourceTree = "<group>"; };
 		B22F910E1F1D046E00E5E6AC /* noay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = noay.jpg; path = kdb3/images/noay.jpg; sourceTree = "<group>"; };
 		B22F910F1F1D046E00E5E6AC /* ok.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ok.jpg; path = kdb3/images/ok.jpg; sourceTree = "<group>"; };
+		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2FED7CC1F1BB261005AA45F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */,
 				B2FED8001F1BB37B005AA45F /* Info.plist */,
 				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
+				B2F2F4441F21627900804898 /* KeyboardView.swift */,
 			);
 			path = "AC Keyboard";
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2FED7FF1F1BB37B005AA45F /* KeyboardViewController.swift in Sources */,
+				B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
