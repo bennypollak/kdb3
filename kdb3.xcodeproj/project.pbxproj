@@ -102,6 +102,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B20B86CB1F20FB660067E08B /* kdb3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kdb3.entitlements; sourceTree = "<group>"; };
+		B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AC Keyboard.entitlements"; sourceTree = "<group>"; };
 		B22877E81F1FD18700141C72 /* hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hide.png; path = kdb3/images/hide.png; sourceTree = "<group>"; };
 		B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yahoo-Mail-logo.png"; path = "kdb3/images/Yahoo-Mail-logo.png"; sourceTree = "<group>"; };
 		B22877EC1F1FD38700141C72 /* thumbsdown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = thumbsdown.gif; path = kdb3/images/thumbsdown.gif; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		B2FED7C91F1BB261005AA45F /* kdb3 */ = {
 			isa = PBXGroup;
 			children = (
+				B20B86CB1F20FB660067E08B /* kdb3.entitlements */,
 				B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */,
 				B2FED7CC1F1BB261005AA45F /* ViewController.swift */,
 				B2FED7CE1F1BB261005AA45F /* Main.storyboard */,
@@ -261,6 +264,7 @@
 		B2FED7FD1F1BB37B005AA45F /* AC Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */,
 				B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */,
 				B2FED8001F1BB37B005AA45F /* Info.plist */,
 				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
@@ -357,6 +361,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					B2FED7DA1F1BB261005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -374,6 +383,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -601,11 +615,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alben.t1.kdb3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
 				SWIFT_VERSION = 3.0;
@@ -644,11 +659,12 @@
 		B20DBE211F1DACD100FA1C13 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = "AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.t1.kdb3.AC-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "19c2839b-bdc9-4a9b-9294-0ffa56b78700";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
@@ -758,11 +774,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alben.t1.kdb3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ee0940cf-eb9d-4f3f-8c3d-e12ecbbc32f5";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 test";
@@ -775,11 +792,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.alben.t1.kdb3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
 				SWIFT_VERSION = 3.0;
@@ -847,14 +865,15 @@
 		B2FED8051F1BB37B005AA45F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = "AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.t1.kdb3.AC-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ee0940cf-eb9d-4f3f-8c3d-e12ecbbc32f5";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 test";
+				PROVISIONING_PROFILE = "976ff55c-d0a0-49d0-a0a2-f2423c31fcc8";
+				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb2 test";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -863,11 +882,12 @@
 		B2FED8061F1BB37B005AA45F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = "AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.t1.kdb3.AC-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "19c2839b-bdc9-4a9b-9294-0ffa56b78700";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";

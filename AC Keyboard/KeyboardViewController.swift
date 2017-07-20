@@ -67,7 +67,10 @@ class KeyboardViewController: UIInputViewController {
         if bstring == "Y" {
             string = "yo372002@yahoo.com"
         } else if (bstring == "B") {
-            string = "babenzi1"
+            let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
+
+            string = SharedDefaults.string(forKey: "Key") ?? ""
+
         } else if (bstring == "G") {
             string = "bpollak@gmail.com"
         } else if (bstring == "P") {
@@ -79,7 +82,7 @@ class KeyboardViewController: UIInputViewController {
         let bstring = button.titleLabel!.text
         let string = ""+bstring!
         (textDocumentProxy as UIKeyInput).insertText("\(string) ")
-        advanceToNextInputMode()
+        //advanceToNextInputMode()
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
         advanceToNextInputMode()
