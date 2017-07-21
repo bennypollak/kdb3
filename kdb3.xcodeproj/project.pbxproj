@@ -626,6 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "715ad932-45ac-4b67-a48b-f625918c3027";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
 				SWIFT_VERSION = 3.0;
 			};
@@ -670,8 +671,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "19c2839b-bdc9-4a9b-9294-0ffa56b78700";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
+				PROVISIONING_PROFILE = "5c2e8b20-22e5-4c51-a79f-c8ec4e9a555b";
+				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb AdHoc";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -893,8 +894,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "19c2839b-bdc9-4a9b-9294-0ffa56b78700";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
+				PROVISIONING_PROFILE = "5c2e8b20-22e5-4c51-a79f-c8ec4e9a555b";
+				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb AdHoc";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
