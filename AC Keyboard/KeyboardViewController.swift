@@ -35,9 +35,78 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
+        //
+    
+        let buttonTitles = ["Q", "W", "E", "R", "T", "Y"]
+        let buttons = createButtons(titles: buttonTitles)
+        let topRow = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        
+        for button in buttons {
+            topRow.addSubview(button)
+        }
+        
+        self.view.addSubview(topRow)
+        
+        addConstraints(buttons, containingView: topRow)
+        /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
         view = objects[0] as! UIView;
+ */
+    }
+    func createButtons(titles: [String]) -> [UIButton] {
+        
+        var buttons = [UIButton]()
+        
+        for title in titles {
+            let button = UIButton.init(type:.system) as UIButton
+            button.setTitle(title, for: .normal)
+            button.translatesAutoresizingMaskIntoConstraints=false
+            button.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
+            button.setTitleColor(UIColor.darkGray, for: .normal)
+            button.addTarget(self, action: #selector(KeyboardViewController.keyPressed(_:)), for: .touchUpInside)
+            buttons.append(button)
+        }
+        
+        return buttons
+    }
+    func addConstraints(_ buttons: [UIButton], containingView: UIView){
+        
+        for (index, button) in buttons.enumerated() {
+            
+            let topConstraint = NSLayoutConstraint(item: button, attribute: .top, relatedBy: .equal
+                , toItem: containingView, attribute: .top, multiplier: 1.0, constant: 1)
+            
+            let bottomConstraint = NSLayoutConstraint(item: button, attribute: .bottom, relatedBy: .equal, toItem: containingView, attribute: .bottom, multiplier: 1.0, constant: -1)
+            
+            var leftConstraint : NSLayoutConstraint!
+            
+            if index == 0 {
+                
+                leftConstraint = NSLayoutConstraint(item: button, attribute: .left, relatedBy: .equal, toItem: containingView, attribute: .left, multiplier: 1.0, constant: 1)
+                
+            }else{
+                
+                leftConstraint = NSLayoutConstraint(item: button, attribute: .left, relatedBy: .equal, toItem: buttons[index-1], attribute: .right, multiplier: 1.0, constant: 1)
+                
+                let widthConstraint = NSLayoutConstraint(item: buttons[0], attribute: .width, relatedBy: .equal, toItem: button, attribute: .width, multiplier: 1.0, constant: 0)
+                
+                containingView.addConstraint(widthConstraint)
+            }
+            
+            var rightConstraint : NSLayoutConstraint!
+            
+            if index == buttons.count - 1 {
+                
+                rightConstraint = NSLayoutConstraint(item: button, attribute: .right, relatedBy: .equal, toItem: containingView, attribute: .right, multiplier: 1.0, constant: -1)
+                
+            }else{
+                
+                rightConstraint = NSLayoutConstraint(item: button, attribute: .right, relatedBy: .equal, toItem: buttons[index+1], attribute: .left, multiplier: 1.0, constant: -1)
+            }
+            
+            containingView.addConstraints([topConstraint, bottomConstraint, rightConstraint, leftConstraint])
+        }
     }
     
     override func didReceiveMemoryWarning() {

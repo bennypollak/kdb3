@@ -363,6 +363,7 @@
 					B2FED7C61F1BB261005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -385,6 +386,7 @@
 					B2FED7FB1F1BB37B005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
