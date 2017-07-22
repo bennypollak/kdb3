@@ -50,7 +50,7 @@ class KeyboardViewController: UIInputViewController {
      
         self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: NSLayoutAttribute.width, relatedBy: .equal, toItem: self.view, attribute: NSLayoutAttribute.width, multiplier: 1.0, constant: 0.0))
         self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: NSLayoutAttribute.height, relatedBy: .equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: 50))
-        self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: NSLayoutAttribute.bottom, relatedBy: .equal, toItem: self.view, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: -20))
+        self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: NSLayoutAttribute.top, relatedBy: .equal, toItem: self.view, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0))
         self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: NSLayoutAttribute.right, relatedBy: .equal, toItem: self.view, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: 0.0))
         addConstraints(buttons, containingView: topRow)
 
