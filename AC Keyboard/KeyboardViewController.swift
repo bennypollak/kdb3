@@ -28,26 +28,21 @@ class KeyboardViewController: UIInputViewController {
         view = KeyboardView()
 
         // Perform custom UI setup here
-        if false {
-        self.nextKeyboardButton = UIButton(type: .custom)
-        
-        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
-        //self.nextKeyboardButton.sizeToFit()
-        //self.nextKeyboardButton.setValue("next", forKey: "name")
-        self.nextKeyboardButton.frame = CGRect(x: 0, y: 100 , width: 50, height: 50)
-        //self.nextKeyboardButton.imageEdgeInsets = UIEdgeInsetsMake(25,25,25,25
-        self.nextKeyboardButton.setImage(UIImage(named: "sad.png"), for: .normal)
-        //self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-        self.nextKeyboardButton.backgroundColor = .clear
-        
-        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-         view.addSubview(self.nextKeyboardButton)
-         //self.nextKeyboardButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-         //self.nextKeyboardButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-         //self.nextKeyboardButton.topAnchor.constraint(equalTo: view.topAnchor).isActive = false
-         //self.nextKeyboardButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = false
-        //nextKeyboardButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        //nextKeyboardButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        if true {
+            
+            self.nextKeyboardButton = UIButton(type: .system)
+            
+            self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
+            self.nextKeyboardButton.sizeToFit()
+            self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
+            
+            self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+            
+            self.view.addSubview(self.nextKeyboardButton)
+            
+            self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+            self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+
         }
         
 //
@@ -57,7 +52,6 @@ class KeyboardViewController: UIInputViewController {
         let buttonImages = ["Phone.png","Yahoo-Mail-logo.png","back.jpg","fu.png","funny.png","gmail.jpeg","gmail2.png","hide.png","lcase.png","next.jpg","next.png","noay.jpg","ok.jpg","ok.png","return.png","sad.png","secret.png","space.png","thumbsdown.gif","ucase.png","yahoomail.png","ymail.png"
 ]
         let buttons = createButtons(titles: buttonTitles)
-        //let topRow = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
         let topRow = UIView()
         view.addSubview(topRow)
         topRow.translatesAutoresizingMaskIntoConstraints=false
@@ -71,19 +65,16 @@ class KeyboardViewController: UIInputViewController {
         
         addConstraints(buttons, containingView: topRow)
 
-        if true {
-            let buttonInfo = [
-            ["fu.png","Fuck you!"], ["sad.png","So sad!"]
-                ]
-            var imgButtons: [UIButton] = []
-            for info in buttonInfo {
+        let buttonInfo = [
+        ["fu.png","Fuck you!"], ["sad.png","So sad!"]
+            ]
+        var imgButtons: [UIButton] = []
+        for info in buttonInfo {
             imgButtons.append(crButton(named: info[1], imgNamed: info[0]))
-            }
-//            imgButtons.append(crButton(named: "So sad!", imgNamed: "sad.png"))
-            let botRow = crRow(topView: topRow, botView: view, buttons: imgButtons)
-            addConstraints(imgButtons, containingView: botRow)
+        }
+        let botRow = crRow(topView: topRow, botView: view, buttons: imgButtons)
+        addConstraints(imgButtons, containingView: botRow)
 
-}
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
