@@ -41,13 +41,13 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.backgroundColor = .clear
         
         self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-         self.view.addSubview(self.nextKeyboardButton)
-         //self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-         //self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-         //self.nextKeyboardButton.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = false
-         //self.nextKeyboardButton.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = false
-        //nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        //nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+         view.addSubview(self.nextKeyboardButton)
+         //self.nextKeyboardButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+         //self.nextKeyboardButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+         //self.nextKeyboardButton.topAnchor.constraint(equalTo: view.topAnchor).isActive = false
+         //self.nextKeyboardButton.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = false
+        //nextKeyboardButton.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        //nextKeyboardButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         }
         
 //
@@ -59,16 +59,16 @@ class KeyboardViewController: UIInputViewController {
         let buttons = createButtons(titles: buttonTitles)
         //let topRow = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
         let topRow = UIView()
-        self.view.addSubview(topRow)
+        view.addSubview(topRow)
         topRow.translatesAutoresizingMaskIntoConstraints=false
         for button in buttons {
             topRow.addSubview(button)
         }
-        self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .width, relatedBy: .equal, toItem: self.view, attribute: .width, multiplier: 1.0, constant: 0.0))
-        self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
-        self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1.0, constant: 0))
-        self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: self.view, attribute: .right, multiplier: 1.0, constant: 0.0))
-        self.view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0.0))
+        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
+        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
+        //view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0.0))
         
         addConstraints(buttons, containingView: topRow)
         //view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .bottom, relatedBy: .equal, toItem: button, attribute: .top, multiplier: 1.0, constant: 0.0))
@@ -77,26 +77,51 @@ class KeyboardViewController: UIInputViewController {
         if true {
             let button = UIButton(type: .custom)
             let image = UIImage(named: "sad.png")
-            //button.frame = CGRect(x: 0, y: 100, width: 50, height: 50)
+            button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+            button.setImage(image, for: UIControlState.normal)
+
+//            button.imageView?.sizeThatFits(CGSize(width: 50, height: 50))
+            button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+   //let imgview = UIImageView(image: image)
             button.backgroundColor = .clear
-            button.setTitle("Title", for: .normal)
+            button.setTitle("Sad", for: .normal)
             button.setTitleColor(.black, for: .normal)
-            button.setImage(image, for: .normal)
+            //button.setImage(image, for: .normal)
             button.translatesAutoresizingMaskIntoConstraints = false
             //button.imageEdgeInsets = UIEdgeInsetsMake(0,0,25,25)
-            view.addSubview(button)
-            //button.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-            //button.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-            self.view.addConstraint(NSLayoutConstraint(item: button, attribute: .top, relatedBy: .equal, toItem: topRow, attribute: .bottom, multiplier: 1.0, constant: 0.0))
-            self.view.addConstraint(NSLayoutConstraint(item: button, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1.0, constant: 0.0))
-            self.view.addConstraint(NSLayoutConstraint(item: button, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-            self.view.addConstraint(NSLayoutConstraint(item: button, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 0.0))
+            //botRow.addSubview(button)
+            let botRow = crRow(topView: topRow, botView: view, buttons: [button])
+            addConstraints([button], containingView: botRow)
+//            button.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+//            button.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+//            view.addConstraint(NSLayoutConstraint(item: button, attribute: .top, relatedBy: .equal, toItem: topRow, attribute: .bottom, multiplier: 1.0, constant: 1))
+            //view.addConstraint(NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+            //view.addConstraint(NSLayoutConstraint(item: button, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1.0, constant: 0.0))
+//            view.addConstraint(NSLayoutConstraint(item: button, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
+//            view.addConstraint(NSLayoutConstraint(item: button, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 1))
+            //button.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+            //button.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+
 }
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
         view = objects[0] as! UIView;
  */
+    }
+    func crRow(topView:UIView, botView:UIView, buttons:[UIButton]) -> UIView {
+        let row = UIView()
+        view.addSubview(row)
+        row.translatesAutoresizingMaskIntoConstraints=false
+        for button in buttons {
+            row.addSubview(button)
+        }
+        view.addConstraint(NSLayoutConstraint(item: row, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
+        view.addConstraint(NSLayoutConstraint(item: row, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+        view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: topView, attribute: .bottom, multiplier: 1.0, constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
+        //view.addConstraint(NSLayoutConstraint(item: row, attribute: .bottom, relatedBy: .equal, toItem: botView, attribute: .top, multiplier: 1.0, constant: 0.0))
+        return row
     }
     func createButtons(titles: [String]) -> [UIButton] {
         
