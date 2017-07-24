@@ -71,7 +71,10 @@ class KeyboardViewController: UIInputViewController {
         }
 
         let buttonInfo = [
-        ["fu.png","Fuck you!"], ["sad.png","So sad!"]
+            ["fu.png","Fuck you!"]
+            , ["sad.png","So sad!"]
+            , ["thumbs_down_angry.png","No way!"]
+            , ["ok.png","Ok!"]
             ]
         var imgButtons: [UIButton] = []
         for info in buttonInfo {
