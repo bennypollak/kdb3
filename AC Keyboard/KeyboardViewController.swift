@@ -72,19 +72,14 @@ class KeyboardViewController: UIInputViewController {
         addConstraints(buttons, containingView: topRow)
 
         if true {
+            let buttonInfo = [
+            ["fu.png","Fuck you!"], ["sad.png","So sad!"]
+                ]
             var imgButtons: [UIButton] = []
-//            let button = UIButton(type: .custom)
-//            let image = UIImage(named: "sad.png")
-//            button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-//            button.setImage(image, for: UIControlState.normal)
-////            button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-//            button.backgroundColor = .clear
-//            button.setTitle("So sad!", for: .normal)
-//            button.setTitleColor(.black, for: .normal)
-//            button.translatesAutoresizingMaskIntoConstraints = false
-            //imgButtons.append(button)
-            imgButtons.append(crButton(named: "Fuck you!", imgNamed: "fu.png"))
-            imgButtons.append(crButton(named: "So sad!", imgNamed: "sad.png"))
+            for info in buttonInfo {
+            imgButtons.append(crButton(named: info[1], imgNamed: info[0]))
+            }
+//            imgButtons.append(crButton(named: "So sad!", imgNamed: "sad.png"))
             let botRow = crRow(topView: topRow, botView: view, buttons: imgButtons)
             addConstraints(imgButtons, containingView: botRow)
 
