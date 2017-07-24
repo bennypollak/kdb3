@@ -30,15 +30,17 @@ class KeyboardViewController: UIInputViewController {
         // Perform custom UI setup here
         if true {
             
-            self.nextKeyboardButton = UIButton(type: .system)
-            
-            self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
+            self.nextKeyboardButton = UIButton(type: .custom)
+            self.nextKeyboardButton.setTitle(NSLocalizedString("", comment: "Title for 'Next Keyboard' button"), for: [])
             self.nextKeyboardButton.sizeToFit()
             self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-            
             self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-            
+            nextKeyboardButton.setImage(UIImage(named: "next.png"), for: UIControlState.normal)
+            nextKeyboardButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+
             self.view.addSubview(self.nextKeyboardButton)
+            view.addConstraint(NSLayoutConstraint(item: nextKeyboardButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+
             
             self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
             self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
@@ -51,19 +53,22 @@ class KeyboardViewController: UIInputViewController {
         let buttonTitles = ["Q", "W", "E", "R", "T", "Y","a","n","d","m","o","r","n","d","m","o","r"]
         let buttonImages = ["Phone.png","Yahoo-Mail-logo.png","back.jpg","fu.png","funny.png","gmail.jpeg","gmail2.png","hide.png","lcase.png","next.jpg","next.png","noay.jpg","ok.jpg","ok.png","return.png","sad.png","secret.png","space.png","thumbsdown.gif","ucase.png","yahoomail.png","ymail.png"
 ]
+        var topRow: UIView? = nil
+        if false {
         let buttons = createButtons(titles: buttonTitles)
-        let topRow = UIView()
-        view.addSubview(topRow)
-        topRow.translatesAutoresizingMaskIntoConstraints=false
+        topRow = UIView()
+        view.addSubview(topRow!)
+        topRow?.translatesAutoresizingMaskIntoConstraints=false
         for button in buttons {
-            topRow.addSubview(button)
+            topRow?.addSubview(button)
         }
         view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
         view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
         view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
         view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
         
-        addConstraints(buttons, containingView: topRow)
+        addConstraints(buttons, containingView: topRow!)
+        }
 
         let buttonInfo = [
         ["fu.png","Fuck you!"], ["sad.png","So sad!"]
@@ -92,9 +97,11 @@ class KeyboardViewController: UIInputViewController {
         button.setTitle(named, for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(KeyboardViewController.ijomePressed(_:)), for: .touchUpInside)
+
         return button
     }
-    func crRow(topView:UIView, botView:UIView, buttons:[UIButton]) -> UIView {
+    func crRow(topView:UIView?, botView:UIView, buttons:[UIButton]) -> UIView {
         let row = UIView()
         view.addSubview(row)
         row.translatesAutoresizingMaskIntoConstraints=false
@@ -103,7 +110,12 @@ class KeyboardViewController: UIInputViewController {
         }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
-        view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: topView, attribute: .bottom, multiplier: 1.0, constant: 0))
+        if topView != nil {
+            view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: topView, attribute: .top, multiplier: 1.0, constant: 0))
+        } else {
+            
+            view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
+        }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
         return row
     }
@@ -195,11 +207,14 @@ class KeyboardViewController: UIInputViewController {
         //advanceToNextInputMode()
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
+        UIDevice.current.playInputClick()
+
         advanceToNextInputMode()
         
     }
     @IBAction func dismissKeyboardPressed(_ sender: Any) {
-        dismissKeyboard()
+       UIDevice.current.playInputClick()
+       dismissKeyboard()
         
     }
     

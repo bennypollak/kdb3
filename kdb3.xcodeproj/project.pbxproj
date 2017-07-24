@@ -27,8 +27,6 @@
 		B22878061F1FD38700141C72 /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F21F1FD38700141C72 /* space.png */; };
 		B22878071F1FD38700141C72 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F31F1FD38700141C72 /* next.png */; };
 		B22878081F1FD38700141C72 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F31F1FD38700141C72 /* next.png */; };
-		B22878091F1FD38700141C72 /* next.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22877F41F1FD38700141C72 /* next.jpg */; };
-		B228780A1F1FD38700141C72 /* next.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22877F41F1FD38700141C72 /* next.jpg */; };
 		B228780B1F1FD38700141C72 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22877F51F1FD38700141C72 /* back.jpg */; };
 		B228780C1F1FD38700141C72 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22877F51F1FD38700141C72 /* back.jpg */; };
 		B228780D1F1FD38700141C72 /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F61F1FD38700141C72 /* return.png */; };
@@ -115,7 +113,6 @@
 		B22877F11F1FD38700141C72 /* ucase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ucase.png; path = kdb3/images/ucase.png; sourceTree = "<group>"; };
 		B22877F21F1FD38700141C72 /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = space.png; path = kdb3/images/space.png; sourceTree = "<group>"; };
 		B22877F31F1FD38700141C72 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next.png; path = kdb3/images/next.png; sourceTree = "<group>"; };
-		B22877F41F1FD38700141C72 /* next.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = next.jpg; path = kdb3/images/next.jpg; sourceTree = "<group>"; };
 		B22877F51F1FD38700141C72 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back.jpg; path = kdb3/images/back.jpg; sourceTree = "<group>"; };
 		B22877F61F1FD38700141C72 /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = return.png; path = kdb3/images/return.png; sourceTree = "<group>"; };
 		B228780F1F1FD7C500141C72 /* gmail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gmail.jpeg; path = kdb3/images/gmail.jpeg; sourceTree = "<group>"; };
@@ -196,7 +193,6 @@
 				B22877F11F1FD38700141C72 /* ucase.png */,
 				B22877F21F1FD38700141C72 /* space.png */,
 				B22877F31F1FD38700141C72 /* next.png */,
-				B22877F41F1FD38700141C72 /* next.jpg */,
 				B22877F51F1FD38700141C72 /* back.jpg */,
 				B22877F61F1FD38700141C72 /* return.png */,
 				B22877E81F1FD18700141C72 /* hide.png */,
@@ -433,7 +429,6 @@
 				B22877F71F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
 				B22877F91F1FD38700141C72 /* thumbsdown.gif in Resources */,
-				B22878091F1FD38700141C72 /* next.jpg in Resources */,
 				B22878051F1FD38700141C72 /* space.png in Resources */,
 				B22877E91F1FD18700141C72 /* hide.png in Resources */,
 				B228781F1F1FDEC800141C72 /* secret.png in Resources */,
@@ -469,7 +464,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B22878081F1FD38700141C72 /* next.png in Resources */,
-				B228780A1F1FD38700141C72 /* next.jpg in Resources */,
 				B22877FE1F1FD38700141C72 /* sad.png in Resources */,
 				B22877F81F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */,
 				B228780E1F1FD38700141C72 /* return.png in Resources */,
