@@ -68,39 +68,25 @@ class KeyboardViewController: UIInputViewController {
         view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
         view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
         view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-        //view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0.0))
         
         addConstraints(buttons, containingView: topRow)
-        //view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .bottom, relatedBy: .equal, toItem: button, attribute: .top, multiplier: 1.0, constant: 0.0))
-        //view.addConstraint(NSLayoutConstraint(item: button, attribute: .top, relatedBy: .equal, toItem: topRow, attribute: .bottom, multiplier: 1.0, constant: 0.0))
-        //view.addConstraint(NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
-        if true {
-            let button = UIButton(type: .custom)
-            let image = UIImage(named: "sad.png")
-            button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-            button.setImage(image, for: UIControlState.normal)
 
-//            button.imageView?.sizeThatFits(CGSize(width: 50, height: 50))
-            button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
-   //let imgview = UIImageView(image: image)
-            button.backgroundColor = .clear
-            button.setTitle("Sad", for: .normal)
-            button.setTitleColor(.black, for: .normal)
-            //button.setImage(image, for: .normal)
-            button.translatesAutoresizingMaskIntoConstraints = false
-            //button.imageEdgeInsets = UIEdgeInsetsMake(0,0,25,25)
-            //botRow.addSubview(button)
-            let botRow = crRow(topView: topRow, botView: view, buttons: [button])
-            addConstraints([button], containingView: botRow)
-//            button.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-//            button.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-//            view.addConstraint(NSLayoutConstraint(item: button, attribute: .top, relatedBy: .equal, toItem: topRow, attribute: .bottom, multiplier: 1.0, constant: 1))
-            //view.addConstraint(NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
-            //view.addConstraint(NSLayoutConstraint(item: button, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1.0, constant: 0.0))
-//            view.addConstraint(NSLayoutConstraint(item: button, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-//            view.addConstraint(NSLayoutConstraint(item: button, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1.0, constant: 1))
-            //button.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-            //button.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        if true {
+            var imgButtons: [UIButton] = []
+//            let button = UIButton(type: .custom)
+//            let image = UIImage(named: "sad.png")
+//            button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+//            button.setImage(image, for: UIControlState.normal)
+////            button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+//            button.backgroundColor = .clear
+//            button.setTitle("So sad!", for: .normal)
+//            button.setTitleColor(.black, for: .normal)
+//            button.translatesAutoresizingMaskIntoConstraints = false
+            //imgButtons.append(button)
+            imgButtons.append(crButton(named: "Fuck you!", imgNamed: "fu.png"))
+            imgButtons.append(crButton(named: "So sad!", imgNamed: "sad.png"))
+            let botRow = crRow(topView: topRow, botView: view, buttons: imgButtons)
+            addConstraints(imgButtons, containingView: botRow)
 
 }
         /*
@@ -108,6 +94,19 @@ class KeyboardViewController: UIInputViewController {
         let objects = nib.instantiate(withOwner: self, options: nil)
         view = objects[0] as! UIView;
  */
+    }
+    func crButton(named: String, imgNamed: String) -> UIButton  {
+        let button = UIButton(type: .custom)
+        let image = UIImage(named: imgNamed)
+        button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        button.setImage(image, for: UIControlState.normal)
+//        button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        button.sizeToFit()
+        button.backgroundColor = .clear
+        button.setTitle(named, for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }
     func crRow(topView:UIView, botView:UIView, buttons:[UIButton]) -> UIView {
         let row = UIView()
@@ -120,7 +119,6 @@ class KeyboardViewController: UIInputViewController {
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: topView, attribute: .bottom, multiplier: 1.0, constant: 0))
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-        //view.addConstraint(NSLayoutConstraint(item: row, attribute: .bottom, relatedBy: .equal, toItem: botView, attribute: .top, multiplier: 1.0, constant: 0.0))
         return row
     }
     func createButtons(titles: [String]) -> [UIButton] {
@@ -134,7 +132,7 @@ class KeyboardViewController: UIInputViewController {
             button.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
             button.setTitleColor(UIColor.darkGray, for: .normal)
             button.sizeToFit()
-            button.addTarget(self, action: #selector(KeyboardViewController.keyPressed(_:)), for: .touchUpInside)
+            button.addTarget(self, action: #selector(KeyboardViewController.ijomePressed(_:)), for: .touchUpInside)
             buttons.append(button)
         }
         
