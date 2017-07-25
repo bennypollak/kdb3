@@ -47,27 +47,23 @@ class KeyboardViewController: UIInputViewController {
 
         }
         
-//
-//        //
-    
         let buttonTitles = ["Q", "W", "E", "R", "T", "Y","a","n","d","m","o","r","n","d","m","o","r"]
-        let buttonImages = ["Phone.png","Yahoo-Mail-logo.png","back.jpg","fu.png","funny.png","gmail.jpeg","gmail2.png","hide.png","lcase.png","next.jpg","next.png","noay.jpg","ok.jpg","ok.png","return.png","sad.png","secret.png","space.png","thumbsdown.gif","ucase.png","yahoomail.png","ymail.png"
-]
+
         var topRow: UIView? = nil
         if false {
-        let buttons = createButtons(titles: buttonTitles)
-        topRow = UIView()
-        view.addSubview(topRow!)
-        topRow?.translatesAutoresizingMaskIntoConstraints=false
-        for button in buttons {
-            topRow?.addSubview(button)
-        }
-        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
-        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
-        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
-        view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-        
-        addConstraints(buttons, containingView: topRow!)
+            let buttons = createButtons(titles: buttonTitles)
+            topRow = UIView()
+            view.addSubview(topRow!)
+            topRow?.translatesAutoresizingMaskIntoConstraints=false
+            for button in buttons {
+                topRow?.addSubview(button)
+            }
+            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
+            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
+            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
+            
+            addConstraints(buttons, containingView: topRow!)
         }
 
         /*
@@ -93,12 +89,6 @@ class KeyboardViewController: UIInputViewController {
         let row2 = addButtonRow(topRow, buttonInfo: buttonInfo)
         let row3 = addButtonRow(row2, buttonInfo: buttonInfo2)
         
-        //        var imgButtons: [UIButton] = []
-        //        for info in buttonInfo {
-        //            imgButtons.append(crButton(named: info[1], imgNamed: info[0]))
-        //        }
-        //        let botRow = crRow(topView: topRow, botView: view, buttons: imgButtons)
-        //        addConstraints(imgButtons, containingView: botRow)
         //
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
@@ -120,7 +110,6 @@ class KeyboardViewController: UIInputViewController {
         let image = UIImage(named: imgNamed)
         button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         button.setImage(image, for: UIControlState.normal)
-//        button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         button.sizeToFit()
         button.backgroundColor = .clear
         button.setTitle(named, for: .normal)
@@ -229,16 +218,21 @@ class KeyboardViewController: UIInputViewController {
     }
     @IBAction func ijomePressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
-        let string = ""+bstring!
+        var string = ""+bstring!
+        var space = " "
+        if (string.hasPrefix("@@@")) {
+            let r = string.index(string.startIndex, offsetBy: 3)..<string.endIndex
+            let substring1 = string[r]
+            let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
+            string = SharedDefaults.string(forKey: substring1) ?? substring1
+            space = ""
+        }
         UIDevice.current.playInputClick()
-        (textDocumentProxy as UIKeyInput).insertText("\(string) ")
-        //advanceToNextInputMode()
+        (textDocumentProxy as UIKeyInput).insertText("\(string)\(space)")
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
         UIDevice.current.playInputClick()
-
         advanceToNextInputMode()
-        
     }
     @IBAction func dismissKeyboardPressed(_ sender: Any) {
        UIDevice.current.playInputClick()
