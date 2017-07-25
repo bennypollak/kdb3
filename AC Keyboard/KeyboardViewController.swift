@@ -70,24 +70,50 @@ class KeyboardViewController: UIInputViewController {
         addConstraints(buttons, containingView: topRow!)
         }
 
+        /*
+         let buttonInfo = [
+         ["",""]
+         , ["",""]
+         ]
+         */
+        
         let buttonInfo = [
             ["fu.png","Fuck you!"]
             , ["sad.png","So sad!"]
             , ["thumbs_down_angry.png","No way!"]
             , ["ok.png","Ok!"]
-            ]
-        var imgButtons: [UIButton] = []
-        for info in buttonInfo {
-            imgButtons.append(crButton(named: info[1], imgNamed: info[0]))
-        }
-        let botRow = crRow(topView: topRow, botView: view, buttons: imgButtons)
-        addConstraints(imgButtons, containingView: botRow)
-
+        ]
+        let buttonInfo2 = [
+            ["yahoomail.png","@@@yo372002@yahoo.com"]
+            , ["gmail2.png","@@@bpollak@gmail.com"]
+            , ["Phone.png","@@@+1-347-416-1525"]
+            , ["secret.png","@@@Key"]
+        ]
+        
+        let row2 = addButtonRow(topRow, buttonInfo: buttonInfo)
+        let row3 = addButtonRow(row2, buttonInfo: buttonInfo2)
+        
+        //        var imgButtons: [UIButton] = []
+        //        for info in buttonInfo {
+        //            imgButtons.append(crButton(named: info[1], imgNamed: info[0]))
+        //        }
+        //        let botRow = crRow(topView: topRow, botView: view, buttons: imgButtons)
+        //        addConstraints(imgButtons, containingView: botRow)
+        //
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
         view = objects[0] as! UIView;
  */
+    }
+    func addButtonRow(_ prevView: UIView?, buttonInfo: [[String]]) -> UIView {
+        var imgButtons: [UIButton] = []
+        for info in buttonInfo {
+            imgButtons.append(crButton(named: info[1], imgNamed: info[0]))
+        }
+        let row = crRow(topView: prevView, botView: view, buttons: imgButtons)
+        addConstraints(imgButtons, containingView: row)
+        return row
     }
     func crButton(named: String, imgNamed: String) -> UIButton  {
         let button = UIButton(type: .custom)
@@ -114,9 +140,8 @@ class KeyboardViewController: UIInputViewController {
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
         if topView != nil {
-            view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: topView, attribute: .top, multiplier: 1.0, constant: 0))
+            view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: topView, attribute: .bottom, multiplier: 1.0, constant: 0))
         } else {
-            
             view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
         }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
