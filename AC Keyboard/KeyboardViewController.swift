@@ -30,27 +30,28 @@ class KeyboardViewController: UIInputViewController {
         // Perform custom UI setup here
         if true {
             
-            self.nextKeyboardButton = UIButton(type: .custom)
-            self.nextKeyboardButton.setTitle(NSLocalizedString("", comment: "Title for 'Next Keyboard' button"), for: [])
-            self.nextKeyboardButton.sizeToFit()
-            self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-            self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+            nextKeyboardButton = UIButton(type: .custom)
+            nextKeyboardButton.setTitle(NSLocalizedString("", comment: "Title for 'Next Keyboard' button"), for: [])
+            nextKeyboardButton.sizeToFit()
+            nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
+            //nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
+            nextKeyboardButton.addTarget(self, action: #selector(KeyboardViewController.nextKeyboardPressed(_:)), for: .touchUpInside)
             nextKeyboardButton.setImage(UIImage(named: "next.png"), for: UIControlState.normal)
             nextKeyboardButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
 
-            self.view.addSubview(self.nextKeyboardButton)
-            view.addConstraint(NSLayoutConstraint(item: nextKeyboardButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+            self.view.addSubview(nextKeyboardButton)
+            view.addConstraint(NSLayoutConstraint(item: nextKeyboardButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
 
             
-            self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-            self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+            nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+            nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
 
         }
         
-        let buttonTitles = ["Q", "W", "E", "R", "T", "Y","a","n","d","m","o","r","n","d","m","o","r"]
+        let buttonTitles = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","z"]
 
         var topRow: UIView? = nil
-        if false {
+        if true {
             let buttons = createButtons(titles: buttonTitles)
             topRow = UIView()
             view.addSubview(topRow!)
@@ -59,7 +60,7 @@ class KeyboardViewController: UIInputViewController {
                 topRow?.addSubview(button)
             }
             view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
-            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
             view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
             view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
             
@@ -127,7 +128,7 @@ class KeyboardViewController: UIInputViewController {
             row.addSubview(button)
         }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
-        view.addConstraint(NSLayoutConstraint(item: row, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 50))
+        view.addConstraint(NSLayoutConstraint(item: row, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
         if topView != nil {
             view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: topView, attribute: .bottom, multiplier: 1.0, constant: 0))
         } else {
@@ -196,7 +197,7 @@ class KeyboardViewController: UIInputViewController {
         } else {
             textColor = UIColor.black
         }
-        //self.nextKeyboardButton.setTitleColor(textColor, for: [])
+        //nextKeyboardButton.setTitleColor(textColor, for: [])
     }
     @IBAction func keyPressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
@@ -226,12 +227,15 @@ class KeyboardViewController: UIInputViewController {
             let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
             string = SharedDefaults.string(forKey: substring1) ?? substring1
             space = ""
+        } else if string.characters.count == 1 {
+            space = ""
         }
         UIDevice.current.playInputClick()
         (textDocumentProxy as UIKeyInput).insertText("\(string)\(space)")
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
         UIDevice.current.playInputClick()
+//        handleInputModeList(from: view, with: UIEvent.tou)
         advanceToNextInputMode()
     }
     @IBAction func dismissKeyboardPressed(_ sender: Any) {
