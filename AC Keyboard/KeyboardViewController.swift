@@ -22,7 +22,12 @@ class KeyboardViewController: UIInputViewController {
         
         // Add custom view sizing constraints here
     }
-    
+    let emoticons = [":-)": "I'm happy!"
+        , ":'-)": "So sad!"
+        , ">:(": "Fuck you!"
+        , ":-*": "Kisses!"
+        , ":$": "So embarrassed!"
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         view = KeyboardView()
@@ -50,9 +55,9 @@ class KeyboardViewController: UIInputViewController {
         
         let buttonTitles = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
-        var topRow: UIView? = nil
+        var row: UIView? = nil
         if true {
-            topRow = addTextButtonRow(topRow, buttonTitles: buttonTitles)
+            row = addTextButtonRow(row, buttonTitles: buttonTitles)
         }
 
         /*
@@ -75,9 +80,10 @@ class KeyboardViewController: UIInputViewController {
             , ["secret.png","@@@Key"]
         ]
         
-        let row2 = addButtonRow(topRow, buttonInfo: buttonInfo)
-        let row3 = addButtonRow(row2, buttonInfo: buttonInfo2)
-        
+        row = addButtonRow(row, buttonInfo: buttonInfo)
+        row = addButtonRow(row, buttonInfo: buttonInfo2)
+        row = addTextButtonRow(row, buttonTitles: Array(emoticons.keys))
+
         //
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
@@ -233,6 +239,8 @@ class KeyboardViewController: UIInputViewController {
             space = ""
         } else if string.characters.count == 1 {
             space = ""
+        } else {
+            string = emoticons[string] ?? string
         }
         UIDevice.current.playInputClick()
         (textDocumentProxy as UIKeyInput).insertText("\(string)\(space)")
