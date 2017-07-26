@@ -15,8 +15,7 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
 
-    @IBOutlet var btn: UIButton!
-    
+    var backCount = 1
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
@@ -240,7 +239,9 @@ class KeyboardViewController: UIInputViewController {
             string = emoticons[string] ?? string
         }
         UIDevice.current.playInputClick()
-        (textDocumentProxy as UIKeyInput).insertText("\(string)\(space)")
+        let text = "\(string)\(space)"
+        backCount = text.characters.count
+        (textDocumentProxy as UIKeyInput).insertText(text)
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
         UIDevice.current.playInputClick()
@@ -248,9 +249,11 @@ class KeyboardViewController: UIInputViewController {
         advanceToNextInputMode()
     }
     @IBAction func backKeyboardPressed(_ sender: Any) {
-        UIDevice.current.playInputClick()
-        //        handleInputModeList(from: view, with: UIEvent.tou)
-        (textDocumentProxy as UIKeyInput).deleteBackward()
+        for _ in 0..<backCount {
+            UIDevice.current.playInputClick()
+            (textDocumentProxy as UIKeyInput).deleteBackward()
+        }
+        backCount = 1
     }
     @IBAction func dismissKeyboardPressed(_ sender: Any) {
        UIDevice.current.playInputClick()
