@@ -48,23 +48,11 @@ class KeyboardViewController: UIInputViewController {
 
         }
         
-        let buttonTitles = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","z"]
+        let buttonTitles = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
         var topRow: UIView? = nil
         if true {
-            let buttons = createButtons(titles: buttonTitles)
-            topRow = UIView()
-            view.addSubview(topRow!)
-            topRow?.translatesAutoresizingMaskIntoConstraints=false
-            for button in buttons {
-                topRow?.addSubview(button)
-            }
-            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
-            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
-            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
-            view.addConstraint(NSLayoutConstraint(item: topRow, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-            
-            addConstraints(buttons, containingView: topRow!)
+            topRow = addTextButtonRow(topRow, buttonTitles: buttonTitles)
         }
 
         /*
@@ -97,6 +85,28 @@ class KeyboardViewController: UIInputViewController {
         view = objects[0] as! UIView;
  */
     }
+    func addTextButtonRow(_ topView: UIView?, buttonTitles: [String]) -> UIView {
+        let buttons = createButtons(titles: buttonTitles)
+        let row = UIView()
+        view.addSubview(row)
+        row.translatesAutoresizingMaskIntoConstraints=false
+        for button in buttons {
+            row.addSubview(button)
+        }
+        addRowConstraints(row, topView: topView)
+        addConstraints(buttons, containingView: row)
+        return row
+    }
+    func crRow(topView:UIView?, botView:UIView, buttons:[UIButton]) -> UIView {
+        let row = UIView()
+        view.addSubview(row)
+        row.translatesAutoresizingMaskIntoConstraints=false
+        for button in buttons {
+            row.addSubview(button)
+        }
+        addRowConstraints(row, topView: topView)
+        return row
+    }
     func addButtonRow(_ prevView: UIView?, buttonInfo: [[String]]) -> UIView {
         var imgButtons: [UIButton] = []
         for info in buttonInfo {
@@ -120,13 +130,8 @@ class KeyboardViewController: UIInputViewController {
 
         return button
     }
-    func crRow(topView:UIView?, botView:UIView, buttons:[UIButton]) -> UIView {
-        let row = UIView()
-        view.addSubview(row)
-        row.translatesAutoresizingMaskIntoConstraints=false
-        for button in buttons {
-            row.addSubview(button)
-        }
+
+    func addRowConstraints(_ row: UIView, topView: UIView?) {
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
         if topView != nil {
@@ -135,7 +140,6 @@ class KeyboardViewController: UIInputViewController {
             view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
         }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-        return row
     }
     func createButtons(titles: [String]) -> [UIButton] {
         
