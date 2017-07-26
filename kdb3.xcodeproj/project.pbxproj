@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21FB7E61F2903B20092C263 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B21FB7E51F2903B20092C263 /* Settings.bundle */; };
 		B22877E91F1FD18700141C72 /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877E81F1FD18700141C72 /* hide.png */; };
 		B22877EA1F1FD18700141C72 /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877E81F1FD18700141C72 /* hide.png */; };
 		B22877F71F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */; };
@@ -107,6 +108,7 @@
 /* Begin PBXFileReference section */
 		B20B86CB1F20FB660067E08B /* kdb3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kdb3.entitlements; sourceTree = "<group>"; };
 		B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AC Keyboard.entitlements"; sourceTree = "<group>"; };
+		B21FB7E51F2903B20092C263 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B22877E81F1FD18700141C72 /* hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hide.png; path = kdb3/images/hide.png; sourceTree = "<group>"; };
 		B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yahoo-Mail-logo.png"; path = "kdb3/images/Yahoo-Mail-logo.png"; sourceTree = "<group>"; };
 		B22877EC1F1FD38700141C72 /* thumbsdown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = thumbsdown.gif; path = kdb3/images/thumbsdown.gif; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 		B2FED7BE1F1BB261005AA45F = {
 			isa = PBXGroup;
 			children = (
+				B21FB7E51F2903B20092C263 /* Settings.bundle */,
 				B22878151F1FD9D900141C72 /* yahoomail.png */,
 				B22F910C1F1D035300E5E6AC /* images */,
 				B2FED7C91F1BB261005AA45F /* kdb3 */,
@@ -451,6 +454,7 @@
 				B22878011F1FD38700141C72 /* lcase.png in Resources */,
 				B22878031F1FD38700141C72 /* ucase.png in Resources */,
 				B24048321F2680AC00922CDE /* noway.png in Resources */,
+				B21FB7E61F2903B20092C263 /* Settings.bundle in Resources */,
 				B22878191F1FDA8100141C72 /* ymail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

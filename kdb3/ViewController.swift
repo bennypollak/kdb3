@@ -26,6 +26,10 @@ class ViewController: UIViewController {
 
         let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
         secret1.text = SharedDefaults.string(forKey: "Key") ?? ""
+        
+        let userDefaults = UserDefaults.standard
+        let name = userDefaults.string(forKey: "name_preference")
+        print(name)
 
 
     }

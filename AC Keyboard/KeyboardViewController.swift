@@ -40,6 +40,10 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        let userDefaults = UserDefaults.standard
+        let name = userDefaults.string(forKey: "name_preference")
+        print(name)
+
         view = KeyboardView()
 
         // Perform custom UI setup here
