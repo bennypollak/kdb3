@@ -15,7 +15,7 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
 
-    @IBOutlet var nextKeyboardButton: UIButton!
+    @IBOutlet var btn: UIButton!
     
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -35,28 +35,26 @@ class KeyboardViewController: UIInputViewController {
         // Perform custom UI setup here
         if true {
             
-            nextKeyboardButton = UIButton(type: .custom)
-            nextKeyboardButton.setTitle(NSLocalizedString("", comment: "Title for 'Next Keyboard' button"), for: [])
-            nextKeyboardButton.sizeToFit()
-            nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-            //nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-            nextKeyboardButton.addTarget(self, action: #selector(KeyboardViewController.nextKeyboardPressed(_:)), for: .touchUpInside)
-            nextKeyboardButton.setImage(UIImage(named: "next.png"), for: UIControlState.normal)
-            nextKeyboardButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-
-            self.view.addSubview(nextKeyboardButton)
-            view.addConstraint(NSLayoutConstraint(item: nextKeyboardButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
-
+            let next = createImgButton(named: "", imgNamed: "next.png", action: #selector(KeyboardViewController.nextKeyboardPressed(_:)))
+            next.backgroundColor = .clear
+            view.addSubview(next)
+            view.addConstraint(NSLayoutConstraint(item: next, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
+            next.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+            next.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
             
-            nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-            nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+            let back = createImgButton(named: "", imgNamed: "back.jpg", action: #selector(KeyboardViewController.backKeyboardPressed(_:)))
+            back.backgroundColor = .clear
+            view.addSubview(back)
+            view.addConstraint(NSLayoutConstraint(item: back, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
+            back.leftAnchor.constraint(equalTo: next.rightAnchor).isActive = true
+            back.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 
         }
         
         let buttonTitles = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
         var row: UIView? = nil
-        if true {
+        if false {
             row = addTextButtonRow(row, buttonTitles: buttonTitles)
         }
 
@@ -84,7 +82,6 @@ class KeyboardViewController: UIInputViewController {
         row = addButtonRow(row, buttonInfo: buttonInfo2)
         row = addTextButtonRow(row, buttonTitles: Array(emoticons.keys))
 
-        //
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
@@ -116,23 +113,23 @@ class KeyboardViewController: UIInputViewController {
     func addButtonRow(_ prevView: UIView?, buttonInfo: [[String]]) -> UIView {
         var imgButtons: [UIButton] = []
         for info in buttonInfo {
-            imgButtons.append(crButton(named: info[1], imgNamed: info[0]))
+            imgButtons.append(createImgButton(named: info[1], imgNamed: info[0]))
         }
         let row = crRow(topView: prevView, botView: view, buttons: imgButtons)
         addConstraints(imgButtons, containingView: row)
         return row
     }
-    func crButton(named: String, imgNamed: String) -> UIButton  {
+    func createImgButton(named: String, imgNamed: String, action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> UIButton  {
         let button = UIButton(type: .custom)
         let image = UIImage(named: imgNamed)
         button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         button.setImage(image, for: UIControlState.normal)
         button.sizeToFit()
-        button.backgroundColor = .clear
+        button.backgroundColor = .white
         button.setTitle(named, for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(KeyboardViewController.ijomePressed(_:)), for: .touchUpInside)
+        button.addTarget(self, action: action, for: .touchUpInside)
 
         return button
     }
@@ -207,7 +204,7 @@ class KeyboardViewController: UIInputViewController {
         } else {
             textColor = UIColor.black
         }
-        //nextKeyboardButton.setTitleColor(textColor, for: [])
+        //btn.setTitleColor(textColor, for: [])
     }
     @IBAction func keyPressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
@@ -247,8 +244,13 @@ class KeyboardViewController: UIInputViewController {
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
         UIDevice.current.playInputClick()
-//        handleInputModeList(from: view, with: UIEvent.tou)
+        //        handleInputModeList(from: view, with: UIEvent.tou)
         advanceToNextInputMode()
+    }
+    @IBAction func backKeyboardPressed(_ sender: Any) {
+        UIDevice.current.playInputClick()
+        //        handleInputModeList(from: view, with: UIEvent.tou)
+        (textDocumentProxy as UIKeyInput).deleteBackward()
     }
     @IBAction func dismissKeyboardPressed(_ sender: Any) {
        UIDevice.current.playInputClick()
