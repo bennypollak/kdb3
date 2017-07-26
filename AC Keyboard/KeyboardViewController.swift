@@ -31,6 +31,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["sad.png","So sad!"]
         , ["thumbs_down_angry.png","No way!"]
         , ["ok.png","Ok!"]
+        , ["ohno.png","Oh no!"]
     ]
     let ijomes2 = [
         ["yahoomail.png","@@@yo372002@yahoo.com"]

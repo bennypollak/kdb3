@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         
         let userDefaults = UserDefaults.standard
         let name = userDefaults.string(forKey: "name_preference")
-        print(name)
 
 
     }

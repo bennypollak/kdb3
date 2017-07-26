@@ -55,6 +55,18 @@
 		B24048371F2681E000922CDE /* thumbs_down_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048351F2681E000922CDE /* thumbs_down_angry.png */; };
 		B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B257CCF91F292E6C009DD6DD /* Settings.bundle */; };
 		B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B257CCF91F292E6C009DD6DD /* Settings.bundle */; };
+		B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFC1F2938E7009DD6DD /* ohno.png */; };
+		B257CCFE1F2938E7009DD6DD /* ohno.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFC1F2938E7009DD6DD /* ohno.png */; };
+		B257CD041F293CB5009DD6DD /* imsick.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFF1F293CB5009DD6DD /* imsick.png */; };
+		B257CD051F293CB5009DD6DD /* imsick.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFF1F293CB5009DD6DD /* imsick.png */; };
+		B257CD061F293CB5009DD6DD /* noway2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B257CD001F293CB5009DD6DD /* noway2.gif */; };
+		B257CD071F293CB5009DD6DD /* noway2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B257CD001F293CB5009DD6DD /* noway2.gif */; };
+		B257CD081F293CB5009DD6DD /* sohappy.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD011F293CB5009DD6DD /* sohappy.png */; };
+		B257CD091F293CB5009DD6DD /* sohappy.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD011F293CB5009DD6DD /* sohappy.png */; };
+		B257CD0A1F293CB5009DD6DD /* wasntme.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD021F293CB5009DD6DD /* wasntme.png */; };
+		B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD021F293CB5009DD6DD /* wasntme.png */; };
+		B257CD0C1F293CB5009DD6DD /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD031F293CB5009DD6DD /* what.png */; };
+		B257CD0D1F293CB5009DD6DD /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD031F293CB5009DD6DD /* what.png */; };
 		B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F4441F21627900804898 /* KeyboardView.swift */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
@@ -133,6 +145,12 @@
 		B24048311F2680AC00922CDE /* noway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noway.png; path = kdb3/images/noway.png; sourceTree = "<group>"; };
 		B24048351F2681E000922CDE /* thumbs_down_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbs_down_angry.png; path = kdb3/images/thumbs_down_angry.png; sourceTree = "<group>"; };
 		B257CCF91F292E6C009DD6DD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B257CCFC1F2938E7009DD6DD /* ohno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohno.png; path = kdb3/images/ohno.png; sourceTree = "<group>"; };
+		B257CCFF1F293CB5009DD6DD /* imsick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imsick.png; path = kdb3/images/imsick.png; sourceTree = "<group>"; };
+		B257CD001F293CB5009DD6DD /* noway2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = noway2.gif; path = kdb3/images/noway2.gif; sourceTree = "<group>"; };
+		B257CD011F293CB5009DD6DD /* sohappy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sohappy.png; path = kdb3/images/sohappy.png; sourceTree = "<group>"; };
+		B257CD021F293CB5009DD6DD /* wasntme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wasntme.png; path = kdb3/images/wasntme.png; sourceTree = "<group>"; };
+		B257CD031F293CB5009DD6DD /* what.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = what.png; path = kdb3/images/what.png; sourceTree = "<group>"; };
 		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +206,12 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B257CCFF1F293CB5009DD6DD /* imsick.png */,
+				B257CD001F293CB5009DD6DD /* noway2.gif */,
+				B257CD011F293CB5009DD6DD /* sohappy.png */,
+				B257CD021F293CB5009DD6DD /* wasntme.png */,
+				B257CD031F293CB5009DD6DD /* what.png */,
+				B257CCFC1F2938E7009DD6DD /* ohno.png */,
 				B24048351F2681E000922CDE /* thumbs_down_angry.png */,
 				B24048311F2680AC00922CDE /* noway.png */,
 				B228781E1F1FDEC800141C72 /* secret.png */,
@@ -433,8 +457,10 @@
 				B24048361F2681E000922CDE /* thumbs_down_angry.png in Resources */,
 				B22F91101F1D046E00E5E6AC /* fu.png in Resources */,
 				B22F91121F1D046E00E5E6AC /* ok.jpg in Resources */,
+				B257CD041F293CB5009DD6DD /* imsick.png in Resources */,
 				B22878131F1FD95200141C72 /* gmail2.png in Resources */,
 				B22F91111F1D046E00E5E6AC /* noay.jpg in Resources */,
+				B257CD061F293CB5009DD6DD /* noway2.gif in Resources */,
 				B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */,
 				B22878161F1FD9D900141C72 /* yahoomail.png in Resources */,
 				B228781C1F1FDB6F00141C72 /* Phone.png in Resources */,
@@ -444,9 +470,11 @@
 				B22877F91F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B22878051F1FD38700141C72 /* space.png in Resources */,
 				B22877E91F1FD18700141C72 /* hide.png in Resources */,
+				B257CD081F293CB5009DD6DD /* sohappy.png in Resources */,
 				B228781F1F1FDEC800141C72 /* secret.png in Resources */,
 				B228780D1F1FD38700141C72 /* return.png in Resources */,
 				B22878101F1FD7C500141C72 /* gmail.jpeg in Resources */,
+				B257CD0C1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FD1F1FD38700141C72 /* sad.png in Resources */,
 				B22878071F1FD38700141C72 /* next.png in Resources */,
 				B22877FB1F1FD38700141C72 /* funny.png in Resources */,
@@ -456,7 +484,9 @@
 				B22878031F1FD38700141C72 /* ucase.png in Resources */,
 				B24048321F2680AC00922CDE /* noway.png in Resources */,
 				B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */,
+				B257CD0A1F293CB5009DD6DD /* wasntme.png in Resources */,
 				B22878191F1FDA8100141C72 /* ymail.png in Resources */,
+				B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,22 +515,28 @@
 				B228780E1F1FD38700141C72 /* return.png in Resources */,
 				B22878021F1FD38700141C72 /* lcase.png in Resources */,
 				B22878111F1FD7C500141C72 /* gmail.jpeg in Resources */,
+				B257CCFE1F2938E7009DD6DD /* ohno.png in Resources */,
 				B22878171F1FD9D900141C72 /* yahoomail.png in Resources */,
 				B22F911A1F1D0C3000E5E6AC /* ok.jpg in Resources */,
 				B22F91191F1D0C2800E5E6AC /* fu.png in Resources */,
+				B257CD051F293CB5009DD6DD /* imsick.png in Resources */,
 				B22877FA1F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B22878201F1FDEC800141C72 /* secret.png in Resources */,
+				B257CD071F293CB5009DD6DD /* noway2.gif in Resources */,
 				B228780C1F1FD38700141C72 /* back.jpg in Resources */,
 				B22878061F1FD38700141C72 /* space.png in Resources */,
 				B24048331F2680AC00922CDE /* noway.png in Resources */,
 				B22878001F1FD38700141C72 /* ok.png in Resources */,
 				B228781D1F1FDB6F00141C72 /* Phone.png in Resources */,
+				B257CD0D1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FC1F1FD38700141C72 /* funny.png in Resources */,
 				B228781A1F1FDA8100141C72 /* ymail.png in Resources */,
 				B22F91181F1D0C2100E5E6AC /* noay.jpg in Resources */,
+				B257CD091F293CB5009DD6DD /* sohappy.png in Resources */,
 				B22878041F1FD38700141C72 /* ucase.png in Resources */,
 				B2FED8091F1BB6EF005AA45F /* KeyboardView.xib in Resources */,
 				B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */,
+				B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */,
 				B22878141F1FD95200141C72 /* gmail2.png in Resources */,
 				B22877EA1F1FD18700141C72 /* hide.png in Resources */,
 			);
