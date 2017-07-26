@@ -6,14 +6,11 @@
 //  Copyright © 2017 Alben Software. All rights reserved.
 //
 /*
- var output: String!
- var buttons: [UIButton] {
- return [officialButton, personal1button, personal2button]
- }
+
  */
 import UIKit
 
-class KeyboardViewController: UIInputViewController {
+class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate {
 
     var backCount = 1
     override func updateViewConstraints() {
@@ -25,13 +22,32 @@ class KeyboardViewController: UIInputViewController {
         , ":'-)": "So sad!"
         , ">:(": "Fuck you!"
         , ":-*": "Kisses!"
+        , ";)": "Wink!"
+        , ":-D": "Funny!"
         , ":$": "So embarrassed!"
+    ]
+    let ijomes1 = [
+        ["fu.png","Fuck you!"]
+        , ["sad.png","So sad!"]
+        , ["thumbs_down_angry.png","No way!"]
+        , ["ok.png","Ok!"]
+    ]
+    let ijomes2 = [
+        ["yahoomail.png","@@@yo372002@yahoo.com"]
+        , ["gmail2.png","@@@bpollak@gmail.com"]
+        , ["Phone.png","@@@+1-347-416-1525"]
+        , ["secret.png","@@@Key"]
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
         view = KeyboardView()
 
         // Perform custom UI setup here
+//        let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(gesture:)))
+//        lpgr.minimumPressDuration = 0.5
+//        lpgr.delaysTouchesBegan = true
+//        lpgr.delegate = self
+//        self.view.addGestureRecognizer(lpgr)
         if true {
             
             let next = createImgButton(named: "", imgNamed: "next.png", action: #selector(KeyboardViewController.nextKeyboardPressed(_:)))
@@ -43,6 +59,7 @@ class KeyboardViewController: UIInputViewController {
             
             let back = createImgButton(named: "", imgNamed: "back.jpg", action: #selector(KeyboardViewController.backKeyboardPressed(_:)))
             back.backgroundColor = .clear
+ 
             view.addSubview(back)
             view.addConstraint(NSLayoutConstraint(item: back, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
             back.leftAnchor.constraint(equalTo: next.rightAnchor).isActive = true
@@ -56,29 +73,9 @@ class KeyboardViewController: UIInputViewController {
         if false {
             row = addTextButtonRow(row, buttonTitles: buttonTitles)
         }
-
-        /*
-         let buttonInfo = [
-         ["",""]
-         , ["",""]
-         ]
-         */
         
-        let buttonInfo = [
-            ["fu.png","Fuck you!"]
-            , ["sad.png","So sad!"]
-            , ["thumbs_down_angry.png","No way!"]
-            , ["ok.png","Ok!"]
-        ]
-        let buttonInfo2 = [
-            ["yahoomail.png","@@@yo372002@yahoo.com"]
-            , ["gmail2.png","@@@bpollak@gmail.com"]
-            , ["Phone.png","@@@+1-347-416-1525"]
-            , ["secret.png","@@@Key"]
-        ]
-        
-        row = addButtonRow(row, buttonInfo: buttonInfo)
-        row = addButtonRow(row, buttonInfo: buttonInfo2)
+        row = addButtonRow(row, buttonInfo: ijomes1)
+        row = addButtonRow(row, buttonInfo: ijomes2)
         row = addTextButtonRow(row, buttonTitles: Array(emoticons.keys))
 
         /*
@@ -99,7 +96,7 @@ class KeyboardViewController: UIInputViewController {
         addConstraints(buttons, containingView: row)
         return row
     }
-    func crRow(topView:UIView?, botView:UIView, buttons:[UIButton]) -> UIView {
+    func createRow(topView:UIView?, botView:UIView, buttons:[UIButton]) -> UIView {
         let row = UIView()
         view.addSubview(row)
         row.translatesAutoresizingMaskIntoConstraints=false
@@ -114,7 +111,7 @@ class KeyboardViewController: UIInputViewController {
         for info in buttonInfo {
             imgButtons.append(createImgButton(named: info[1], imgNamed: info[0]))
         }
-        let row = crRow(topView: prevView, botView: view, buttons: imgButtons)
+        let row = createRow(topView: prevView, botView: view, buttons: imgButtons)
         addConstraints(imgButtons, containingView: row)
         return row
     }
@@ -255,6 +252,15 @@ class KeyboardViewController: UIInputViewController {
         }
         backCount = 1
     }
+    @IBAction func handleLongPress(gesture : UILongPressGestureRecognizer!) {
+        if gesture.state != .ended {
+            return
+        }
+        UIDevice.current.playInputClick()
+        (textDocumentProxy as UIKeyInput).deleteBackward()
+    }
+
+//        let p = g    }
     @IBAction func dismissKeyboardPressed(_ sender: Any) {
        UIDevice.current.playInputClick()
        dismissKeyboard()
