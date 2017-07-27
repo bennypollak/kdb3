@@ -32,6 +32,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["thumbs_down_angry.png","No way!"]
         , ["ok.png","Ok!"]
         , ["ohno.png","Oh no!"]
+        , ["wink.png","Wink!"]
     ]
     let ijomes2 = [
         ["yahoomail.png","@@@yo372002@yahoo.com"]
@@ -39,6 +40,16 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["Phone.png","@@@+1-347-416-1525"]
         , ["secret.png","@@@Key"]
     ]
+    
+    let ijomes3 = [
+        ["imsick.png", "So sick!"]
+    , ["noway2.gif", "No way!"]
+    , ["sohappy.png", "So happy!"]
+    , ["wasntme.png", "I wasn't me!"]
+        , ["what.png", "What?"]
+        , ["wtf.png", "WTF!"]
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let userDefaults = UserDefaults.standard
@@ -80,8 +91,9 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         }
         
         row = addButtonRow(row, buttonInfo: ijomes1)
-        row = addButtonRow(row, buttonInfo: ijomes2)
+        row = addButtonRow(row, buttonInfo: ijomes3)
         row = addTextButtonRow(row, buttonTitles: Array(emoticons.keys))
+        row = addButtonRow(row, buttonInfo: ijomes2)
 
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
