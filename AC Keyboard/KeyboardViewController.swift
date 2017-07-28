@@ -25,30 +25,32 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ";)": "Wink!"
         , ":-D": "Funny!"
         , ":$": "So embarrassed!"
-    ]
+        ]
+    
     let ijomes1 = [
-        ["fu.png","Fuck you!"]
-        , ["sad.png","So sad!"]
-        , ["thumbs_down_angry.png","No way!"]
-        , ["ok.png","Ok!"]
-        , ["ohno.png","Oh no!"]
-        , ["wink.png","Wink!"]
-    ]
+        "fu.png": "Fuck you!"
+        , "sad.png": "So sad!"
+        , "thumbs_down_angry.png": "No way!"
+        , "ok.png": "Ok!"
+        , "ohno.png": "Oh no!"
+        , "wink.png": "Wink!"
+        ]
+    
     let ijomes2 = [
-        ["yahoomail.png","@@@yo372002@yahoo.com"]
-        , ["gmail2.png","@@@bpollak@gmail.com"]
-        , ["Phone.png","@@@+1-347-416-1525"]
-        , ["secret.png","@@@Key"]
-    ]
+        "yahoomail.png": "@@@yo372002@yahoo.com"
+        , "gmail2.png": "@@@bpollak@gmail.com"
+        , "Phone.png": "@@@+1-347-416-1525"
+        , "secret.png": "@@@Key"
+        ]
     
     let ijomes3 = [
-        ["imsick.png", "So sick!"]
-    , ["noway2.gif", "No way!"]
-    , ["sohappy.png", "So happy!"]
-    , ["wasntme.png", "I wasn't me!"]
-        , ["what.png", "What?"]
-        , ["wtf.png", "WTF!"]
-    ]
+        "imsick.png": "So sick!"
+        , "noway2.gif": "No way!"
+        , "sohappy.png": "So happy!"
+        , "wasntme.png": "I wasn't me!"
+        , "what.png": "What?"
+        , "wtf.png": "WTF!"
+        ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,10 +125,10 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         addRowConstraints(row, topView: topView)
         return row
     }
-    func addButtonRow(_ prevView: UIView?, buttonInfo: [[String]]) -> UIView {
+    func addButtonRow(_ prevView: UIView?, buttonInfo: [String: String]) -> UIView {
         var imgButtons: [UIButton] = []
-        for info in buttonInfo {
-            imgButtons.append(createImgButton(named: info[1], imgNamed: info[0]))
+        for (imgNamed, named) in buttonInfo {
+            imgButtons.append(createImgButton(named: named, imgNamed: imgNamed))
         }
         let row = createRow(topView: prevView, botView: view, buttons: imgButtons)
         addConstraints(imgButtons, containingView: row)
