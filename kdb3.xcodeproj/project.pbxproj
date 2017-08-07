@@ -67,6 +67,8 @@
 		B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD021F293CB5009DD6DD /* wasntme.png */; };
 		B257CD0C1F293CB5009DD6DD /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD031F293CB5009DD6DD /* what.png */; };
 		B257CD0D1F293CB5009DD6DD /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD031F293CB5009DD6DD /* what.png */; };
+		B29DC8061F3626ED00EF277C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B29DC8051F3626ED00EF277C /* icon.png */; };
+		B29DC8071F3626ED00EF277C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B29DC8051F3626ED00EF277C /* icon.png */; };
 		B2A01E801F2984FE00BF1F7C /* wink.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E7F1F2984FE00BF1F7C /* wink.png */; };
 		B2A01E811F2984FE00BF1F7C /* wink.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E7F1F2984FE00BF1F7C /* wink.png */; };
 		B2A01E831F29866300BF1F7C /* wtf.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E821F29866300BF1F7C /* wtf.png */; };
@@ -155,6 +157,7 @@
 		B257CD011F293CB5009DD6DD /* sohappy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sohappy.png; path = kdb3/images/sohappy.png; sourceTree = "<group>"; };
 		B257CD021F293CB5009DD6DD /* wasntme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wasntme.png; path = kdb3/images/wasntme.png; sourceTree = "<group>"; };
 		B257CD031F293CB5009DD6DD /* what.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = what.png; path = kdb3/images/what.png; sourceTree = "<group>"; };
+		B29DC8051F3626ED00EF277C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = kdb3/icon.png; sourceTree = "<group>"; };
 		B2A01E7F1F2984FE00BF1F7C /* wink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wink.png; path = kdb3/images/wink.png; sourceTree = "<group>"; };
 		B2A01E821F29866300BF1F7C /* wtf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wtf.png; path = kdb3/images/wtf.png; sourceTree = "<group>"; };
 		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
@@ -212,6 +215,7 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B29DC8051F3626ED00EF277C /* icon.png */,
 				B2A01E821F29866300BF1F7C /* wtf.png */,
 				B2A01E7F1F2984FE00BF1F7C /* wink.png */,
 				B257CCFF1F293CB5009DD6DD /* imsick.png */,
@@ -482,6 +486,7 @@
 				B228781F1F1FDEC800141C72 /* secret.png in Resources */,
 				B228780D1F1FD38700141C72 /* return.png in Resources */,
 				B22878101F1FD7C500141C72 /* gmail.jpeg in Resources */,
+				B29DC8061F3626ED00EF277C /* icon.png in Resources */,
 				B257CD0C1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FD1F1FD38700141C72 /* sad.png in Resources */,
 				B22878071F1FD38700141C72 /* next.png in Resources */,
@@ -530,6 +535,7 @@
 				B22878171F1FD9D900141C72 /* yahoomail.png in Resources */,
 				B22F911A1F1D0C3000E5E6AC /* ok.jpg in Resources */,
 				B22F91191F1D0C2800E5E6AC /* fu.png in Resources */,
+				B29DC8071F3626ED00EF277C /* icon.png in Resources */,
 				B257CD051F293CB5009DD6DD /* imsick.png in Resources */,
 				B22877FA1F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B22878201F1FDEC800141C72 /* secret.png in Resources */,
