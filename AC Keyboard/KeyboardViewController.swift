@@ -142,7 +142,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         button.sizeToFit()
         button.backgroundColor = .white
         button.setTitle(named, for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: action, for: .touchUpInside)
 

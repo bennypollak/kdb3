@@ -854,7 +854,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ee0940cf-eb9d-4f3f-8c3d-e12ecbbc32f5";
+				PROVISIONING_PROFILE = "1464803a-f927-44cf-a245-afc55ac2e8f4";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 test";
 				SWIFT_VERSION = 3.0;
 			};
