@@ -18,7 +18,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         
         // Add custom view sizing constraints here
     }
-    let emoticons = [":-)": "I'm happy!"
+    let emoticons = [":)": "Smiled!"
         , ":'-)": "So sad!"
         , ">:(": "Fuck you!"
         , ":-*": "Kisses!"
@@ -33,31 +33,28 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , "thumbs_down_angry.png": "No way!"
         , "ok.png": "Ok!"
         , "ohno.png": "Oh no!"
-        , "wink.png": "Wink!"
+//        , "wink.png": "Wink!"
+        , "thebard3.jpeg": "###bard"
         ]
     
     let ijomes2 = [
         "yahoomail.png": "@@@yo372002@yahoo.com"
         , "gmail2.png": "@@@bpollak@gmail.com"
         , "Phone.png": "@@@+1-347-416-1525"
-        , "secret.png": "@@@Key"
+        , "secret1.png": "@@@Key"
         ]
     
     let ijomes3 = [
         "imsick.png": "So sick!"
-        , "noway2.gif": "No way!"
+        , "angry.jpeg": "Very angry!"
         , "sohappy.png": "So happy!"
-        , "wasntme.png": "I wasn't me!"
+        , "wasntme.png": "It wasn't me!"
         , "what.png": "What?"
         , "wtf.png": "WTF!"
         ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userDefaults = UserDefaults.standard
-        let name = userDefaults.string(forKey: "name_preference")
-        print(name)
-
         view = KeyboardView()
 
         // Perform custom UI setup here
@@ -205,22 +202,6 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         // Dispose of any resources that can be recreated
     }
     
-    override func textWillChange(_ textInput: UITextInput?) {
-        // The app is about to change the document's contents. Perform any preparation here.
-    }
-    
-    override func textDidChange(_ textInput: UITextInput?) {
-        // The app has just changed the document's contents, the document context has been updated.
-        
-        var textColor: UIColor
-        let proxy = self.textDocumentProxy
-        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-            textColor = UIColor.white
-        } else {
-            textColor = UIColor.black
-        }
-        //btn.setTitleColor(textColor, for: [])
-    }
     @IBAction func keyPressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
         var string = "?"
@@ -249,6 +230,13 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
             string = SharedDefaults.string(forKey: substring1) ?? substring1
             space = ""
+        } else if (string.hasPrefix("###")) {
+            let r = string.index(string.startIndex, offsetBy: 3)..<string.endIndex
+            let substring1 = string[r]
+            if substring1 == "bard" {
+                string = Bard.insult()
+            }
+            space = " "
         } else if string.characters.count == 1 {
             space = ""
         } else {

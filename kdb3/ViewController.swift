@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
-        secret1.text = SharedDefaults.string(forKey: "Key") ?? ""
+//        let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
+//        secret1.text = SharedDefaults.string(forKey: "Key") ?? ""
         
     }
     

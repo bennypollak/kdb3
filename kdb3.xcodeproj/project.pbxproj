@@ -73,6 +73,21 @@
 		B2A01E811F2984FE00BF1F7C /* wink.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E7F1F2984FE00BF1F7C /* wink.png */; };
 		B2A01E831F29866300BF1F7C /* wtf.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E821F29866300BF1F7C /* wtf.png */; };
 		B2A01E841F29866300BF1F7C /* wtf.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E821F29866300BF1F7C /* wtf.png */; };
+		B2CD1D2E1F4730CA0002090A /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD1D2D1F4730CA0002090A /* Bard.swift */; };
+		B2CD1D331F473B170002090A /* angry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D2F1F473B170002090A /* angry.jpeg */; };
+		B2CD1D341F473B170002090A /* angry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D2F1F473B170002090A /* angry.jpeg */; };
+		B2CD1D351F473B170002090A /* thebard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D301F473B170002090A /* thebard.jpg */; };
+		B2CD1D361F473B170002090A /* thebard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D301F473B170002090A /* thebard.jpg */; };
+		B2CD1D371F473B170002090A /* thebard2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D311F473B170002090A /* thebard2.jpg */; };
+		B2CD1D381F473B170002090A /* thebard2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D311F473B170002090A /* thebard2.jpg */; };
+		B2CD1D391F473B170002090A /* thebard3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D321F473B170002090A /* thebard3.jpeg */; };
+		B2CD1D3A1F473B170002090A /* thebard3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D321F473B170002090A /* thebard3.jpeg */; };
+		B2CD1D3C1F4744CF0002090A /* secret1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D3B1F4744CF0002090A /* secret1.png */; };
+		B2CD1D3D1F4744CF0002090A /* secret1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D3B1F4744CF0002090A /* secret1.png */; };
+		B2CD1D3F1F4754F60002090A /* secret2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D3E1F4754F60002090A /* secret2.png */; };
+		B2CD1D401F4754F60002090A /* secret2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D3E1F4754F60002090A /* secret2.png */; };
+		B2CD1D421F475B000002090A /* secret3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D411F475B000002090A /* secret3.png */; };
+		B2CD1D431F475B000002090A /* secret3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D411F475B000002090A /* secret3.png */; };
 		B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F4441F21627900804898 /* KeyboardView.swift */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
@@ -160,6 +175,14 @@
 		B29DC8051F3626ED00EF277C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = kdb3/icon.png; sourceTree = "<group>"; };
 		B2A01E7F1F2984FE00BF1F7C /* wink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wink.png; path = kdb3/images/wink.png; sourceTree = "<group>"; };
 		B2A01E821F29866300BF1F7C /* wtf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wtf.png; path = kdb3/images/wtf.png; sourceTree = "<group>"; };
+		B2CD1D2D1F4730CA0002090A /* Bard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bard.swift; sourceTree = "<group>"; };
+		B2CD1D2F1F473B170002090A /* angry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = angry.jpeg; path = kdb3/images/angry.jpeg; sourceTree = "<group>"; };
+		B2CD1D301F473B170002090A /* thebard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thebard.jpg; path = kdb3/images/thebard.jpg; sourceTree = "<group>"; };
+		B2CD1D311F473B170002090A /* thebard2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thebard2.jpg; path = kdb3/images/thebard2.jpg; sourceTree = "<group>"; };
+		B2CD1D321F473B170002090A /* thebard3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thebard3.jpeg; path = kdb3/images/thebard3.jpeg; sourceTree = "<group>"; };
+		B2CD1D3B1F4744CF0002090A /* secret1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret1.png; path = kdb3/images/secret1.png; sourceTree = "<group>"; };
+		B2CD1D3E1F4754F60002090A /* secret2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret2.png; path = kdb3/images/secret2.png; sourceTree = "<group>"; };
+		B2CD1D411F475B000002090A /* secret3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret3.png; path = kdb3/images/secret3.png; sourceTree = "<group>"; };
 		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +238,13 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B2CD1D411F475B000002090A /* secret3.png */,
+				B2CD1D3E1F4754F60002090A /* secret2.png */,
+				B2CD1D3B1F4744CF0002090A /* secret1.png */,
+				B2CD1D2F1F473B170002090A /* angry.jpeg */,
+				B2CD1D301F473B170002090A /* thebard.jpg */,
+				B2CD1D311F473B170002090A /* thebard2.jpg */,
+				B2CD1D321F473B170002090A /* thebard3.jpeg */,
 				B29DC8051F3626ED00EF277C /* icon.png */,
 				B2A01E821F29866300BF1F7C /* wtf.png */,
 				B2A01E7F1F2984FE00BF1F7C /* wink.png */,
@@ -315,6 +345,7 @@
 				B2FED8001F1BB37B005AA45F /* Info.plist */,
 				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
 				B2F2F4441F21627900804898 /* KeyboardView.swift */,
+				B2CD1D2D1F4730CA0002090A /* Bard.swift */,
 			);
 			path = "AC Keyboard";
 			sourceTree = "<group>";
@@ -466,6 +497,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CD1D351F473B170002090A /* thebard.jpg in Resources */,
 				B24048361F2681E000922CDE /* thumbs_down_angry.png in Resources */,
 				B22F91101F1D046E00E5E6AC /* fu.png in Resources */,
 				B22F91121F1D046E00E5E6AC /* ok.jpg in Resources */,
@@ -473,11 +505,14 @@
 				B22878131F1FD95200141C72 /* gmail2.png in Resources */,
 				B22F91111F1D046E00E5E6AC /* noay.jpg in Resources */,
 				B257CD061F293CB5009DD6DD /* noway2.gif in Resources */,
+				B2CD1D371F473B170002090A /* thebard2.jpg in Resources */,
+				B2CD1D421F475B000002090A /* secret3.png in Resources */,
 				B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */,
 				B22878161F1FD9D900141C72 /* yahoomail.png in Resources */,
 				B228781C1F1FDB6F00141C72 /* Phone.png in Resources */,
 				B228780B1F1FD38700141C72 /* back.jpg in Resources */,
 				B22877F71F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */,
+				B2CD1D391F473B170002090A /* thebard3.jpeg in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
 				B22877F91F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B22878051F1FD38700141C72 /* space.png in Resources */,
@@ -487,11 +522,13 @@
 				B228780D1F1FD38700141C72 /* return.png in Resources */,
 				B22878101F1FD7C500141C72 /* gmail.jpeg in Resources */,
 				B29DC8061F3626ED00EF277C /* icon.png in Resources */,
+				B2CD1D3C1F4744CF0002090A /* secret1.png in Resources */,
 				B257CD0C1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FD1F1FD38700141C72 /* sad.png in Resources */,
 				B22878071F1FD38700141C72 /* next.png in Resources */,
 				B22877FB1F1FD38700141C72 /* funny.png in Resources */,
 				B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */,
+				B2CD1D3F1F4754F60002090A /* secret2.png in Resources */,
 				B22877FF1F1FD38700141C72 /* ok.png in Resources */,
 				B2A01E831F29866300BF1F7C /* wtf.png in Resources */,
 				B22878011F1FD38700141C72 /* lcase.png in Resources */,
@@ -500,6 +537,7 @@
 				B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */,
 				B257CD0A1F293CB5009DD6DD /* wasntme.png in Resources */,
 				B22878191F1FDA8100141C72 /* ymail.png in Resources */,
+				B2CD1D331F473B170002090A /* angry.jpeg in Resources */,
 				B2A01E801F2984FE00BF1F7C /* wink.png in Resources */,
 				B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */,
 			);
@@ -523,11 +561,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CD1D3D1F4744CF0002090A /* secret1.png in Resources */,
 				B22878081F1FD38700141C72 /* next.png in Resources */,
 				B22877FE1F1FD38700141C72 /* sad.png in Resources */,
 				B24048371F2681E000922CDE /* thumbs_down_angry.png in Resources */,
 				B22877F81F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */,
 				B228780E1F1FD38700141C72 /* return.png in Resources */,
+				B2CD1D401F4754F60002090A /* secret2.png in Resources */,
 				B22878021F1FD38700141C72 /* lcase.png in Resources */,
 				B2A01E841F29866300BF1F7C /* wtf.png in Resources */,
 				B22878111F1FD7C500141C72 /* gmail.jpeg in Resources */,
@@ -537,10 +577,12 @@
 				B22F91191F1D0C2800E5E6AC /* fu.png in Resources */,
 				B29DC8071F3626ED00EF277C /* icon.png in Resources */,
 				B257CD051F293CB5009DD6DD /* imsick.png in Resources */,
+				B2CD1D431F475B000002090A /* secret3.png in Resources */,
 				B22877FA1F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B22878201F1FDEC800141C72 /* secret.png in Resources */,
 				B257CD071F293CB5009DD6DD /* noway2.gif in Resources */,
 				B228780C1F1FD38700141C72 /* back.jpg in Resources */,
+				B2CD1D3A1F473B170002090A /* thebard3.jpeg in Resources */,
 				B22878061F1FD38700141C72 /* space.png in Resources */,
 				B24048331F2680AC00922CDE /* noway.png in Resources */,
 				B22878001F1FD38700141C72 /* ok.png in Resources */,
@@ -550,10 +592,13 @@
 				B22877FC1F1FD38700141C72 /* funny.png in Resources */,
 				B228781A1F1FDA8100141C72 /* ymail.png in Resources */,
 				B22F91181F1D0C2100E5E6AC /* noay.jpg in Resources */,
+				B2CD1D341F473B170002090A /* angry.jpeg in Resources */,
 				B257CD091F293CB5009DD6DD /* sohappy.png in Resources */,
 				B22878041F1FD38700141C72 /* ucase.png in Resources */,
 				B2FED8091F1BB6EF005AA45F /* KeyboardView.xib in Resources */,
+				B2CD1D381F473B170002090A /* thebard2.jpg in Resources */,
 				B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */,
+				B2CD1D361F473B170002090A /* thebard.jpg in Resources */,
 				B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */,
 				B22878141F1FD95200141C72 /* gmail2.png in Resources */,
 				B22877EA1F1FD18700141C72 /* hide.png in Resources */,
@@ -592,6 +637,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CD1D2E1F4730CA0002090A /* Bard.swift in Sources */,
 				B2FED7FF1F1BB37B005AA45F /* KeyboardViewController.swift in Sources */,
 				B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */,
 			);
