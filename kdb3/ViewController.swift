@@ -10,22 +10,31 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    @IBOutlet weak var secret1: UITextField!
+    @IBOutlet weak var secret2: UITextField!
+    @IBOutlet weak var secret3: UITextField!
+    @IBOutlet weak var secret4: UITextField!
+    @IBOutlet weak var secret5: UITextField!
+    var secrets:[UITextField] = []
     @IBAction func secretChanged(_ sender: Any) {
-        let string = secret1.text
+        let field = (sender as! UITextField)
+        let string = field.text
         
         let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
-        SharedDefaults.set(string, forKey: "Key")
+        SharedDefaults.set(string, forKey: "secret\(field.tag+1)")
         SharedDefaults.synchronize()
 
     }
 
-    @IBOutlet weak var secret1: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        secrets = [secret1, secret2, secret3, secret4, secret5]
 
-//        let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
-//        secret1.text = SharedDefaults.string(forKey: "Key") ?? ""
+        let defaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
+        for s in secrets  {
+            s.text = defaults.string(forKey: "secret\(s.tag+1)") ?? ""
+        }
+        
         
     }
     

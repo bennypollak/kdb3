@@ -88,6 +88,10 @@
 		B2CD1D401F4754F60002090A /* secret2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D3E1F4754F60002090A /* secret2.png */; };
 		B2CD1D421F475B000002090A /* secret3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D411F475B000002090A /* secret3.png */; };
 		B2CD1D431F475B000002090A /* secret3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D411F475B000002090A /* secret3.png */; };
+		B2CD1D451F4787810002090A /* secret4.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D441F4787810002090A /* secret4.png */; };
+		B2CD1D461F4787810002090A /* secret4.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D441F4787810002090A /* secret4.png */; };
+		B2CD1D481F478A8E0002090A /* secret5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D471F478A8E0002090A /* secret5.png */; };
+		B2CD1D491F478A8E0002090A /* secret5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D471F478A8E0002090A /* secret5.png */; };
 		B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F4441F21627900804898 /* KeyboardView.swift */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
@@ -183,6 +187,8 @@
 		B2CD1D3B1F4744CF0002090A /* secret1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret1.png; path = kdb3/images/secret1.png; sourceTree = "<group>"; };
 		B2CD1D3E1F4754F60002090A /* secret2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret2.png; path = kdb3/images/secret2.png; sourceTree = "<group>"; };
 		B2CD1D411F475B000002090A /* secret3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret3.png; path = kdb3/images/secret3.png; sourceTree = "<group>"; };
+		B2CD1D441F4787810002090A /* secret4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret4.png; path = kdb3/images/secret4.png; sourceTree = "<group>"; };
+		B2CD1D471F478A8E0002090A /* secret5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret5.png; path = kdb3/images/secret5.png; sourceTree = "<group>"; };
 		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -238,6 +244,8 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B2CD1D471F478A8E0002090A /* secret5.png */,
+				B2CD1D441F4787810002090A /* secret4.png */,
 				B2CD1D411F475B000002090A /* secret3.png */,
 				B2CD1D3E1F4754F60002090A /* secret2.png */,
 				B2CD1D3B1F4744CF0002090A /* secret1.png */,
@@ -515,6 +523,7 @@
 				B2CD1D391F473B170002090A /* thebard3.jpeg in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
 				B22877F91F1FD38700141C72 /* thumbsdown.gif in Resources */,
+				B2CD1D481F478A8E0002090A /* secret5.png in Resources */,
 				B22878051F1FD38700141C72 /* space.png in Resources */,
 				B22877E91F1FD18700141C72 /* hide.png in Resources */,
 				B257CD081F293CB5009DD6DD /* sohappy.png in Resources */,
@@ -525,6 +534,7 @@
 				B2CD1D3C1F4744CF0002090A /* secret1.png in Resources */,
 				B257CD0C1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FD1F1FD38700141C72 /* sad.png in Resources */,
+				B2CD1D451F4787810002090A /* secret4.png in Resources */,
 				B22878071F1FD38700141C72 /* next.png in Resources */,
 				B22877FB1F1FD38700141C72 /* funny.png in Resources */,
 				B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */,
@@ -583,6 +593,7 @@
 				B257CD071F293CB5009DD6DD /* noway2.gif in Resources */,
 				B228780C1F1FD38700141C72 /* back.jpg in Resources */,
 				B2CD1D3A1F473B170002090A /* thebard3.jpeg in Resources */,
+				B2CD1D491F478A8E0002090A /* secret5.png in Resources */,
 				B22878061F1FD38700141C72 /* space.png in Resources */,
 				B24048331F2680AC00922CDE /* noway.png in Resources */,
 				B22878001F1FD38700141C72 /* ok.png in Resources */,
@@ -597,6 +608,7 @@
 				B22878041F1FD38700141C72 /* ucase.png in Resources */,
 				B2FED8091F1BB6EF005AA45F /* KeyboardView.xib in Resources */,
 				B2CD1D381F473B170002090A /* thebard2.jpg in Resources */,
+				B2CD1D461F4787810002090A /* secret4.png in Resources */,
 				B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */,
 				B2CD1D361F473B170002090A /* thebard.jpg in Resources */,
 				B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */,
