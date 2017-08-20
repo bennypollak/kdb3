@@ -12,7 +12,7 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate {
 
-    var backCount = 1
+    var backCount:[Int] = []
     override func updateViewConstraints() {
         super.updateViewConstraints()
         
@@ -62,6 +62,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        backCount = []
         view = KeyboardView()
 
         if true {
@@ -247,7 +248,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         }
         UIDevice.current.playInputClick()
         let text = "\(string)\(space)"
-        backCount = text.characters.count
+        backCount.append(text.characters.count)
         (textDocumentProxy as UIKeyInput).insertText(text)
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
@@ -256,11 +257,12 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         advanceToNextInputMode()
     }
     @IBAction func backKeyboardPressed(_ sender: Any) {
-        for _ in 0..<backCount {
+        if backCount.count == 0 { backCount.append(1) }
+        let count = backCount.removeLast()
+        for _ in 0..<count {
             UIDevice.current.playInputClick()
             (textDocumentProxy as UIKeyInput).deleteBackward()
         }
-        backCount = 1
     }
     @IBAction func handleLongPress(gesture : UILongPressGestureRecognizer!) {
         if gesture.state != .ended {
