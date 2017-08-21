@@ -79,7 +79,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
  
             view.addSubview(back)
             view.addConstraint(NSLayoutConstraint(item: back, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
-            back.leftAnchor.constraint(equalTo: next.rightAnchor).isActive = true
+            back.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
             back.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 
         }
