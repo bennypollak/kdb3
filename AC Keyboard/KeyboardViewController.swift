@@ -33,7 +33,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["sad.png", "So sad!"]
         , ["thumbs_down_angry.png", "No way!"]
         , ["ok.png", "Ok!"]
-        , ["ohno.png", "Oh no!"]
+        , ["ohno2.png", "Oh no!"]
 //        , ["wink.png", "Wink!"]
         , ["thebard3.jpeg", "###bard"]
         ]
@@ -56,7 +56,15 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["wasntme.png", "It wasn't me!"]
         , ["what.png", "What?"]
         , ["wtf.png", "WTF!"]
-        ]
+    ]
+    let ijomes4 = [
+        ["stella.jpg", "Stella!"]
+        , ["truelove2.jpg", "We'll always have Paris!"]
+        , ["haveadrink.jpg", "Have a drink!"]
+        , ["ahhhhh.jpg", "Ahhh!"]
+        , ["truelove.jpg", "True love!"]
+        , ["badday.png", "Having a bad day!"]
+    ]
     
     var textValues:[String:String] = [:]
     
@@ -93,7 +101,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         
         row = addButtonRow(row, buttonInfo: ijomes1)
         row = addButtonRow(row, buttonInfo: ijomes3)
-        row = addTextButtonRow(row, buttonTitles: emoticons)
+//        row = addTextButtonRow(row, buttonTitles: emoticons)
+        row = addButtonRow(row, buttonInfo: ijomes4)
         row = addButtonRow(row, buttonInfo: ijomes2)
 
         /*
