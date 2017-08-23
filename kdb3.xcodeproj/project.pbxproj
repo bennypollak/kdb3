@@ -57,6 +57,8 @@
 		B24211D61F4CF7AA000A10ED /* truelove2.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D41F4CF7AA000A10ED /* truelove2.png */; };
 		B24211D81F4CF90A000A10ED /* truelove.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D71F4CF90A000A10ED /* truelove.png */; };
 		B24211D91F4CF90A000A10ED /* truelove.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D71F4CF90A000A10ED /* truelove.png */; };
+		B24211E21F4DFBBE000A10ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B24211E51F4DFBBE000A10ED /* Localizable.strings */; };
+		B24211E31F4DFBBE000A10ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B24211E51F4DFBBE000A10ED /* Localizable.strings */; };
 		B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B257CCF91F292E6C009DD6DD /* Settings.bundle */; };
 		B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B257CCF91F292E6C009DD6DD /* Settings.bundle */; };
 		B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFC1F2938E7009DD6DD /* ohno.png */; };
@@ -203,6 +205,10 @@
 		B24048351F2681E000922CDE /* thumbs_down_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbs_down_angry.png; path = kdb3/images/thumbs_down_angry.png; sourceTree = "<group>"; };
 		B24211D41F4CF7AA000A10ED /* truelove2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truelove2.png; path = kdb3/images/truelove2.png; sourceTree = "<group>"; };
 		B24211D71F4CF90A000A10ED /* truelove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truelove.png; path = kdb3/images/truelove.png; sourceTree = "<group>"; };
+		B24211DD1F4DEFDA000A10ED /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B24211DE1F4DEFDA000A10ED /* es */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = es; path = es.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B24211E41F4DFBBE000A10ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B24211E61F4DFBC4000A10ED /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B257CCF91F292E6C009DD6DD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B257CCFC1F2938E7009DD6DD /* ohno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohno.png; path = kdb3/images/ohno.png; sourceTree = "<group>"; };
 		B257CCFF1F293CB5009DD6DD /* imsick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imsick.png; path = kdb3/images/imsick.png; sourceTree = "<group>"; };
@@ -352,6 +358,13 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		B24211DC1F4DD9BC000A10ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B2FED7BE1F1BB261005AA45F = {
 			isa = PBXGroup;
 			children = (
@@ -412,12 +425,14 @@
 		B2FED7FD1F1BB37B005AA45F /* AC Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				B24211DC1F4DD9BC000A10ED /* Supporting Files */,
 				B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */,
 				B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */,
 				B2FED8001F1BB37B005AA45F /* Info.plist */,
 				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
 				B2F2F4441F21627900804898 /* KeyboardView.swift */,
 				B2CD1D2D1F4730CA0002090A /* Bard.swift */,
+				B24211E51F4DFBBE000A10ED /* Localizable.strings */,
 			);
 			path = "AC Keyboard";
 			sourceTree = "<group>";
@@ -550,6 +565,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = B2FED7BE1F1BB261005AA45F;
 			productRefGroup = B2FED7C81F1BB261005AA45F /* Products */;
@@ -616,6 +632,7 @@
 				B29722E31F4C7DA700B2B00D /* lock2.png in Resources */,
 				B29722DB1F4C7DA700B2B00D /* Image-11.png in Resources */,
 				B2A01E831F29866300BF1F7C /* wtf.png in Resources */,
+				B24211E21F4DFBBE000A10ED /* Localizable.strings in Resources */,
 				B29722D91F4C7DA700B2B00D /* haveadrink.jpg in Resources */,
 				B22878011F1FD38700141C72 /* lcase.png in Resources */,
 				B22878031F1FD38700141C72 /* ucase.png in Resources */,
@@ -676,6 +693,7 @@
 				B22F91191F1D0C2800E5E6AC /* fu.png in Resources */,
 				B29DC8071F3626ED00EF277C /* icon.png in Resources */,
 				B24211D91F4CF90A000A10ED /* truelove.png in Resources */,
+				B24211E31F4DFBBE000A10ED /* Localizable.strings in Resources */,
 				B257CD051F293CB5009DD6DD /* imsick.png in Resources */,
 				B2CD1D431F475B000002090A /* secret3.png in Resources */,
 				B22877FA1F1FD38700141C72 /* thumbsdown.gif in Resources */,
@@ -772,10 +790,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B24211E51F4DFBBE000A10ED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B24211E41F4DFBBE000A10ED /* en */,
+				B24211E61F4DFBC4000A10ED /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B2FED7CE1F1BB261005AA45F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B2FED7CF1F1BB261005AA45F /* Base */,
+				B24211DD1F4DEFDA000A10ED /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -784,6 +812,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B2FED7D41F1BB261005AA45F /* Base */,
+				B24211DE1F4DEFDA000A10ED /* es */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -795,6 +824,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -904,6 +934,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -956,6 +987,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

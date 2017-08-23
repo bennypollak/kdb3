@@ -9,6 +9,11 @@
 
  */
 import UIKit
+extension String {
+    var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+    }
+}
 
 class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate {
 
@@ -72,7 +77,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         super.viewDidLoad()
         backCount = []
         view = KeyboardView()
-
+//        var lang : String = NSLocale.preferredLanguages[0]
         if true {
             
             let next = createImgButton(named: "", imgNamed: "next.png", action: #selector(KeyboardViewController.nextKeyboardPressed(_:)))
@@ -253,7 +258,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         } else if string.characters.count == 1 {
             space = ""
         } else {
-            string = textValues[string] ?? string
+            string = (textValues[string] ?? string).localized
+//            print(string)
         }
         UIDevice.current.playInputClick()
         let text = "\(string)\(space)"

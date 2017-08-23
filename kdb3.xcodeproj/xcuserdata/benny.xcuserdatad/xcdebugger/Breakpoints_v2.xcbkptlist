@@ -2,4 +2,54 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AC Keyboard/KeyboardViewController.swift"
+            timestampString = "525208043.997999"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "261"
+            endingLineNumber = "261"
+            landmarkName = "ijomePressed(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AC_Keyboard.KeyboardViewController.ijomePressed (__ObjC.UIButton) -&gt; ()"
+                  moduleName = "AC Keyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benny/dev/iPhone/kdb3/AC%20Keyboard/KeyboardViewController.swift"
+                  timestampString = "525207341.214614"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "263"
+                  endingLineNumber = "263"
+                  offsetFromSymbolStart = "4636">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AC_Keyboard.KeyboardViewController.(ijomePressed (__ObjC.UIButton) -&gt; ()).(implicit closure #2)"
+                  moduleName = "AC Keyboard"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benny/dev/iPhone/kdb3/AC%20Keyboard/KeyboardViewController.swift"
+                  timestampString = "525207341.217225"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "263"
+                  endingLineNumber = "263"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
