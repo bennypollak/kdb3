@@ -53,6 +53,10 @@
 		B24048331F2680AC00922CDE /* noway.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048311F2680AC00922CDE /* noway.png */; };
 		B24048361F2681E000922CDE /* thumbs_down_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048351F2681E000922CDE /* thumbs_down_angry.png */; };
 		B24048371F2681E000922CDE /* thumbs_down_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048351F2681E000922CDE /* thumbs_down_angry.png */; };
+		B24211D51F4CF7AA000A10ED /* truelove2.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D41F4CF7AA000A10ED /* truelove2.png */; };
+		B24211D61F4CF7AA000A10ED /* truelove2.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D41F4CF7AA000A10ED /* truelove2.png */; };
+		B24211D81F4CF90A000A10ED /* truelove.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D71F4CF90A000A10ED /* truelove.png */; };
+		B24211D91F4CF90A000A10ED /* truelove.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D71F4CF90A000A10ED /* truelove.png */; };
 		B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B257CCF91F292E6C009DD6DD /* Settings.bundle */; };
 		B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B257CCF91F292E6C009DD6DD /* Settings.bundle */; };
 		B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFC1F2938E7009DD6DD /* ohno.png */; };
@@ -87,10 +91,6 @@
 		B29722E41F4C7DA700B2B00D /* lock2.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722CD1F4C7DA700B2B00D /* lock2.png */; };
 		B29722E51F4C7DA700B2B00D /* stella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722CE1F4C7DA700B2B00D /* stella.jpg */; };
 		B29722E61F4C7DA700B2B00D /* stella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722CE1F4C7DA700B2B00D /* stella.jpg */; };
-		B29722E71F4C7DA700B2B00D /* truelove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722CF1F4C7DA700B2B00D /* truelove.jpg */; };
-		B29722E81F4C7DA700B2B00D /* truelove.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722CF1F4C7DA700B2B00D /* truelove.jpg */; };
-		B29722E91F4C7DA700B2B00D /* truelove2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722D01F4C7DA700B2B00D /* truelove2.jpg */; };
-		B29722EA1F4C7DA700B2B00D /* truelove2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722D01F4C7DA700B2B00D /* truelove2.jpg */; };
 		B29722EC1F4C811000B2B00D /* badday.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722EB1F4C811000B2B00D /* badday.png */; };
 		B29722ED1F4C811000B2B00D /* badday.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722EB1F4C811000B2B00D /* badday.png */; };
 		B29DC8061F3626ED00EF277C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B29DC8051F3626ED00EF277C /* icon.png */; };
@@ -201,6 +201,8 @@
 		B22F910F1F1D046E00E5E6AC /* ok.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ok.jpg; path = kdb3/images/ok.jpg; sourceTree = "<group>"; };
 		B24048311F2680AC00922CDE /* noway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noway.png; path = kdb3/images/noway.png; sourceTree = "<group>"; };
 		B24048351F2681E000922CDE /* thumbs_down_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbs_down_angry.png; path = kdb3/images/thumbs_down_angry.png; sourceTree = "<group>"; };
+		B24211D41F4CF7AA000A10ED /* truelove2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truelove2.png; path = kdb3/images/truelove2.png; sourceTree = "<group>"; };
+		B24211D71F4CF90A000A10ED /* truelove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truelove.png; path = kdb3/images/truelove.png; sourceTree = "<group>"; };
 		B257CCF91F292E6C009DD6DD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B257CCFC1F2938E7009DD6DD /* ohno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ohno.png; path = kdb3/images/ohno.png; sourceTree = "<group>"; };
 		B257CCFF1F293CB5009DD6DD /* imsick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imsick.png; path = kdb3/images/imsick.png; sourceTree = "<group>"; };
@@ -218,8 +220,6 @@
 		B29722CC1F4C7DA700B2B00D /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock.png; path = kdb3/images/lock.png; sourceTree = "<group>"; };
 		B29722CD1F4C7DA700B2B00D /* lock2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lock2.png; path = kdb3/images/lock2.png; sourceTree = "<group>"; };
 		B29722CE1F4C7DA700B2B00D /* stella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stella.jpg; path = kdb3/images/stella.jpg; sourceTree = "<group>"; };
-		B29722CF1F4C7DA700B2B00D /* truelove.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = truelove.jpg; path = kdb3/images/truelove.jpg; sourceTree = "<group>"; };
-		B29722D01F4C7DA700B2B00D /* truelove2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = truelove2.jpg; path = kdb3/images/truelove2.jpg; sourceTree = "<group>"; };
 		B29722EB1F4C811000B2B00D /* badday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = badday.png; path = kdb3/images/badday.png; sourceTree = "<group>"; };
 		B29DC8051F3626ED00EF277C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = kdb3/icon.png; sourceTree = "<group>"; };
 		B2A01E7F1F2984FE00BF1F7C /* wink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wink.png; path = kdb3/images/wink.png; sourceTree = "<group>"; };
@@ -292,62 +292,62 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
-				B29722EB1F4C811000B2B00D /* badday.png */,
+				B24211D71F4CF90A000A10ED /* truelove.png */,
+				B24211D41F4CF7AA000A10ED /* truelove2.png */,
 				B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */,
+				B2CD1D2F1F473B170002090A /* angry.jpeg */,
+				B22877F51F1FD38700141C72 /* back.jpg */,
+				B29722EB1F4C811000B2B00D /* badday.png */,
 				B29722C61F4C7DA700B2B00D /* crying.png */,
+				B22F910D1F1D046E00E5E6AC /* fu.png */,
+				B22877ED1F1FD38700141C72 /* funny.png */,
+				B228780F1F1FD7C500141C72 /* gmail.jpeg */,
+				B22878121F1FD95200141C72 /* gmail2.png */,
 				B29722C71F4C7DA700B2B00D /* happy.png */,
 				B29722C81F4C7DA700B2B00D /* haveadrink.jpg */,
+				B22877E81F1FD18700141C72 /* hide.png */,
+				B29DC8051F3626ED00EF277C /* icon.png */,
 				B29722C91F4C7DA700B2B00D /* Image-11.png */,
+				B257CCFF1F293CB5009DD6DD /* imsick.png */,
 				B29722CA1F4C7DA700B2B00D /* iwarnyou.png */,
 				B29722CB1F4C7DA700B2B00D /* laugh2.png */,
+				B22877F01F1FD38700141C72 /* lcase.png */,
 				B29722CC1F4C7DA700B2B00D /* lock.png */,
 				B29722CD1F4C7DA700B2B00D /* lock2.png */,
-				B29722CE1F4C7DA700B2B00D /* stella.jpg */,
-				B29722CF1F4C7DA700B2B00D /* truelove.jpg */,
-				B29722D01F4C7DA700B2B00D /* truelove2.jpg */,
+				B22877F31F1FD38700141C72 /* next.png */,
+				B22F910E1F1D046E00E5E6AC /* noay.jpg */,
+				B24048311F2680AC00922CDE /* noway.png */,
+				B257CD001F293CB5009DD6DD /* noway2.gif */,
+				B257CCFC1F2938E7009DD6DD /* ohno.png */,
 				B2A3ADC01F4BD40E0007400B /* ohno2.png */,
+				B22F910F1F1D046E00E5E6AC /* ok.jpg */,
+				B22877EF1F1FD38700141C72 /* ok.png */,
 				B2A3ADC11F4BD40E0007400B /* oy.jpeg */,
-				B2A3ADC21F4BD40E0007400B /* waiting.png */,
-				B2CD1D471F478A8E0002090A /* secret5.png */,
-				B2CD1D441F4787810002090A /* secret4.png */,
-				B2CD1D411F475B000002090A /* secret3.png */,
-				B2CD1D3E1F4754F60002090A /* secret2.png */,
+				B228781B1F1FDB6F00141C72 /* Phone.png */,
+				B22877F61F1FD38700141C72 /* return.png */,
+				B22877EE1F1FD38700141C72 /* sad.png */,
+				B228781E1F1FDEC800141C72 /* secret.png */,
 				B2CD1D3B1F4744CF0002090A /* secret1.png */,
-				B2CD1D2F1F473B170002090A /* angry.jpeg */,
+				B2CD1D3E1F4754F60002090A /* secret2.png */,
+				B2CD1D411F475B000002090A /* secret3.png */,
+				B2CD1D441F4787810002090A /* secret4.png */,
+				B2CD1D471F478A8E0002090A /* secret5.png */,
+				B257CD011F293CB5009DD6DD /* sohappy.png */,
+				B22877F21F1FD38700141C72 /* space.png */,
+				B29722CE1F4C7DA700B2B00D /* stella.jpg */,
 				B2CD1D301F473B170002090A /* thebard.jpg */,
 				B2CD1D311F473B170002090A /* thebard2.jpg */,
 				B2CD1D321F473B170002090A /* thebard3.jpeg */,
-				B29DC8051F3626ED00EF277C /* icon.png */,
-				B2A01E821F29866300BF1F7C /* wtf.png */,
-				B2A01E7F1F2984FE00BF1F7C /* wink.png */,
-				B257CCFF1F293CB5009DD6DD /* imsick.png */,
-				B257CD001F293CB5009DD6DD /* noway2.gif */,
-				B257CD011F293CB5009DD6DD /* sohappy.png */,
+				B24048351F2681E000922CDE /* thumbs_down_angry.png */,
+				B22877EC1F1FD38700141C72 /* thumbsdown.gif */,
+				B22877F11F1FD38700141C72 /* ucase.png */,
+				B2A3ADC21F4BD40E0007400B /* waiting.png */,
 				B257CD021F293CB5009DD6DD /* wasntme.png */,
 				B257CD031F293CB5009DD6DD /* what.png */,
-				B257CCFC1F2938E7009DD6DD /* ohno.png */,
-				B24048351F2681E000922CDE /* thumbs_down_angry.png */,
-				B24048311F2680AC00922CDE /* noway.png */,
-				B228781E1F1FDEC800141C72 /* secret.png */,
-				B228781B1F1FDB6F00141C72 /* Phone.png */,
-				B22878181F1FDA8100141C72 /* ymail.png */,
-				B22878121F1FD95200141C72 /* gmail2.png */,
-				B228780F1F1FD7C500141C72 /* gmail.jpeg */,
+				B2A01E7F1F2984FE00BF1F7C /* wink.png */,
+				B2A01E821F29866300BF1F7C /* wtf.png */,
 				B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */,
-				B22877EC1F1FD38700141C72 /* thumbsdown.gif */,
-				B22877ED1F1FD38700141C72 /* funny.png */,
-				B22877EE1F1FD38700141C72 /* sad.png */,
-				B22877EF1F1FD38700141C72 /* ok.png */,
-				B22877F01F1FD38700141C72 /* lcase.png */,
-				B22877F11F1FD38700141C72 /* ucase.png */,
-				B22877F21F1FD38700141C72 /* space.png */,
-				B22877F31F1FD38700141C72 /* next.png */,
-				B22877F51F1FD38700141C72 /* back.jpg */,
-				B22877F61F1FD38700141C72 /* return.png */,
-				B22877E81F1FD18700141C72 /* hide.png */,
-				B22F910D1F1D046E00E5E6AC /* fu.png */,
-				B22F910E1F1D046E00E5E6AC /* noay.jpg */,
-				B22F910F1F1D046E00E5E6AC /* ok.jpg */,
+				B22878181F1FDA8100141C72 /* ymail.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -586,13 +586,13 @@
 				B22878161F1FD9D900141C72 /* yahoomail.png in Resources */,
 				B228781C1F1FDB6F00141C72 /* Phone.png in Resources */,
 				B228780B1F1FD38700141C72 /* back.jpg in Resources */,
-				B29722E71F4C7DA700B2B00D /* truelove.jpg in Resources */,
 				B2A3ADC31F4BD40E0007400B /* ohno2.png in Resources */,
 				B22877F71F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */,
 				B2CD1D391F473B170002090A /* thebard3.jpeg in Resources */,
 				B2A3ADC51F4BD40E0007400B /* waiting.png in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
 				B22877F91F1FD38700141C72 /* thumbsdown.gif in Resources */,
+				B24211D51F4CF7AA000A10ED /* truelove2.png in Resources */,
 				B2CD1D481F478A8E0002090A /* secret5.png in Resources */,
 				B22878051F1FD38700141C72 /* space.png in Resources */,
 				B22877E91F1FD18700141C72 /* hide.png in Resources */,
@@ -608,7 +608,6 @@
 				B22878071F1FD38700141C72 /* next.png in Resources */,
 				B22877FB1F1FD38700141C72 /* funny.png in Resources */,
 				B29722DD1F4C7DA700B2B00D /* iwarnyou.png in Resources */,
-				B29722E91F4C7DA700B2B00D /* truelove2.jpg in Resources */,
 				B29722E51F4C7DA700B2B00D /* stella.jpg in Resources */,
 				B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */,
 				B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */,
@@ -626,6 +625,7 @@
 				B257CD0A1F293CB5009DD6DD /* wasntme.png in Resources */,
 				B22878191F1FDA8100141C72 /* ymail.png in Resources */,
 				B2CD1D331F473B170002090A /* angry.jpeg in Resources */,
+				B24211D81F4CF90A000A10ED /* truelove.png in Resources */,
 				B2A3ADC41F4BD40E0007400B /* oy.jpeg in Resources */,
 				B2A01E801F2984FE00BF1F7C /* wink.png in Resources */,
 				B29722EC1F4C811000B2B00D /* badday.png in Resources */,
@@ -653,11 +653,9 @@
 			files = (
 				B2CD1D3D1F4744CF0002090A /* secret1.png in Resources */,
 				B22878081F1FD38700141C72 /* next.png in Resources */,
-				B29722EA1F4C7DA700B2B00D /* truelove2.jpg in Resources */,
 				B22877FE1F1FD38700141C72 /* sad.png in Resources */,
 				B24048371F2681E000922CDE /* thumbs_down_angry.png in Resources */,
 				B22877F81F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */,
-				B29722E81F4C7DA700B2B00D /* truelove.jpg in Resources */,
 				B228780E1F1FD38700141C72 /* return.png in Resources */,
 				B29722D61F4C7DA700B2B00D /* crying.png in Resources */,
 				B29722E41F4C7DA700B2B00D /* lock2.png in Resources */,
@@ -677,6 +675,7 @@
 				B29722E01F4C7DA700B2B00D /* laugh2.png in Resources */,
 				B22F91191F1D0C2800E5E6AC /* fu.png in Resources */,
 				B29DC8071F3626ED00EF277C /* icon.png in Resources */,
+				B24211D91F4CF90A000A10ED /* truelove.png in Resources */,
 				B257CD051F293CB5009DD6DD /* imsick.png in Resources */,
 				B2CD1D431F475B000002090A /* secret3.png in Resources */,
 				B22877FA1F1FD38700141C72 /* thumbsdown.gif in Resources */,
@@ -708,6 +707,7 @@
 				B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */,
 				B2CD1D361F473B170002090A /* thebard.jpg in Resources */,
 				B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */,
+				B24211D61F4CF7AA000A10ED /* truelove2.png in Resources */,
 				B22878141F1FD95200141C72 /* gmail2.png in Resources */,
 				B22877EA1F1FD18700141C72 /* hide.png in Resources */,
 			);

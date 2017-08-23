@@ -59,10 +59,10 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     ]
     let ijomes4 = [
         ["stella.jpg", "Stella!"]
-        , ["truelove2.jpg", "We'll always have Paris!"]
+        , ["truelove2.png", "We'll always have Paris!"]
         , ["haveadrink.jpg", "Have a drink!"]
         , ["ahhhhh.jpg", "Ahhh!"]
-        , ["truelove.jpg", "True love!"]
+        , ["truelove.png", "True love!"]
         , ["badday.png", "Having a bad day!"]
     ]
     
