@@ -6,16 +6,6 @@
 	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPrincipalClass</key>
@@ -25,22 +15,32 @@
 			<key>RequestsOpenAccess</key>
 			<true/>
 			<key>PrimaryLanguage</key>
-			<string>mul</string>
+			<string></string>
 			<key>PrefersRightToLeft</key>
 			<false/>
 			<key>IsASCIICapable</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.keyboard-service</string>
 	</dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
 	<key>CFBundleDisplayName</key>
 	<string>ijomE</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
 </dict>
 </plist>
