@@ -13,6 +13,13 @@ extension String {
     var localized: String {
         return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
     }
+    func localized(_ lang:String) ->String {
+        
+        let path = Bundle.main.path(forResource: lang, ofType: "lproj")
+        let bundle = Bundle(path: path!)
+        
+        return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
+    }
 }
 
 class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate {
@@ -40,7 +47,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["ok.png", "Ok!"]
         , ["ohno2.png", "Oh no!"]
 //        , ["wink.png", "Wink!"]
-        , ["thebard3.jpeg", "###bard"]
+        , ["shakespeare.jpg", "###bard"]
         ]
     
     let ijomes2 = [
@@ -72,12 +79,28 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     ]
     
     var textValues:[String:String] = [:]
-    
+    var languages:[[String]] = [[]]
+    var language = 0
+    var languageBtn:UIButton = UIButton()
+    var languageImageFiles:[String : String] = [
+        "en": "thebard3.jpeg"
+        , "es": "cervantes.png"
+    ]
+    var languageImages:[String : UIImage] = [:]
+    let useLanguageImages = true
     override func viewDidLoad() {
         super.viewDidLoad()
         backCount = []
         view = KeyboardView()
-//        var lang : String = NSLocale.preferredLanguages[0]
+        languages.removeAll()
+        for lang_region in NSLocale.preferredLanguages {
+            let lang = lang_region.components(separatedBy: "-")[0]
+            if languageImageFiles[lang] != nil {
+                languageImages[lang] = UIImage(named: languageImageFiles[lang]!)
+                languages.append([lang , ""])
+            }
+        }
+//        print(languages)
         if true {
             
             let next = createImgButton(named: "", imgNamed: "next.png", action: #selector(KeyboardViewController.nextKeyboardPressed(_:)))
@@ -86,6 +109,18 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             view.addConstraint(NSLayoutConstraint(item: next, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
             next.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
             next.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+            let lang = languages[language][0]
+            if useLanguageImages {
+                languageBtn = createImgButton(named: lang, imgNamed: languageImageFiles[lang]!, action: #selector(KeyboardViewController.nextLanguagePressed(_:)))
+            } else {
+                languageBtn = createButtons(titles: [languages[language]], action: #selector(KeyboardViewController.nextLanguagePressed(_:)))[0]
+            }
+            languageBtn.backgroundColor = .white
+            view.addSubview(languageBtn)
+            view.addConstraint(NSLayoutConstraint(item: languageBtn, attribute: .left, relatedBy: .equal, toItem: next, attribute: .right, multiplier: 1.0, constant: 40))
+            view.addConstraint(NSLayoutConstraint(item: languageBtn, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
+            view.addConstraint(NSLayoutConstraint(item: languageBtn, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 40))
+            languageBtn.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
             
             let back = createImgButton(named: "", imgNamed: "back.jpg", action: #selector(KeyboardViewController.backKeyboardPressed(_:)))
             back.backgroundColor = .clear
@@ -95,6 +130,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             back.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
             back.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
 
+//            view.addConstraint(NSLayoutConstraint(item: languageBtn, attribute: .right, relatedBy: .equal, toItem: back, attribute: .left, multiplier: 1.0, constant: 0))
         }
         
 
@@ -174,7 +210,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
     }
-    func createButtons(titles: [[String]]) -> [UIButton] {
+    func createButtons(titles: [[String]], action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> [UIButton] {
         
         var buttons = [UIButton]()
         for i in 0..<titles.count {
@@ -185,7 +221,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             button.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
             button.setTitleColor(UIColor.darkGray, for: .normal)
             button.sizeToFit()
-            button.addTarget(self, action: #selector(KeyboardViewController.ijomePressed(_:)), for: .touchUpInside)
+            button.addTarget(self, action: action, for: .touchUpInside)
             buttons.append(button)
         }
         
@@ -238,6 +274,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         (textDocumentProxy as UIKeyInput).insertText("\(string)")
         UIDevice.current.playInputClick()
     }
+    
+
     @IBAction func ijomePressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
         var string = ""+bstring!
@@ -258,8 +296,16 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         } else if string.characters.count == 1 {
             space = ""
         } else {
-            string = (textValues[string] ?? string).localized
-//            print(string)
+            let en = string.localized("en")
+            let es = string.localized("es")
+//            let en  = locale.localizedString(forLanguageCode:"en")
+//            print("string \(string) en \(en) es \(es))")
+            var lang:String = languages[language][0]
+            if languageImageFiles[lang] == nil {
+                lang = "en"
+            }
+            string = (textValues[string] ?? string).localized(lang)
+//            print(language)
         }
         UIDevice.current.playInputClick()
         let text = "\(string)\(space)"
@@ -270,6 +316,15 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         UIDevice.current.playInputClick()
         //        handleInputModeList(from: view, with: UIEvent.tou)
         advanceToNextInputMode()
+    }
+    @IBAction func nextLanguagePressed(_ sender: Any) {
+        language = (language+1)%languages.count
+        let lang = languages[language][0]
+        if useLanguageImages {
+            languageBtn.setImage(languageImages[lang], for: .normal)
+        } else {
+            languageBtn.setTitle(lang, for: .normal)
+        }
     }
     @IBAction func backKeyboardPressed(_ sender: Any) {
         if backCount.count == 0 { backCount.append(1) }

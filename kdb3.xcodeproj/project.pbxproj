@@ -73,6 +73,12 @@
 		B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD021F293CB5009DD6DD /* wasntme.png */; };
 		B257CD0C1F293CB5009DD6DD /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD031F293CB5009DD6DD /* what.png */; };
 		B257CD0D1F293CB5009DD6DD /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD031F293CB5009DD6DD /* what.png */; };
+		B26993F11F54A11C00E405D5 /* cervantes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26993EF1F54A11C00E405D5 /* cervantes.jpg */; };
+		B26993F21F54A11C00E405D5 /* cervantes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26993EF1F54A11C00E405D5 /* cervantes.jpg */; };
+		B26993F31F54A11C00E405D5 /* shakespeare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26993F01F54A11C00E405D5 /* shakespeare.jpg */; };
+		B26993F41F54A11C00E405D5 /* shakespeare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26993F01F54A11C00E405D5 /* shakespeare.jpg */; };
+		B26993F61F54AEB200E405D5 /* cervantes.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F51F54AEB200E405D5 /* cervantes.png */; };
+		B26993F71F54AEB200E405D5 /* cervantes.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F51F54AEB200E405D5 /* cervantes.png */; };
 		B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D21F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D51F4C7DA700B2B00D /* crying.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C61F4C7DA700B2B00D /* crying.png */; };
@@ -216,6 +222,9 @@
 		B257CD011F293CB5009DD6DD /* sohappy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sohappy.png; path = kdb3/images/sohappy.png; sourceTree = "<group>"; };
 		B257CD021F293CB5009DD6DD /* wasntme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wasntme.png; path = kdb3/images/wasntme.png; sourceTree = "<group>"; };
 		B257CD031F293CB5009DD6DD /* what.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = what.png; path = kdb3/images/what.png; sourceTree = "<group>"; };
+		B26993EF1F54A11C00E405D5 /* cervantes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cervantes.jpg; path = kdb3/images/cervantes.jpg; sourceTree = "<group>"; };
+		B26993F01F54A11C00E405D5 /* shakespeare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shakespeare.jpg; path = kdb3/images/shakespeare.jpg; sourceTree = "<group>"; };
+		B26993F51F54AEB200E405D5 /* cervantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes.png; path = kdb3/images/cervantes.png; sourceTree = "<group>"; };
 		B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ahhhhh.jpg; path = kdb3/images/ahhhhh.jpg; sourceTree = "<group>"; };
 		B29722C61F4C7DA700B2B00D /* crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crying.png; path = kdb3/images/crying.png; sourceTree = "<group>"; };
 		B29722C71F4C7DA700B2B00D /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = kdb3/images/happy.png; sourceTree = "<group>"; };
@@ -298,6 +307,9 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B26993F51F54AEB200E405D5 /* cervantes.png */,
+				B26993EF1F54A11C00E405D5 /* cervantes.jpg */,
+				B26993F01F54A11C00E405D5 /* shakespeare.jpg */,
 				B24211D71F4CF90A000A10ED /* truelove.png */,
 				B24211D41F4CF7AA000A10ED /* truelove2.png */,
 				B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */,
@@ -595,9 +607,11 @@
 				B29722D51F4C7DA700B2B00D /* crying.png in Resources */,
 				B29722DF1F4C7DA700B2B00D /* laugh2.png in Resources */,
 				B22F91111F1D046E00E5E6AC /* noay.jpg in Resources */,
+				B26993F31F54A11C00E405D5 /* shakespeare.jpg in Resources */,
 				B257CD061F293CB5009DD6DD /* noway2.gif in Resources */,
 				B2CD1D371F473B170002090A /* thebard2.jpg in Resources */,
 				B2CD1D421F475B000002090A /* secret3.png in Resources */,
+				B26993F11F54A11C00E405D5 /* cervantes.jpg in Resources */,
 				B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */,
 				B22878161F1FD9D900141C72 /* yahoomail.png in Resources */,
 				B228781C1F1FDB6F00141C72 /* Phone.png in Resources */,
@@ -645,6 +659,7 @@
 				B24211D81F4CF90A000A10ED /* truelove.png in Resources */,
 				B2A3ADC41F4BD40E0007400B /* oy.jpeg in Resources */,
 				B2A01E801F2984FE00BF1F7C /* wink.png in Resources */,
+				B26993F61F54AEB200E405D5 /* cervantes.png in Resources */,
 				B29722EC1F4C811000B2B00D /* badday.png in Resources */,
 				B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */,
 			);
@@ -699,6 +714,7 @@
 				B22877FA1F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B22878201F1FDEC800141C72 /* secret.png in Resources */,
 				B257CD071F293CB5009DD6DD /* noway2.gif in Resources */,
+				B26993F21F54A11C00E405D5 /* cervantes.jpg in Resources */,
 				B228780C1F1FD38700141C72 /* back.jpg in Resources */,
 				B2CD1D3A1F473B170002090A /* thebard3.jpeg in Resources */,
 				B29722ED1F4C811000B2B00D /* badday.png in Resources */,
@@ -722,9 +738,11 @@
 				B29722E61F4C7DA700B2B00D /* stella.jpg in Resources */,
 				B2CD1D381F473B170002090A /* thebard2.jpg in Resources */,
 				B2CD1D461F4787810002090A /* secret4.png in Resources */,
+				B26993F71F54AEB200E405D5 /* cervantes.png in Resources */,
 				B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */,
 				B2CD1D361F473B170002090A /* thebard.jpg in Resources */,
 				B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */,
+				B26993F41F54A11C00E405D5 /* shakespeare.jpg in Resources */,
 				B24211D61F4CF7AA000A10ED /* truelove2.png in Resources */,
 				B22878141F1FD95200141C72 /* gmail2.png in Resources */,
 				B22877EA1F1FD18700141C72 /* hide.png in Resources */,
