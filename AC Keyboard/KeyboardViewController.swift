@@ -100,6 +100,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("load")
         backCount = []
         view = KeyboardView()
         languages.removeAll()
