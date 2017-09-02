@@ -8,25 +8,41 @@
 import Foundation
 
 class Bard {
+    static let trumpisms: [String] = [
+    "Believe me!"
+    , "People say"
+    ,  "Sad!"
+    ,  "HUUUGE!"
+    ,"Bigly!"
+    ]
+    
     // http://www.renfaire.com/Language/insults.html
-    static let randomInsults: [String] = [
-          "Thou be a fawning lean-witted boar-pig!"
-        , "Thou art truly a vacant fly-bitten mammet!"
-        , "Thou cans't not be but a dankish rough-hewn hempseed!"
-        , "Verily, thou art naught but a puny lean-witted flap-dragon!"
-        , "Thou art a gnarling elf-skinned horn-beast!"
-        , "S'wounds thou art a wenching shrill-gorged maggot-pie!"
-        , "Verily, ye be a droning clay-brained cutpurse!"
-        , "Thou be a venomed pale-hearted hedge-pig!"
-        , "Verily, ye be a churlish ill-nurtured malt-worm!"
-        , "Thou be a surly dismal-dreaming flax-wench!"
-        , "Thou cans't not be but a fawning ill-breeding lout!"
-        , "Verily, ye be a droning plume-plucked moldwarp!"
-        , "Verily, thou art naught but a bawdy fool-born whey-face!"
-        , "Thou art a spongy guts-griping canker-blossom!"
-        , "S'wounds thou art a fobbing ill-composed dogfish!"
-        , "Forsooth! Thou art a yeasty folly-fallen death-token!"
-        , "S'wounds thou art a frothy weather-bitten varlot!"
+    static let insults: [String] = [
+        "You fail So did your dads condom"
+        , "If you want a good comeback you should go lick your mums face"
+        , "So, a thought crossed your mind? Must have been a long and lonely journey"
+        , "How did you get here? Did someone leave your cage open?"
+        , "If I were a dog and you were a flower I'd lift up my leg and give you a shower"
+        , "Better at sex than anyone? Now all you need is a partner"
+        , "'I'd like to see things from your point of view, too bad, I can't shove my head that far up my arse"
+        , "You must have been born on a highway because that's where most accidents happen"
+        , "I'd slap you, but that would be animal abuse"
+        , "I could eat a bowl of alphabet soup and shit out a smarter statement than that"
+        , "It's scary to think that people like you are allowed to vote"
+        , "Learn from your parents mistakes, use birth control"
+        , "The smartest thing that ever came out your mouth was a penis"
+        , "Dont let your mind wander, it's far too small to be out by itself"
+        , "I called your boyfriend gay and he hit me with his purse"
+        , "Earth is full. Go home."
+        , "Do you have to leave so soon? I was about to poison the tea"
+        , "Why don't you go play in traffic?"
+        , "So you've changed your mind? Does this one work any better?"
+        , "Nice outfit. Go stand on a street corner, you could make some money"
+        , "Your legs are like tescos. Open 24/7"
+        , "You'd better hide, the garbage collecter is coming"
+        , "Shut up, you'll never be the man your mother is!"
+        , "I'm busy now, can I ignore you another time?"
+        , "I may be fat but you're ugly and at least I can loose weight"
     ]
 
     static let insult_thou = [ "Thou" , "Verily, ye be a" , "Ye" , "Thou be a" , "Forsooth! Thou art a" , "Thou cans't not be but a" , "Thou art truly a" , "Verily, thou art naught but a" , "Thou art a" , "S'wounds thou art a"]
@@ -40,7 +56,14 @@ class Bard {
         }
         return array
     }
-    static func insult() -> String {
+    static func bardInsult() -> String {
         return Bard.randoms([insult_thou,insult_adj1,insult_adj2,insult_noun]).joined(separator: " ")
     }
+    static func insult() -> String {
+        return Bard.insults[Int(arc4random_uniform(UInt32(Bard.insults.count)))]
+    }
+    static func trumpism() -> String {
+        return Bard.trumpisms[Int(arc4random_uniform(UInt32(Bard.trumpisms.count)))]
+    }
+
 }

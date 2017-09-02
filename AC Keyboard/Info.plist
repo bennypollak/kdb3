@@ -15,7 +15,7 @@
 			<key>RequestsOpenAccess</key>
 			<true/>
 			<key>PrimaryLanguage</key>
-			<string></string>
+			<string>mul</string>
 			<key>PrefersRightToLeft</key>
 			<false/>
 			<key>IsASCIICapable</key>
@@ -32,15 +32,15 @@
 	<string>1</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleDisplayName</key>
 	<string>ijomE</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
-	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1</string>
 </dict>
 </plist>
