@@ -31,13 +31,14 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         // Add custom view sizing constraints here
     }
     let emoticons = [
-        [":)", "Smiled!"]
-        , [":'-)", "So sad!"]
-        , [">:(", "Fuck you!"]
-        , [":-*", "Kisses!"]
-        , [";)", "Wink!"]
-        , [":-D", "Funny!"]
-        , [":$", "So embarrassed!"]
+        // must add leading space
+        [" :)", "Smiled!"]
+        , [" :'-)", "So sad!"]
+        , [" >:(", "Fuck you!"]
+        , [" :-*", "Kisses!"]
+        , [" ;)", "Wink!"]
+        , [" :-D", "Funny!"]
+        , [" :$", "So embarrassed!"]
         ]
     
     let ijomes1 = [
@@ -137,38 +138,16 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         back.backgroundColor = .clear
         
         addBottomRow([next, languageBtn, keyboardBtn, back])
-    
 
-        var row: UIView? = nil
+//        var row: UIView? = nil
 //        _ = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 //        if false {
 //            row = addTextButtonRow(row, buttonTitles: buttonTitles)
 //        }
-        
+//
         keyboards.removeAll()
-        var rows:[UIView] = []
-        row = addButtonRow(row, buttonInfo: ijomes1)
-        rows.append(row!)
-        row = addButtonRow(row, buttonInfo: ijomes3)
-        rows.append(row!)
-        row = addButtonRow(row, buttonInfo: ijomes4)
-        rows.append(row!)
-        row = addButtonRow(row, buttonInfo: ijomes2)
-        rows.append(row!)
-        keyboards.append(rows)
-        
-        rows = []
-        row = nil
-        row = addButtonRow(row, buttonInfo: ijomes5)
-        rows.append(row!)
-        row = addButtonRow(row, buttonInfo: ijomes3)
-        rows.append(row!)
-        row = addTextButtonRow(row, buttonTitles: emoticons)
-        rows.append(row!)
-        row = addButtonRow(row, buttonInfo: ijomes2)
-        rows.append(row!)
-        keyboards.append(rows)
-        
+        addKeyboard( [ijomes1, ijomes3, ijomes4, ijomes2])
+        addKeyboard([ijomes5, ijomes3, emoticons, ijomes2])
         setupKeyboard()
         
         /*
@@ -197,6 +176,15 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             }
         }
         
+    }
+    func addKeyboard(_ keyboard:[[[String]]]) {
+        var rows:[UIView] = []
+        var row:UIView? = nil
+        for ijomes in keyboard {
+            row = addButtonRow(row, buttonInfo: ijomes)
+            rows.append(row!)
+        }
+        keyboards.append(rows)
     }
     func setupKeyboard() {
         for i in 0..<keyboards.count {
@@ -230,13 +218,19 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         return row
     }
     func addButtonRow(_ prevView: UIView?, buttonInfo: [[String]]) -> UIView {
-        var imgButtons: [UIButton] = []
+        var buttons: [UIButton] = []
         for i in 0..<buttonInfo.count {
             let info = buttonInfo[i]
-            imgButtons.append(createImgButton(named: info[1], imgNamed: info[0]))
+            if (info[0].hasPrefix(" ")) {
+                let r = info[0].index(info[0].startIndex, offsetBy: 1)..<info[0].endIndex
+                let substring = info[0][r]
+                buttons.append(createButtons(titles: [[substring, info[1]]])[0])
+            } else {
+                buttons.append(createImgButton(named: info[1], imgNamed: info[0]))
+            }
         }
-        let row = createRow(topView: prevView, botView: view, buttons: imgButtons)
-        addConstraints(imgButtons, containingView: row)
+        let row = createRow(topView: prevView, botView: view, buttons: buttons)
+        addConstraints(buttons, containingView: row)
         return row
     }
     func createImgButton(named: String, imgNamed: String, action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> UIButton  {
