@@ -83,6 +83,8 @@
 		B26993F71F54AEB200E405D5 /* cervantes.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F51F54AEB200E405D5 /* cervantes.png */; };
 		B26993F91F55DAA000E405D5 /* cervantes2.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F81F55DAA000E405D5 /* cervantes2.png */; };
 		B26993FA1F55DAF500E405D5 /* cervantes2.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F81F55DAA000E405D5 /* cervantes2.png */; };
+		B27C4A361F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
+		B27C4A371F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
 		B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D21F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D51F4C7DA700B2B00D /* crying.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C61F4C7DA700B2B00D /* crying.png */; };
@@ -243,6 +245,7 @@
 		B26993F01F54A11C00E405D5 /* shakespeare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shakespeare.jpg; path = kdb3/images/shakespeare.jpg; sourceTree = "<group>"; };
 		B26993F51F54AEB200E405D5 /* cervantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes.png; path = kdb3/images/cervantes.png; sourceTree = "<group>"; };
 		B26993F81F55DAA000E405D5 /* cervantes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes2.png; path = kdb3/images/cervantes2.png; sourceTree = "<group>"; };
+		B27C4A351F5C48EB00B16820 /* more2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more2.png; path = kdb3/images/more2.png; sourceTree = "<group>"; };
 		B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ahhhhh.jpg; path = kdb3/images/ahhhhh.jpg; sourceTree = "<group>"; };
 		B29722C61F4C7DA700B2B00D /* crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crying.png; path = kdb3/images/crying.png; sourceTree = "<group>"; };
 		B29722C71F4C7DA700B2B00D /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = kdb3/images/happy.png; sourceTree = "<group>"; };
@@ -331,6 +334,7 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B27C4A351F5C48EB00B16820 /* more2.png */,
 				B2A68B141F5B2EEB0006670C /* trump.jpg */,
 				B2A68B151F5B2EEB0006670C /* trump2.png */,
 				B2A68B0B1F5B29010006670C /* insult.jpg */,
@@ -686,6 +690,7 @@
 				B2A01E831F29866300BF1F7C /* wtf.png in Resources */,
 				B24211E21F4DFBBE000A10ED /* Localizable.strings in Resources */,
 				B29722D91F4C7DA700B2B00D /* haveadrink.jpg in Resources */,
+				B27C4A361F5C48EB00B16820 /* more2.png in Resources */,
 				B22878011F1FD38700141C72 /* lcase.png in Resources */,
 				B22878031F1FD38700141C72 /* ucase.png in Resources */,
 				B24048321F2680AC00922CDE /* noway.png in Resources */,
@@ -772,6 +777,7 @@
 				B2A01E811F2984FE00BF1F7C /* wink.png in Resources */,
 				B257CD0D1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FC1F1FD38700141C72 /* funny.png in Resources */,
+				B27C4A371F5C48EB00B16820 /* more2.png in Resources */,
 				B228781A1F1FDA8100141C72 /* ymail.png in Resources */,
 				B22F91181F1D0C2100E5E6AC /* noay.jpg in Resources */,
 				B2CD1D341F473B170002090A /* angry.jpeg in Resources */,
