@@ -45,7 +45,6 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ["fu.png", "Fuck you!"]
         , ["sad.png", "So sad!"]
         , ["love2.png", "###lovism"]
-        , ["love1.png", "###lovism"]
         , ["trump2.png", "###trumpism"]
         , ["insult2.jpg", "###insult"]
         , ["shakespeare.jpg", "###bard"]
@@ -148,7 +147,10 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         let back = createImgButton(named: "", imgNamed: "back.jpg", action: #selector(KeyboardViewController.backKeyboardPressed(_:)))
         back.backgroundColor = .clear
         
-        addBottomRow([next, languageBtn, keyboardBtn, back])
+        let returnKey = createImgButton(named: "\n", imgNamed: "return.png")
+        returnKey.backgroundColor = .clear
+        
+        addBottomRow([next, languageBtn, keyboardBtn, returnKey, back])
 
 //        var row: UIView? = nil
 //        _ = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
@@ -169,13 +171,14 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     }
     func addBottomRow(_ buttons:[UIButton]) {
         let height = CGFloat(50.0)
+        let wideHeight = CGFloat(100.0)
         
         for i in 0..<buttons.count {
             let button = buttons[i]
             view.addSubview(button)
             button.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
             view.addConstraint(NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height))
-            view.addConstraint(NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height))
+            view.addConstraint(NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: (button.titleLabel?.text == "\n" ? wideHeight : height)))
             if i == buttons.count-1 {
                 button.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
             } else {

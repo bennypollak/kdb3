@@ -46,7 +46,6 @@ class Bard {
         , "I never loved another person the way I loved myself."
         , "Where we love is home, home that our feet may leave, but not our hearts."
         , "Real love stories never have endings."
-        , "To love another person is to see the face of God. [Les Miserables]"
         , "When we are in love we seem to ourselves quite different from what we were before."
         , "Life is the flower for which love is the honey."
         , "I pray Thee, O God, that I may be beautiful within."
@@ -58,11 +57,11 @@ class Bard {
         , "The more one loves a mistress, the more one is ready to hate her."
     ]
     static let trumpisms: [String] = [
-    "Believe me!"
-    , "People say"
-    ,  "Sad!"
-    ,  "HUUUGE!"
-    ,"Bigly!"
+          "Believe me!"
+        , "People say"
+        , "Sad!"
+        , "HUUUGE!"
+        , "Bigly!"
     ]
     
     // http://www.renfaire.com/Language/insults.html

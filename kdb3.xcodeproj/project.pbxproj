@@ -87,6 +87,10 @@
 		B276598D1F5F399A00320DE5 /* love1.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598A1F5F399A00320DE5 /* love1.png */; };
 		B276598E1F5F399A00320DE5 /* love2.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598B1F5F399A00320DE5 /* love2.png */; };
 		B276598F1F5F399A00320DE5 /* love2.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598B1F5F399A00320DE5 /* love2.png */; };
+		B27659921F5F442B00320DE5 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659901F5F442B00320DE5 /* more.png */; };
+		B27659931F5F442B00320DE5 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659901F5F442B00320DE5 /* more.png */; };
+		B27659941F5F442B00320DE5 /* return1.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659911F5F442B00320DE5 /* return1.png */; };
+		B27659951F5F442B00320DE5 /* return1.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659911F5F442B00320DE5 /* return1.png */; };
 		B27C4A361F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
 		B27C4A371F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
 		B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
@@ -251,6 +255,8 @@
 		B26993F81F55DAA000E405D5 /* cervantes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes2.png; path = kdb3/images/cervantes2.png; sourceTree = "<group>"; };
 		B276598A1F5F399A00320DE5 /* love1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love1.png; path = kdb3/images/love1.png; sourceTree = "<group>"; };
 		B276598B1F5F399A00320DE5 /* love2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love2.png; path = kdb3/images/love2.png; sourceTree = "<group>"; };
+		B27659901F5F442B00320DE5 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more.png; path = kdb3/images/more.png; sourceTree = "<group>"; };
+		B27659911F5F442B00320DE5 /* return1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = return1.png; path = kdb3/images/return1.png; sourceTree = "<group>"; };
 		B27C4A351F5C48EB00B16820 /* more2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more2.png; path = kdb3/images/more2.png; sourceTree = "<group>"; };
 		B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ahhhhh.jpg; path = kdb3/images/ahhhhh.jpg; sourceTree = "<group>"; };
 		B29722C61F4C7DA700B2B00D /* crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crying.png; path = kdb3/images/crying.png; sourceTree = "<group>"; };
@@ -340,6 +346,8 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B27659901F5F442B00320DE5 /* more.png */,
+				B27659911F5F442B00320DE5 /* return1.png */,
 				B276598A1F5F399A00320DE5 /* love1.png */,
 				B276598B1F5F399A00320DE5 /* love2.png */,
 				B27C4A351F5C48EB00B16820 /* more2.png */,
@@ -482,8 +490,8 @@
 			children = (
 				B2A68B081F5B1AD60006670C /* Cervantes.swift */,
 				B24211DC1F4DD9BC000A10ED /* Supporting Files */,
-				B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */,
 				B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */,
+				B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */,
 				B2FED8001F1BB37B005AA45F /* Info.plist */,
 				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
 				B2F2F4441F21627900804898 /* KeyboardView.swift */,
@@ -645,6 +653,7 @@
 				B2CD1D351F473B170002090A /* thebard.jpg in Resources */,
 				B24048361F2681E000922CDE /* thumbs_down_angry.png in Resources */,
 				B29722D71F4C7DA700B2B00D /* happy.png in Resources */,
+				B27659941F5F442B00320DE5 /* return1.png in Resources */,
 				B22F91101F1D046E00E5E6AC /* fu.png in Resources */,
 				B22F91121F1D046E00E5E6AC /* ok.jpg in Resources */,
 				B257CD041F293CB5009DD6DD /* imsick.png in Resources */,
@@ -691,6 +700,7 @@
 				B29722DD1F4C7DA700B2B00D /* iwarnyou.png in Resources */,
 				B29722E51F4C7DA700B2B00D /* stella.jpg in Resources */,
 				B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */,
+				B27659921F5F442B00320DE5 /* more.png in Resources */,
 				B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */,
 				B2CD1D3F1F4754F60002090A /* secret2.png in Resources */,
 				B22877FF1F1FD38700141C72 /* ok.png in Resources */,
@@ -749,6 +759,8 @@
 				B29722E41F4C7DA700B2B00D /* lock2.png in Resources */,
 				B2CD1D401F4754F60002090A /* secret2.png in Resources */,
 				B29722D81F4C7DA700B2B00D /* happy.png in Resources */,
+				B27659931F5F442B00320DE5 /* more.png in Resources */,
+				B27659951F5F442B00320DE5 /* return1.png in Resources */,
 				B276598F1F5F399A00320DE5 /* love2.png in Resources */,
 				B238E4C51F58602300A1C771 /* more1.png in Resources */,
 				B22878021F1FD38700141C72 /* lcase.png in Resources */,
