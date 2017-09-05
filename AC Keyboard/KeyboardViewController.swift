@@ -44,7 +44,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     let ijomes1 = [
         ["fu.png", "Fuck you!"]
         , ["sad.png", "So sad!"]
-        , ["thumbs_down_angry.png", "No way!"]
+        , ["love2.png", "###lovism"]
+        , ["love1.png", "###lovism"]
         , ["trump2.png", "###trumpism"]
         , ["insult2.jpg", "###insult"]
         , ["shakespeare.jpg", "###bard"]
@@ -83,6 +84,16 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["wink.png", "Wink!"]
     ]
     
+    
+    let ijomes6 = [
+        ["imsick.png", "So sick!"]
+        , ["angry.jpeg", "Very angry!"]
+        , ["thumbs_down_angry.png", "No way!"]
+        , ["wasntme.png", "It wasn't me!"]
+        , ["what.png", "What?"]
+        , ["wtf.png", "WTF!"]
+    ]
+
     var textValues:[String:String] = [:]
     var languages:[[String]] = [[]]
     var language = 0
@@ -147,7 +158,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
 //
         keyboards.removeAll()
         addKeyboard( [ijomes1, ijomes3, ijomes4, ijomes2])
-        addKeyboard([ijomes5, ijomes3, emoticons, ijomes2])
+        addKeyboard([ijomes5, ijomes6, emoticons, ijomes2])
         setupKeyboard()
         
         /*
@@ -350,6 +361,12 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
                     string = Bard.insult()
                 } else {
                     string = Cervantes.insult()
+                }
+            } else if substring1 == "lovism" {
+                if lang == "en" {
+                    string = Bard.lovism()
+                } else {
+                    string = Cervantes.lovism()
                 }
             }
             space = " "

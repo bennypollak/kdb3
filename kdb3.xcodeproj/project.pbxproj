@@ -83,6 +83,10 @@
 		B26993F71F54AEB200E405D5 /* cervantes.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F51F54AEB200E405D5 /* cervantes.png */; };
 		B26993F91F55DAA000E405D5 /* cervantes2.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F81F55DAA000E405D5 /* cervantes2.png */; };
 		B26993FA1F55DAF500E405D5 /* cervantes2.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F81F55DAA000E405D5 /* cervantes2.png */; };
+		B276598C1F5F399A00320DE5 /* love1.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598A1F5F399A00320DE5 /* love1.png */; };
+		B276598D1F5F399A00320DE5 /* love1.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598A1F5F399A00320DE5 /* love1.png */; };
+		B276598E1F5F399A00320DE5 /* love2.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598B1F5F399A00320DE5 /* love2.png */; };
+		B276598F1F5F399A00320DE5 /* love2.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598B1F5F399A00320DE5 /* love2.png */; };
 		B27C4A361F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
 		B27C4A371F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
 		B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
@@ -245,6 +249,8 @@
 		B26993F01F54A11C00E405D5 /* shakespeare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shakespeare.jpg; path = kdb3/images/shakespeare.jpg; sourceTree = "<group>"; };
 		B26993F51F54AEB200E405D5 /* cervantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes.png; path = kdb3/images/cervantes.png; sourceTree = "<group>"; };
 		B26993F81F55DAA000E405D5 /* cervantes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes2.png; path = kdb3/images/cervantes2.png; sourceTree = "<group>"; };
+		B276598A1F5F399A00320DE5 /* love1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love1.png; path = kdb3/images/love1.png; sourceTree = "<group>"; };
+		B276598B1F5F399A00320DE5 /* love2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love2.png; path = kdb3/images/love2.png; sourceTree = "<group>"; };
 		B27C4A351F5C48EB00B16820 /* more2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more2.png; path = kdb3/images/more2.png; sourceTree = "<group>"; };
 		B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ahhhhh.jpg; path = kdb3/images/ahhhhh.jpg; sourceTree = "<group>"; };
 		B29722C61F4C7DA700B2B00D /* crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crying.png; path = kdb3/images/crying.png; sourceTree = "<group>"; };
@@ -334,6 +340,8 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B276598A1F5F399A00320DE5 /* love1.png */,
+				B276598B1F5F399A00320DE5 /* love2.png */,
 				B27C4A351F5C48EB00B16820 /* more2.png */,
 				B2A68B141F5B2EEB0006670C /* trump.jpg */,
 				B2A68B151F5B2EEB0006670C /* trump2.png */,
@@ -574,7 +582,7 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -597,7 +605,7 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -672,6 +680,7 @@
 				B228780D1F1FD38700141C72 /* return.png in Resources */,
 				B22878101F1FD7C500141C72 /* gmail.jpeg in Resources */,
 				B29DC8061F3626ED00EF277C /* icon.png in Resources */,
+				B276598C1F5F399A00320DE5 /* love1.png in Resources */,
 				B2CD1D3C1F4744CF0002090A /* secret1.png in Resources */,
 				B2A68B181F5B2EEB0006670C /* trump2.png in Resources */,
 				B257CD0C1F293CB5009DD6DD /* what.png in Resources */,
@@ -693,6 +702,7 @@
 				B27C4A361F5C48EB00B16820 /* more2.png in Resources */,
 				B22878011F1FD38700141C72 /* lcase.png in Resources */,
 				B22878031F1FD38700141C72 /* ucase.png in Resources */,
+				B276598E1F5F399A00320DE5 /* love2.png in Resources */,
 				B24048321F2680AC00922CDE /* noway.png in Resources */,
 				B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */,
 				B29722E11F4C7DA700B2B00D /* lock.png in Resources */,
@@ -739,6 +749,7 @@
 				B29722E41F4C7DA700B2B00D /* lock2.png in Resources */,
 				B2CD1D401F4754F60002090A /* secret2.png in Resources */,
 				B29722D81F4C7DA700B2B00D /* happy.png in Resources */,
+				B276598F1F5F399A00320DE5 /* love2.png in Resources */,
 				B238E4C51F58602300A1C771 /* more1.png in Resources */,
 				B22878021F1FD38700141C72 /* lcase.png in Resources */,
 				B2A01E841F29866300BF1F7C /* wtf.png in Resources */,
@@ -794,6 +805,7 @@
 				B257CD0B1F293CB5009DD6DD /* wasntme.png in Resources */,
 				B26993F41F54A11C00E405D5 /* shakespeare.jpg in Resources */,
 				B2A68B111F5B29010006670C /* insult2.jpg in Resources */,
+				B276598D1F5F399A00320DE5 /* love1.png in Resources */,
 				B24211D61F4CF7AA000A10ED /* truelove2.png in Resources */,
 				B22878141F1FD95200141C72 /* gmail2.png in Resources */,
 				B26993FA1F55DAF500E405D5 /* cervantes2.png in Resources */,
@@ -944,14 +956,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "715ad932-45ac-4b67-a48b-f625918c3027";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = AdHoc;
@@ -989,14 +1001,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c2e8b20-22e5-4c51-a79f-c8ec4e9a555b";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb AdHoc";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1107,13 +1119,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1464803a-f927-44cf-a245-afc55ac2e8f4";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 test";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -1125,13 +1137,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 AdHoc";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -1199,13 +1211,13 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "976ff55c-d0a0-49d0-a0a2-f2423c31fcc8";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb2 test";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -1215,14 +1227,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5c2e8b20-22e5-4c51-a79f-c8ec4e9a555b";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb AdHoc";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
