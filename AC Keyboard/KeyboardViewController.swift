@@ -111,7 +111,6 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("load")
         backCount = []
         view = KeyboardView()
         languages.removeAll()
@@ -150,7 +149,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         let returnKey = createImgButton(named: "\n", imgNamed: "return.png")
         returnKey.backgroundColor = .clear
         
-        addBottomRow([next, languageBtn, keyboardBtn, returnKey, back])
+        let bottomRow = addBottomRow([next, languageBtn, keyboardBtn, returnKey, back])
 
 //        var row: UIView? = nil
 //        _ = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
@@ -159,22 +158,25 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
 //        }
 //
         keyboards.removeAll()
-        addKeyboard( [ijomes1, ijomes3, ijomes4, ijomes2])
-        addKeyboard([ijomes5, ijomes6, emoticons, ijomes2])
+        var lastKdb:UIView = UIView()
+        lastKdb = addKeyboard( [ijomes1, ijomes3, ijomes4, ijomes2])
+        lastKdb = addKeyboard([ijomes5, ijomes6, emoticons, ijomes2])
         setupKeyboard()
         
+        view.addConstraint(NSLayoutConstraint(item: lastKdb, attribute: .bottom, relatedBy: .equal, toItem: bottomRow, attribute: .top, multiplier: 1.0, constant: 0.0))
+
         /*
         let nib = UINib(nibName: "KeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: self, options: nil)
         view = objects[0] as! UIView;
  */
     }
-    func addBottomRow(_ buttons:[UIButton]) {
-        let height = CGFloat(50.0)
-        let wideHeight = CGFloat(100.0)
-        
+    func addBottomRow(_ buttons:[UIButton]) -> UIView {
+        let height = CGFloat(40.0)
+        let wideHeight = CGFloat(80.0)
+        var button:UIButton = UIButton()
         for i in 0..<buttons.count {
-            let button = buttons[i]
+            button = buttons[i]
             view.addSubview(button)
             button.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
             view.addConstraint(NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height))
@@ -189,9 +191,9 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
                 }
             }
         }
-        
+        return button
     }
-    func addKeyboard(_ keyboard:[[[String]]]) {
+    func addKeyboard(_ keyboard:[[[String]]]) -> UIView {
         var rows:[UIView] = []
         var row:UIView? = nil
         for ijomes in keyboard {
@@ -199,6 +201,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             rows.append(row!)
         }
         keyboards.append(rows)
+        return row!
     }
     func setupKeyboard() {
         for i in 0..<keyboards.count {
@@ -210,15 +213,17 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     }
     func addTextButtonRow(_ topView: UIView?, buttonTitles: [[String]]) -> UIView {
         let buttons = createButtons(titles: buttonTitles)
+        var result:UIButton = UIButton()
         let row = UIView()
         view.addSubview(row)
         row.translatesAutoresizingMaskIntoConstraints=false
         for button in buttons {
             row.addSubview(button)
+            result = button
         }
         addRowConstraints(row, topView: topView)
         addConstraints(buttons, containingView: row)
-        return row
+        return result
     }
     func createRow(topView:UIView?, botView:UIView, buttons:[UIButton]) -> UIView {
         let row = UIView()
