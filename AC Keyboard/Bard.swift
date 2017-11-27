@@ -59,9 +59,11 @@ class Bard {
     static let trumpisms: [String] = [
           "Believe me!"
         , "People say"
+        , "I can tell you that"
         , "Sad!"
         , "HUUUGE!"
         , "Bigly!"
+        , "That I can tell you!"
     ]
     
     // http://www.renfaire.com/Language/insults.html

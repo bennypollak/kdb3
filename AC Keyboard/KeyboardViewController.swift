@@ -9,18 +9,6 @@
 
  */
 import UIKit
-extension String {
-    var localized: String {
-        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
-    }
-    func localized(_ lang:String) ->String {
-        
-        let path = Bundle.main.path(forResource: lang, ofType: "lproj")
-        let bundle = Bundle(path: path!)
-        
-        return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
-    }
-}
 
 class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate {
 
@@ -32,9 +20,10 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     }
     let emoticons = [
         // must add leading space
-        [" :)", "Smiled!"]
-        , [" :'-)", "So sad!"]
+        [" :)", "😂 (Smiled!)"]
+        , [" :'-)", "😩 (So sad!)"]
         , [" >:(", "Fuck you!"]
+        , ["  😠", "😠 (Fuck you!)"]
         , [" :-*", "Kisses!"]
         , [" ;)", "Wink!"]
         , [" :-D", "Funny!"]
@@ -42,8 +31,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ]
     
     let ijomes1 = [
-        ["fu.png", "Fuck you!"]
-        , ["sad.png", "So sad!"]
+        ["fu.png", "\u{1F496} (Fuck you!)"]
+        , ["sad.png", "☹️ (So sad!)"]
         , ["love2.png", "###lovism"]
         , ["trump2.png", "###trumpism"]
         , ["insult2.jpg", "###insult"]
@@ -62,7 +51,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ["imsick.png", "So sick!"]
         , ["angry.jpeg", "Very angry!"]
         , ["sohappy.png", "So happy!"]
-        , ["wasntme.png", "It wasn't me!"]
+        , ["boobs1.jpg", "Life is beautiful!"]
         , ["what.png", "What?"]
         , ["wtf.png", "WTF!"]
     ]
@@ -136,7 +125,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         if useLanguageImages {
             languageBtn = createImgButton(named: lang, imgNamed: languageImageFiles[lang]!, action: #selector(KeyboardViewController.nextLanguagePressed(_:)))
         } else {
-            languageBtn = createButtons(titles: [languages[language]], action: #selector(KeyboardViewController.nextLanguagePressed(_:)))[0]
+            languageBtn = createTextButtons(titles: [languages[language]], action: #selector(KeyboardViewController.nextLanguagePressed(_:)))[0]
         }
         languageBtn.backgroundColor = .clear
         
@@ -149,7 +138,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         let returnKey = createImgButton(named: "\n", imgNamed: "return.png")
         returnKey.backgroundColor = .clear
         
-        let bottomRow = addBottomRow([next, languageBtn, keyboardBtn, returnKey, back])
+        let bottomRow = addBottomRow([languageBtn, next, keyboardBtn, returnKey, back])
 
 //        var row: UIView? = nil
 //        _ = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
@@ -212,7 +201,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         }
     }
     func addTextButtonRow(_ topView: UIView?, buttonTitles: [[String]]) -> UIView {
-        let buttons = createButtons(titles: buttonTitles)
+        let buttons = createTextButtons(titles: buttonTitles)
         var result:UIButton = UIButton()
         let row = UIView()
         view.addSubview(row)
@@ -243,7 +232,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             if (info[0].hasPrefix(" ")) {
                 let r = info[0].index(info[0].startIndex, offsetBy: 1)..<info[0].endIndex
                 let substring = info[0][r]
-                buttons.append(createButtons(titles: [[substring, info[1]]])[0])
+                buttons.append(createTextButtons(titles: [[substring, info[1]]])[0])
             } else {
                 buttons.append(createImgButton(named: info[1], imgNamed: info[0]))
             }
@@ -277,7 +266,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
     }
-    func createButtons(titles: [[String]], action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> [UIButton] {
+    func createTextButtons(titles: [[String]], action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> [UIButton] {
         
         var buttons = [UIButton]()
         for i in 0..<titles.count {

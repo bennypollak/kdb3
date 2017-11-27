@@ -83,6 +83,8 @@
 		B26993F71F54AEB200E405D5 /* cervantes.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F51F54AEB200E405D5 /* cervantes.png */; };
 		B26993F91F55DAA000E405D5 /* cervantes2.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F81F55DAA000E405D5 /* cervantes2.png */; };
 		B26993FA1F55DAF500E405D5 /* cervantes2.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F81F55DAA000E405D5 /* cervantes2.png */; };
+		B26EDEFE1F65ABA900EFAEBF /* boobs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */; };
+		B26EDEFF1F65ABA900EFAEBF /* boobs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */; };
 		B276598C1F5F399A00320DE5 /* love1.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598A1F5F399A00320DE5 /* love1.png */; };
 		B276598D1F5F399A00320DE5 /* love1.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598A1F5F399A00320DE5 /* love1.png */; };
 		B276598E1F5F399A00320DE5 /* love2.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598B1F5F399A00320DE5 /* love2.png */; };
@@ -158,6 +160,8 @@
 		B2CD1D461F4787810002090A /* secret4.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D441F4787810002090A /* secret4.png */; };
 		B2CD1D481F478A8E0002090A /* secret5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D471F478A8E0002090A /* secret5.png */; };
 		B2CD1D491F478A8E0002090A /* secret5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D471F478A8E0002090A /* secret5.png */; };
+		B2D80E591F6C2A5F00CB09B5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D80E581F6C2A5F00CB09B5 /* String.swift */; };
+		B2D80E5A1F6C2A5F00CB09B5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D80E581F6C2A5F00CB09B5 /* String.swift */; };
 		B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F4441F21627900804898 /* KeyboardView.swift */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
@@ -253,6 +257,7 @@
 		B26993F01F54A11C00E405D5 /* shakespeare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shakespeare.jpg; path = kdb3/images/shakespeare.jpg; sourceTree = "<group>"; };
 		B26993F51F54AEB200E405D5 /* cervantes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes.png; path = kdb3/images/cervantes.png; sourceTree = "<group>"; };
 		B26993F81F55DAA000E405D5 /* cervantes2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cervantes2.png; path = kdb3/images/cervantes2.png; sourceTree = "<group>"; };
+		B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = boobs1.jpg; path = kdb3/images/boobs1.jpg; sourceTree = "<group>"; };
 		B276598A1F5F399A00320DE5 /* love1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love1.png; path = kdb3/images/love1.png; sourceTree = "<group>"; };
 		B276598B1F5F399A00320DE5 /* love2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love2.png; path = kdb3/images/love2.png; sourceTree = "<group>"; };
 		B27659901F5F442B00320DE5 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more.png; path = kdb3/images/more.png; sourceTree = "<group>"; };
@@ -291,6 +296,7 @@
 		B2CD1D411F475B000002090A /* secret3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret3.png; path = kdb3/images/secret3.png; sourceTree = "<group>"; };
 		B2CD1D441F4787810002090A /* secret4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret4.png; path = kdb3/images/secret4.png; sourceTree = "<group>"; };
 		B2CD1D471F478A8E0002090A /* secret5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret5.png; path = kdb3/images/secret5.png; sourceTree = "<group>"; };
+		B2D80E581F6C2A5F00CB09B5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -346,6 +352,7 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */,
 				B27659901F5F442B00320DE5 /* more.png */,
 				B27659911F5F442B00320DE5 /* return1.png */,
 				B276598A1F5F399A00320DE5 /* love1.png */,
@@ -463,6 +470,7 @@
 				B2FED7D11F1BB261005AA45F /* Assets.xcassets */,
 				B2FED7D31F1BB261005AA45F /* LaunchScreen.storyboard */,
 				B2FED7D61F1BB261005AA45F /* Info.plist */,
+				B2D80E581F6C2A5F00CB09B5 /* String.swift */,
 			);
 			path = kdb3;
 			sourceTree = "<group>";
@@ -702,6 +710,7 @@
 				B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */,
 				B27659921F5F442B00320DE5 /* more.png in Resources */,
 				B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */,
+				B26EDEFE1F65ABA900EFAEBF /* boobs1.jpg in Resources */,
 				B2CD1D3F1F4754F60002090A /* secret2.png in Resources */,
 				B22877FF1F1FD38700141C72 /* ok.png in Resources */,
 				B29722E31F4C7DA700B2B00D /* lock2.png in Resources */,
@@ -782,6 +791,7 @@
 				B24211E31F4DFBBE000A10ED /* Localizable.strings in Resources */,
 				B257CD051F293CB5009DD6DD /* imsick.png in Resources */,
 				B2CD1D431F475B000002090A /* secret3.png in Resources */,
+				B26EDEFF1F65ABA900EFAEBF /* boobs1.jpg in Resources */,
 				B22877FA1F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B22878201F1FDEC800141C72 /* secret.png in Resources */,
 				B257CD071F293CB5009DD6DD /* noway2.gif in Resources */,
@@ -834,6 +844,7 @@
 			files = (
 				B2A68B091F5B1AD60006670C /* Cervantes.swift in Sources */,
 				B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */,
+				B2D80E591F6C2A5F00CB09B5 /* String.swift in Sources */,
 				B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -860,6 +871,7 @@
 			files = (
 				B2CD1D2E1F4730CA0002090A /* Bard.swift in Sources */,
 				B2A68B0A1F5B1AD60006670C /* Cervantes.swift in Sources */,
+				B2D80E5A1F6C2A5F00CB09B5 /* String.swift in Sources */,
 				B2FED7FF1F1BB37B005AA45F /* KeyboardViewController.swift in Sources */,
 				B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */,
 			);
