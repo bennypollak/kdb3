@@ -23,7 +23,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         [" :)", "😂 (Smiled!)"]
         , [" :'-)", "😩 (So sad!)"]
         , [" >:(", "Fuck you!"]
-        , ["  😠", "😠 (Fuck you!)"]
+        , ["😠", "😠 (Fuck you!)"]
         , [" :-*", "Kisses!"]
         , [" ;)", "Wink!"]
         , [" :-D", "Funny!"]
@@ -233,6 +233,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
                 let r = info[0].index(info[0].startIndex, offsetBy: 1)..<info[0].endIndex
                 let substring = info[0][r]
                 buttons.append(createTextButtons(titles: [[substring, info[1]]])[0])
+            } else if info[0].containsEmoji {
+                buttons.append(createTextButtons(titles: [[info[0], info[1]]])[0])
             } else {
                 buttons.append(createImgButton(named: info[1], imgNamed: info[0]))
             }
@@ -270,9 +272,15 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         
         var buttons = [UIButton]()
         for i in 0..<titles.count {
-            textValues[titles[i][0]] = titles[i][1]
+            let title:String = titles[i][0]
+            textValues[title] = titles[i][1]
             let button = UIButton.init(type:.system) as UIButton
-            button.setTitle(titles[i][0], for: .normal)
+            if title.containsEmoji {
+                button.titleLabel?.font = UIFont(name: "AppleColorEmoji", size:35.0)
+                button.setTitle(title, for: .normal)
+            } else {
+                button.setTitle(title, for: .normal)
+            }
             button.translatesAutoresizingMaskIntoConstraints=false
             button.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
             button.setTitleColor(UIColor.darkGray, for: .normal)
