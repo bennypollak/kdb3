@@ -20,10 +20,10 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     }
     let emoticons = [
         // must add leading space
-        [" :)", "😂 (Smiled!)"]
-        , [" :'-)", "😩 (So sad!)"]
+        [" :)", "😂 Smiled!"]
+        , [" :'-)", "😩 So sad!"]
         , [" >:(", "Fuck you!"]
-        , ["😠", "😠 (Fuck you!)"]
+        , ["😠", "Fuck you!"]
         , [" :-*", "Kisses!"]
         , [" ;)", "Wink!"]
         , [" :-D", "Funny!"]
@@ -31,11 +31,12 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ]
     
     let ijomes1 = [
-        ["fu.png", "\u{1F496} (Fuck you!)"]
-        , ["sad.png", "☹️ (So sad!)"]
-        , ["love2.png", "###lovism"]
+        ["fu.png", "💘 Fuck you!"]
+//        ["fu.png", "😤 Fuck you!"]
+        , ["sad.png", "☹️ So sad!"]
+        , ["love2.png", "❤️ ###lovism"]
         , ["trump2.png", "###trumpism"]
-        , ["insult2.jpg", "###insult"]
+        , ["insult2.jpg", "😤 ###insult"]
         , ["shakespeare.jpg", "###bard"]
         ]
     
@@ -48,12 +49,12 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ]
     
     let ijomes3 = [
-        ["imsick.png", "So sick!"]
+        ["imsick.png", "😷 So sick!"]
         , ["angry.jpeg", "Very angry!"]
-        , ["sohappy.png", "So happy!"]
-        , ["boobs1.jpg", "Life is beautiful!"]
-        , ["what.png", "What?"]
-        , ["wtf.png", "WTF!"]
+        , ["sohappy.png", "😂 So happy!"]
+        , ["boobs1.jpg", "👏 Life is beautiful!"]
+        , ["what.png", " What?"]
+        , ["wtf.png", "😱 WTF!"]
     ]
     let ijomes4 = [
         ["stella.jpg", "Stella!"]
@@ -67,8 +68,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ["yahoomail.png", "@@@yo372002@yahoo.com"]
         , ["gmail2.png", "@@@bpollak@gmail.com"]
         , ["Phone.png", "@@@+1-347-416-1525"]
-        , ["ok.png", "Ok!"]
-        , ["ohno2.png", "Oh no!"]
+        , ["ok.png", "👍 Ok!"]
+        , ["ohno2.png", "😫 Oh no!"]
         , ["wink.png", "Wink!"]
     ]
     
@@ -77,7 +78,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ["imsick.png", "So sick!"]
         , ["angry.jpeg", "Very angry!"]
         , ["thumbs_down_angry.png", "No way!"]
-        , ["wasntme.png", "It wasn't me!"]
+        , ["wasntme.png", "😇 It wasn't me!"]
         , ["what.png", "What?"]
         , ["wtf.png", "WTF!"]
     ]
@@ -122,11 +123,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         next.backgroundColor = .clear
         
         let lang = languages[language][0]
-        if useLanguageImages {
-            languageBtn = createImgButton(named: lang, imgNamed: languageImageFiles[lang]!, action: #selector(KeyboardViewController.nextLanguagePressed(_:)))
-        } else {
-            languageBtn = createTextButtons(titles: [languages[language]], action: #selector(KeyboardViewController.nextLanguagePressed(_:)))[0]
-        }
+        
+        languageBtn = createImgButton(named: lang, imgNamed: languageImageFiles[lang]!, action: #selector(KeyboardViewController.nextLanguagePressed(_:)))
         languageBtn.backgroundColor = .clear
         
         keyboardBtn = createImgButton(named: "more", imgNamed: "more2.png", action: #selector(KeyboardViewController.selectNextKeyboardPressed(_:)))
@@ -200,25 +198,10 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             }
         }
     }
-    func addTextButtonRow(_ topView: UIView?, buttonTitles: [[String]]) -> UIView {
-        let buttons = createTextButtons(titles: buttonTitles)
-        var result:UIButton = UIButton()
-        let row = UIView()
-        view.addSubview(row)
-        row.translatesAutoresizingMaskIntoConstraints=false
-        for button in buttons {
-            row.addSubview(button)
-            result = button
-        }
-        addRowConstraints(row, topView: topView)
-        addConstraints(buttons, containingView: row)
-        return result
-    }
     func createRow(topView:UIView?, botView:UIView, buttons:[UIButton]) -> UIView {
         let row = UIView()
         view.addSubview(row)
         row.translatesAutoresizingMaskIntoConstraints=false
-//        var prevButton:UIButton? = nil
         for button in buttons {
             row.addSubview(button)
         }
@@ -232,9 +215,9 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             if (info[0].hasPrefix(" ")) {
                 let r = info[0].index(info[0].startIndex, offsetBy: 1)..<info[0].endIndex
                 let substring = info[0][r]
-                buttons.append(createTextButtons(titles: [[substring, info[1]]])[0])
+                buttons.append(createTextButton(title: substring, target: info[1]))
             } else if info[0].containsEmoji {
-                buttons.append(createTextButtons(titles: [[info[0], info[1]]])[0])
+                buttons.append(createTextButton(title: info[0], target: info[1]))
             } else {
                 buttons.append(createImgButton(named: info[1], imgNamed: info[0]))
             }
@@ -257,6 +240,22 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
 
         return button
     }
+    func createTextButton(title: String, target:String, action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> UIButton  {
+        let button = UIButton.init(type:.system) as UIButton
+        textValues[title] = target
+        if title.containsEmoji {
+            button.titleLabel?.font = UIFont(name: "AppleColorEmoji", size:35.0)
+            button.setTitle(title, for: .normal)
+        } else {
+            button.setTitle(title, for: .normal)
+        }
+        button.translatesAutoresizingMaskIntoConstraints=false
+        button.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
+        button.setTitleColor(UIColor.darkGray, for: .normal)
+        button.sizeToFit()
+        button.addTarget(self, action: action, for: .touchUpInside)
+        return button
+    }
 
     func addRowConstraints(_ row: UIView, topView: UIView?/*, leftView: UIView?*/) {
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .width, relatedBy: .equal, toItem: view, attribute: .width, multiplier: 1.0, constant: 0.0))
@@ -267,29 +266,6 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             view.addConstraint(NSLayoutConstraint(item: row, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1.0, constant: 0))
         }
         view.addConstraint(NSLayoutConstraint(item: row, attribute: .right, relatedBy: .equal, toItem: view, attribute: .right, multiplier: 1.0, constant: 0.0))
-    }
-    func createTextButtons(titles: [[String]], action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> [UIButton] {
-        
-        var buttons = [UIButton]()
-        for i in 0..<titles.count {
-            let title:String = titles[i][0]
-            textValues[title] = titles[i][1]
-            let button = UIButton.init(type:.system) as UIButton
-            if title.containsEmoji {
-                button.titleLabel?.font = UIFont(name: "AppleColorEmoji", size:35.0)
-                button.setTitle(title, for: .normal)
-            } else {
-                button.setTitle(title, for: .normal)
-            }
-            button.translatesAutoresizingMaskIntoConstraints=false
-            button.backgroundColor = UIColor(white: 1.0, alpha: 1.0)
-            button.setTitleColor(UIColor.darkGray, for: .normal)
-            button.sizeToFit()
-            button.addTarget(self, action: action, for: .touchUpInside)
-            buttons.append(button)
-        }
-        
-        return buttons
     }
     func addConstraints(_ buttons: [UIButton], containingView: UIView){
         for (index, button) in buttons.enumerated() {
@@ -342,11 +318,19 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
 
     @IBAction func ijomePressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
-        var string = ""+bstring!
+        var string:String = ""+bstring!
         var space = " "
         var lang:String = languages[language][0]
         if languageImageFiles[lang] == nil {
             lang = preferredLanguage
+        }
+        var ijome = ""
+        if string[0].containsEmoji {
+            ijome = string[0]
+            if string != ijome {
+                let r = string.index(string.startIndex, offsetBy: 2)..<string.endIndex
+                string = string[r]
+            }
         }
         if (string.hasPrefix("@@@")) {
             let r = string.index(string.startIndex, offsetBy: 3)..<string.endIndex
@@ -375,14 +359,13 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
                 }
             }
             space = " "
-        } else if string.characters.count == 1 {
-            space = ""
+//        } else if string.characters.count == 1 {
+//            space = ""
         } else {
             string = (textValues[string] ?? string).localized(lang)
-//            print(language)
         }
         UIDevice.current.playInputClick()
-        let text = "\(string)\(space)"
+        let text = ijome == "" ? "\(string)\(space)" : "\(ijome) (\(string)\(space))"
         backCount.append(text.characters.count)
         (textDocumentProxy as UIKeyInput).insertText(text)
     }
