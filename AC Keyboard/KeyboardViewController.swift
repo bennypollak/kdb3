@@ -54,7 +54,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         , ["sohappy.png", "😂 So happy!"]
         , ["boobs1.jpg", "👏 Life is beautiful!"]
         , ["what.png", " What?"]
-        , ["wtf.png", "😱 WTF!"]
+        , ["😱", "WTF!"]
     ]
     let ijomes4 = [
         ["stella.jpg", "Stella!"]
@@ -68,8 +68,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ["yahoomail.png", "@@@yo372002@yahoo.com"]
         , ["gmail2.png", "@@@bpollak@gmail.com"]
         , ["Phone.png", "@@@+1-347-416-1525"]
-        , ["ok.png", "👍 Ok!"]
-        , ["ohno2.png", "😫 Oh no!"]
+        , ["👍", "Ok!"]
+        , ["😫", "Oh no!"]
         , ["wink.png", "Wink!"]
     ]
     
