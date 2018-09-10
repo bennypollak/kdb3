@@ -31,8 +31,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         ]
     
     let ijomes1 = [
-        ["fu.png", "💘 Fuck you!"]
-//        ["fu.png", "😤 Fuck you!"]
+        ["🖕", "Fuck you!"]
         , ["sad.png", "☹️ So sad!"]
         , ["love2.png", "❤️ ###lovism"]
         , ["trump2.png", "###trumpism"]
@@ -50,7 +49,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     
     let ijomes3 = [
         ["imsick.png", "😷 So sick!"]
-        , ["angry.jpeg", "Very angry!"]
+        , ["💘", "Love you!"]
         , ["sohappy.png", "😂 So happy!"]
         , ["boobs1.jpg", "👏 Life is beautiful!"]
         , ["what.png", " What?"]
