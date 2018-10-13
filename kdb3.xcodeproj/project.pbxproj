@@ -7,6 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B213776E216E5F4500373754 /* IjomePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213776D216E5F4500373754 /* IjomePart.swift */; };
+		B2137770216E611600373754 /* QueryItemRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213776F216E611600373754 /* QueryItemRepresentable.swift */; };
+		B2137772216E652400373754 /* Ijome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2137771216E652400373754 /* Ijome.swift */; };
+		B21377742170029C00373754 /* Ijomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377732170029C00373754 /* Ijomes.swift */; };
+		B21377752170029C00373754 /* Ijomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377732170029C00373754 /* Ijomes.swift */; };
+		B21377762170029D00373754 /* Ijomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377732170029C00373754 /* Ijomes.swift */; };
+		B21377782170EC4500373754 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377772170EC4500373754 /* TableViewController.swift */; };
+		B213777A2170ECBC00373754 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377792170ECBC00373754 /* CollectionViewController.swift */; };
+		B21B0EE7216D0BAC00150CFB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */; };
+		B21B0EEA216D0BAC00150CFB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */; };
+		B21B0EEC216D0BAE00150CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21B0EEB216D0BAE00150CFB /* Assets.xcassets */; };
+		B21B0EF0216D0BAE00150CFB /* IjomeMessage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B21B0EF4216D174800150CFB /* boobs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */; };
+		B21B0EF5216D174800150CFB /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659901F5F442B00320DE5 /* more.png */; };
+		B21B0EF6216D174800150CFB /* return1.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659911F5F442B00320DE5 /* return1.png */; };
+		B21B0EF7216D174800150CFB /* love1.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598A1F5F399A00320DE5 /* love1.png */; };
+		B21B0EF8216D174800150CFB /* love2.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598B1F5F399A00320DE5 /* love2.png */; };
+		B21B0EF9216D174800150CFB /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
+		B21B0EFA216D174800150CFB /* trump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B141F5B2EEB0006670C /* trump.jpg */; };
+		B21B0EFB216D174800150CFB /* trump2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B151F5B2EEB0006670C /* trump2.png */; };
+		B21B0EFC216D174800150CFB /* insult.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B0B1F5B29010006670C /* insult.jpg */; };
+		B21B0EFD216D174800150CFB /* insult2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B0C1F5B29010006670C /* insult2.jpg */; };
+		B21B0EFE216D174800150CFB /* insult3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B0D1F5B29010006670C /* insult3.jpg */; };
+		B21B0EFF216D174800150CFB /* more1.png in Resources */ = {isa = PBXBuildFile; fileRef = B238E4C31F58602300A1C771 /* more1.png */; };
+		B21B0F00216D174800150CFB /* cervantes2.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F81F55DAA000E405D5 /* cervantes2.png */; };
+		B21B0F01216D174800150CFB /* cervantes.png in Resources */ = {isa = PBXBuildFile; fileRef = B26993F51F54AEB200E405D5 /* cervantes.png */; };
+		B21B0F02216D174800150CFB /* cervantes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26993EF1F54A11C00E405D5 /* cervantes.jpg */; };
+		B21B0F03216D174800150CFB /* shakespeare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26993F01F54A11C00E405D5 /* shakespeare.jpg */; };
+		B21B0F04216D174800150CFB /* truelove.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D71F4CF90A000A10ED /* truelove.png */; };
+		B21B0F05216D174800150CFB /* truelove2.png in Resources */ = {isa = PBXBuildFile; fileRef = B24211D41F4CF7AA000A10ED /* truelove2.png */; };
+		B21B0F06216D174800150CFB /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
+		B21B0F07216D174800150CFB /* angry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D2F1F473B170002090A /* angry.jpeg */; };
+		B21B0F08216D174800150CFB /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22877F51F1FD38700141C72 /* back.jpg */; };
+		B21B0F09216D174800150CFB /* badday.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722EB1F4C811000B2B00D /* badday.png */; };
+		B21B0F0A216D174800150CFB /* crying.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C61F4C7DA700B2B00D /* crying.png */; };
+		B21B0F0B216D174800150CFB /* fu.png in Resources */ = {isa = PBXBuildFile; fileRef = B22F910D1F1D046E00E5E6AC /* fu.png */; };
+		B21B0F0C216D174800150CFB /* funny.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877ED1F1FD38700141C72 /* funny.png */; };
+		B21B0F0D216D174800150CFB /* gmail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B228780F1F1FD7C500141C72 /* gmail.jpeg */; };
+		B21B0F0E216D174800150CFB /* gmail2.png in Resources */ = {isa = PBXBuildFile; fileRef = B22878121F1FD95200141C72 /* gmail2.png */; };
+		B21B0F0F216D174800150CFB /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C71F4C7DA700B2B00D /* happy.png */; };
+		B21B0F10216D174800150CFB /* haveadrink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C81F4C7DA700B2B00D /* haveadrink.jpg */; };
+		B21B0F11216D174800150CFB /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877E81F1FD18700141C72 /* hide.png */; };
+		B21B0F12216D174800150CFB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B29DC8051F3626ED00EF277C /* icon.png */; };
+		B21B0F13216D174900150CFB /* Image-11.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C91F4C7DA700B2B00D /* Image-11.png */; };
+		B21B0F14216D174900150CFB /* imsick.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFF1F293CB5009DD6DD /* imsick.png */; };
+		B21B0F15216D174900150CFB /* iwarnyou.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722CA1F4C7DA700B2B00D /* iwarnyou.png */; };
+		B21B0F16216D174900150CFB /* laugh2.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722CB1F4C7DA700B2B00D /* laugh2.png */; };
+		B21B0F17216D174900150CFB /* lcase.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F01F1FD38700141C72 /* lcase.png */; };
+		B21B0F18216D174900150CFB /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722CC1F4C7DA700B2B00D /* lock.png */; };
+		B21B0F19216D174900150CFB /* lock2.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722CD1F4C7DA700B2B00D /* lock2.png */; };
+		B21B0F1A216D174900150CFB /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F31F1FD38700141C72 /* next.png */; };
+		B21B0F1B216D174900150CFB /* noay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910E1F1D046E00E5E6AC /* noay.jpg */; };
+		B21B0F1C216D174900150CFB /* noway.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048311F2680AC00922CDE /* noway.png */; };
+		B21B0F1D216D174900150CFB /* noway2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B257CD001F293CB5009DD6DD /* noway2.gif */; };
+		B21B0F1E216D174900150CFB /* ohno.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CCFC1F2938E7009DD6DD /* ohno.png */; };
+		B21B0F1F216D174900150CFB /* ohno2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A3ADC01F4BD40E0007400B /* ohno2.png */; };
+		B21B0F20216D174900150CFB /* ok.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910F1F1D046E00E5E6AC /* ok.jpg */; };
+		B21B0F21216D174900150CFB /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877EF1F1FD38700141C72 /* ok.png */; };
+		B21B0F22216D174900150CFB /* oy.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2A3ADC11F4BD40E0007400B /* oy.jpeg */; };
+		B21B0F23216D174900150CFB /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = B228781B1F1FDB6F00141C72 /* Phone.png */; };
+		B21B0F24216D174900150CFB /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F61F1FD38700141C72 /* return.png */; };
+		B21B0F25216D174900150CFB /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877EE1F1FD38700141C72 /* sad.png */; };
+		B21B0F26216D174900150CFB /* secret.png in Resources */ = {isa = PBXBuildFile; fileRef = B228781E1F1FDEC800141C72 /* secret.png */; };
+		B21B0F27216D174900150CFB /* secret1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D3B1F4744CF0002090A /* secret1.png */; };
+		B21B0F28216D174900150CFB /* secret2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D3E1F4754F60002090A /* secret2.png */; };
+		B21B0F29216D174900150CFB /* secret3.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D411F475B000002090A /* secret3.png */; };
+		B21B0F2A216D174900150CFB /* secret4.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D441F4787810002090A /* secret4.png */; };
+		B21B0F2B216D174900150CFB /* secret5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D471F478A8E0002090A /* secret5.png */; };
+		B21B0F2C216D174900150CFB /* sohappy.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD011F293CB5009DD6DD /* sohappy.png */; };
+		B21B0F2D216D174900150CFB /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F21F1FD38700141C72 /* space.png */; };
+		B21B0F2E216D174900150CFB /* stella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722CE1F4C7DA700B2B00D /* stella.jpg */; };
+		B21B0F2F216D174900150CFB /* thebard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D301F473B170002090A /* thebard.jpg */; };
+		B21B0F30216D174900150CFB /* thebard2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D311F473B170002090A /* thebard2.jpg */; };
+		B21B0F31216D174900150CFB /* thebard3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D321F473B170002090A /* thebard3.jpeg */; };
+		B21B0F32216D174900150CFB /* thumbs_down_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048351F2681E000922CDE /* thumbs_down_angry.png */; };
+		B21B0F33216D174900150CFB /* thumbsdown.gif in Resources */ = {isa = PBXBuildFile; fileRef = B22877EC1F1FD38700141C72 /* thumbsdown.gif */; };
+		B21B0F34216D174900150CFB /* ucase.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877F11F1FD38700141C72 /* ucase.png */; };
+		B21B0F35216D174900150CFB /* waiting.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A3ADC21F4BD40E0007400B /* waiting.png */; };
+		B21B0F36216D174900150CFB /* wasntme.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD021F293CB5009DD6DD /* wasntme.png */; };
+		B21B0F37216D174900150CFB /* what.png in Resources */ = {isa = PBXBuildFile; fileRef = B257CD031F293CB5009DD6DD /* what.png */; };
+		B21B0F38216D174900150CFB /* wink.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E7F1F2984FE00BF1F7C /* wink.png */; };
+		B21B0F39216D174900150CFB /* wtf.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E821F29866300BF1F7C /* wtf.png */; };
+		B21B0F3A216D174900150CFB /* Yahoo-Mail-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */; };
+		B21B0F3B216D174900150CFB /* ymail.png in Resources */ = {isa = PBXBuildFile; fileRef = B22878181F1FDA8100141C72 /* ymail.png */; };
 		B22877E91F1FD18700141C72 /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877E81F1FD18700141C72 /* hide.png */; };
 		B22877EA1F1FD18700141C72 /* hide.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877E81F1FD18700141C72 /* hide.png */; };
 		B22877F71F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */; };
@@ -176,6 +260,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B21B0EEE216D0BAE00150CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2FED7BF1F1BB261005AA45F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B21B0EE0216D0BAC00150CFB;
+			remoteInfo = IjomeMessage;
+		};
 		B2FED7DC1F1BB261005AA45F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B2FED7BF1F1BB261005AA45F /* Project object */;
@@ -207,6 +298,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				B2FED8031F1BB37B005AA45F /* AC Keyboard.appex in Embed App Extensions */,
+				B21B0EF0216D0BAE00150CFB /* IjomeMessage.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +308,17 @@
 /* Begin PBXFileReference section */
 		B20B86CB1F20FB660067E08B /* kdb3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kdb3.entitlements; sourceTree = "<group>"; };
 		B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AC Keyboard.entitlements"; sourceTree = "<group>"; };
+		B213776D216E5F4500373754 /* IjomePart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IjomePart.swift; sourceTree = "<group>"; };
+		B213776F216E611600373754 /* QueryItemRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryItemRepresentable.swift; sourceTree = "<group>"; };
+		B2137771216E652400373754 /* Ijome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ijome.swift; sourceTree = "<group>"; };
+		B21377732170029C00373754 /* Ijomes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ijomes.swift; sourceTree = "<group>"; };
+		B21377772170EC4500373754 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B21377792170ECBC00373754 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IjomeMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		B21B0EE9216D0BAC00150CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B21B0EEB216D0BAE00150CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B21B0EED216D0BAE00150CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22877E81F1FD18700141C72 /* hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hide.png; path = kdb3/images/hide.png; sourceTree = "<group>"; };
 		B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yahoo-Mail-logo.png"; path = "kdb3/images/Yahoo-Mail-logo.png"; sourceTree = "<group>"; };
 		B22877EC1F1FD38700141C72 /* thumbsdown.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = thumbsdown.gif; path = kdb3/images/thumbsdown.gif; sourceTree = "<group>"; };
@@ -318,6 +421,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B21B0EDE216D0BAC00150CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2FED7C41F1BB261005AA45F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,6 +459,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B21B0EE5216D0BAC00150CFB /* IjomeMessage */ = {
+			isa = PBXGroup;
+			children = (
+				B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */,
+				B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */,
+				B21B0EEB216D0BAE00150CFB /* Assets.xcassets */,
+				B21B0EED216D0BAE00150CFB /* Info.plist */,
+				B213776D216E5F4500373754 /* IjomePart.swift */,
+				B213776F216E611600373754 /* QueryItemRepresentable.swift */,
+				B2137771216E652400373754 /* Ijome.swift */,
+				B21377772170EC4500373754 /* TableViewController.swift */,
+				B21377792170ECBC00373754 /* CollectionViewController.swift */,
+			);
+			path = IjomeMessage;
+			sourceTree = "<group>";
+		};
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +571,7 @@
 				B2FED7DE1F1BB261005AA45F /* kdb3Tests */,
 				B2FED7E91F1BB261005AA45F /* kdb3UITests */,
 				B2FED7FD1F1BB37B005AA45F /* AC Keyboard */,
+				B21B0EE5216D0BAC00150CFB /* IjomeMessage */,
 				B2FED7C81F1BB261005AA45F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -456,6 +583,7 @@
 				B2FED7DB1F1BB261005AA45F /* kdb3Tests.xctest */,
 				B2FED7E61F1BB261005AA45F /* kdb3UITests.xctest */,
 				B2FED7FC1F1BB37B005AA45F /* AC Keyboard.appex */,
+				B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -465,12 +593,14 @@
 			children = (
 				B20B86CB1F20FB660067E08B /* kdb3.entitlements */,
 				B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */,
+				B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */,
 				B2FED7CC1F1BB261005AA45F /* ViewController.swift */,
 				B2FED7CE1F1BB261005AA45F /* Main.storyboard */,
 				B2FED7D11F1BB261005AA45F /* Assets.xcassets */,
 				B2FED7D31F1BB261005AA45F /* LaunchScreen.storyboard */,
 				B2FED7D61F1BB261005AA45F /* Info.plist */,
 				B2D80E581F6C2A5F00CB09B5 /* String.swift */,
+				B21377732170029C00373754 /* Ijomes.swift */,
 			);
 			path = kdb3;
 			sourceTree = "<group>";
@@ -498,7 +628,6 @@
 			children = (
 				B2A68B081F5B1AD60006670C /* Cervantes.swift */,
 				B24211DC1F4DD9BC000A10ED /* Supporting Files */,
-				B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */,
 				B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */,
 				B2FED8001F1BB37B005AA45F /* Info.plist */,
 				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
@@ -512,6 +641,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B21B0EE0216D0BAC00150CFB /* IjomeMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21B0EF3216D0BAE00150CFB /* Build configuration list for PBXNativeTarget "IjomeMessage" */;
+			buildPhases = (
+				B21B0EDD216D0BAC00150CFB /* Sources */,
+				B21B0EDE216D0BAC00150CFB /* Frameworks */,
+				B21B0EDF216D0BAC00150CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IjomeMessage;
+			productName = IjomeMessage;
+			productReference = B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		B2FED7C61F1BB261005AA45F /* kdb3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2FED7EF1F1BB261005AA45F /* Build configuration list for PBXNativeTarget "kdb3" */;
@@ -525,6 +671,7 @@
 			);
 			dependencies = (
 				B2FED8021F1BB37B005AA45F /* PBXTargetDependency */,
+				B21B0EEF216D0BAE00150CFB /* PBXTargetDependency */,
 			);
 			name = kdb3;
 			productName = kdb3;
@@ -590,10 +737,15 @@
 		B2FED7BF1F1BB261005AA45F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Alben Software";
 				TargetAttributes = {
+					B21B0EE0216D0BAC00150CFB = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = 388X7HA3JM;
+						ProvisioningStyle = Automatic;
+					};
 					B2FED7C61F1BB261005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
@@ -648,11 +800,93 @@
 				B2FED7DA1F1BB261005AA45F /* kdb3Tests */,
 				B2FED7E51F1BB261005AA45F /* kdb3UITests */,
 				B2FED7FB1F1BB37B005AA45F /* AC Keyboard */,
+				B21B0EE0216D0BAC00150CFB /* IjomeMessage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B21B0EDF216D0BAC00150CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21B0F0B216D174800150CFB /* fu.png in Resources */,
+				B21B0F34216D174900150CFB /* ucase.png in Resources */,
+				B21B0F0A216D174800150CFB /* crying.png in Resources */,
+				B21B0F2E216D174900150CFB /* stella.jpg in Resources */,
+				B21B0F05216D174800150CFB /* truelove2.png in Resources */,
+				B21B0F13216D174900150CFB /* Image-11.png in Resources */,
+				B21B0F17216D174900150CFB /* lcase.png in Resources */,
+				B21B0EEC216D0BAE00150CFB /* Assets.xcassets in Resources */,
+				B21B0F25216D174900150CFB /* sad.png in Resources */,
+				B21B0EF9216D174800150CFB /* more2.png in Resources */,
+				B21B0EF7216D174800150CFB /* love1.png in Resources */,
+				B21B0F02216D174800150CFB /* cervantes.jpg in Resources */,
+				B21B0F03216D174800150CFB /* shakespeare.jpg in Resources */,
+				B21B0F0F216D174800150CFB /* happy.png in Resources */,
+				B21B0F2A216D174900150CFB /* secret4.png in Resources */,
+				B21B0F1E216D174900150CFB /* ohno.png in Resources */,
+				B21B0F14216D174900150CFB /* imsick.png in Resources */,
+				B21B0EEA216D0BAC00150CFB /* MainInterface.storyboard in Resources */,
+				B21B0F1F216D174900150CFB /* ohno2.png in Resources */,
+				B21B0F04216D174800150CFB /* truelove.png in Resources */,
+				B21B0F18216D174900150CFB /* lock.png in Resources */,
+				B21B0F37216D174900150CFB /* what.png in Resources */,
+				B21B0F15216D174900150CFB /* iwarnyou.png in Resources */,
+				B21B0F1C216D174900150CFB /* noway.png in Resources */,
+				B21B0F22216D174900150CFB /* oy.jpeg in Resources */,
+				B21B0F28216D174900150CFB /* secret2.png in Resources */,
+				B21B0F20216D174900150CFB /* ok.jpg in Resources */,
+				B21B0F06216D174800150CFB /* ahhhhh.jpg in Resources */,
+				B21B0F10216D174800150CFB /* haveadrink.jpg in Resources */,
+				B21B0F08216D174800150CFB /* back.jpg in Resources */,
+				B21B0F2B216D174900150CFB /* secret5.png in Resources */,
+				B21B0F09216D174800150CFB /* badday.png in Resources */,
+				B21B0EFE216D174800150CFB /* insult3.jpg in Resources */,
+				B21B0EF5216D174800150CFB /* more.png in Resources */,
+				B21B0F12216D174800150CFB /* icon.png in Resources */,
+				B21B0EFF216D174800150CFB /* more1.png in Resources */,
+				B21B0EFB216D174800150CFB /* trump2.png in Resources */,
+				B21B0F36216D174900150CFB /* wasntme.png in Resources */,
+				B21B0F1D216D174900150CFB /* noway2.gif in Resources */,
+				B21B0EF6216D174800150CFB /* return1.png in Resources */,
+				B21B0F00216D174800150CFB /* cervantes2.png in Resources */,
+				B21B0F30216D174900150CFB /* thebard2.jpg in Resources */,
+				B21B0F11216D174800150CFB /* hide.png in Resources */,
+				B21B0F1B216D174900150CFB /* noay.jpg in Resources */,
+				B21B0F2F216D174900150CFB /* thebard.jpg in Resources */,
+				B21B0F1A216D174900150CFB /* next.png in Resources */,
+				B21B0F26216D174900150CFB /* secret.png in Resources */,
+				B21B0F21216D174900150CFB /* ok.png in Resources */,
+				B21B0F27216D174900150CFB /* secret1.png in Resources */,
+				B21B0F31216D174900150CFB /* thebard3.jpeg in Resources */,
+				B21B0EF8216D174800150CFB /* love2.png in Resources */,
+				B21B0F39216D174900150CFB /* wtf.png in Resources */,
+				B21B0F35216D174900150CFB /* waiting.png in Resources */,
+				B21B0F24216D174900150CFB /* return.png in Resources */,
+				B21B0F0E216D174800150CFB /* gmail2.png in Resources */,
+				B21B0F16216D174900150CFB /* laugh2.png in Resources */,
+				B21B0F19216D174900150CFB /* lock2.png in Resources */,
+				B21B0F32216D174900150CFB /* thumbs_down_angry.png in Resources */,
+				B21B0F3B216D174900150CFB /* ymail.png in Resources */,
+				B21B0F0D216D174800150CFB /* gmail.jpeg in Resources */,
+				B21B0F29216D174900150CFB /* secret3.png in Resources */,
+				B21B0F38216D174900150CFB /* wink.png in Resources */,
+				B21B0F01216D174800150CFB /* cervantes.png in Resources */,
+				B21B0EF4216D174800150CFB /* boobs1.jpg in Resources */,
+				B21B0F2D216D174900150CFB /* space.png in Resources */,
+				B21B0F23216D174900150CFB /* Phone.png in Resources */,
+				B21B0EFC216D174800150CFB /* insult.jpg in Resources */,
+				B21B0F0C216D174800150CFB /* funny.png in Resources */,
+				B21B0F3A216D174900150CFB /* Yahoo-Mail-logo.png in Resources */,
+				B21B0F2C216D174900150CFB /* sohappy.png in Resources */,
+				B21B0F07216D174800150CFB /* angry.jpeg in Resources */,
+				B21B0F33216D174900150CFB /* thumbsdown.gif in Resources */,
+				B21B0EFA216D174800150CFB /* trump.jpg in Resources */,
+				B21B0EFD216D174800150CFB /* insult2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2FED7C51F1BB261005AA45F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -838,10 +1072,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B21B0EDD216D0BAC00150CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21377762170029D00373754 /* Ijomes.swift in Sources */,
+				B21377782170EC4500373754 /* TableViewController.swift in Sources */,
+				B2137770216E611600373754 /* QueryItemRepresentable.swift in Sources */,
+				B21B0EE7216D0BAC00150CFB /* MessagesViewController.swift in Sources */,
+				B213777A2170ECBC00373754 /* CollectionViewController.swift in Sources */,
+				B2137772216E652400373754 /* Ijome.swift in Sources */,
+				B213776E216E5F4500373754 /* IjomePart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2FED7C31F1BB261005AA45F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21377742170029C00373754 /* Ijomes.swift in Sources */,
 				B2A68B091F5B1AD60006670C /* Cervantes.swift in Sources */,
 				B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */,
 				B2D80E591F6C2A5F00CB09B5 /* String.swift in Sources */,
@@ -869,6 +1118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B21377752170029C00373754 /* Ijomes.swift in Sources */,
 				B2CD1D2E1F4730CA0002090A /* Bard.swift in Sources */,
 				B2A68B0A1F5B1AD60006670C /* Cervantes.swift in Sources */,
 				B2D80E5A1F6C2A5F00CB09B5 /* String.swift in Sources */,
@@ -880,6 +1130,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B21B0EEF216D0BAE00150CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B21B0EE0216D0BAC00150CFB /* IjomeMessage */;
+			targetProxy = B21B0EEE216D0BAE00150CFB /* PBXContainerItemProxy */;
+		};
 		B2FED7DD1F1BB261005AA45F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B2FED7C61F1BB261005AA45F /* kdb3 */;
@@ -898,6 +1153,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B21B0EE9216D0BAC00150CFB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		B24211E51F4DFBBE000A10ED /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -928,6 +1191,71 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B21B0EF1216D0BAE00150CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 388X7HA3JM;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IjomeMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3.IjomeMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B21B0EF2216D0BAE00150CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 388X7HA3JM;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = IjomeMessage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3.IjomeMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B2FED7ED1F1BB261005AA45F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1166,6 +1494,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B21B0EF3216D0BAE00150CFB /* Build configuration list for PBXNativeTarget "IjomeMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21B0EF1216D0BAE00150CFB /* Debug */,
+				B21B0EF2216D0BAE00150CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B2FED7C21F1BB261005AA45F /* Build configuration list for PBXProject "kdb3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
