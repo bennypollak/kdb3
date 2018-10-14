@@ -53,6 +53,23 @@ struct Ijomes {
         , ["ahhhhh.jpg", "Ahhh!"]
         , ["truelove.png", "True love!"]
         , ["badday.png", "Having a bad day!"]
+        , ["boobs1.jpg", "👏 Life is beautiful!"]
+    ]
+    static let
+    msgIjomes = [
+        ["stella.jpg", "Stella!"]
+        , ["iwarnyou.png", "Splendid!"]
+        , ["ohno2.png", "Oh no!"]
+        , ["oy.jpeg", "Oy vei!"]
+        , ["sad.png", "So fucking sad!"]
+        , ["fu.png", "Fuck you!"]
+        , ["sad.png", "☹️ So sad!"]
+        , ["truelove2.png", "We'll always have Paris!"]
+        , ["haveadrink.jpg", "Have a drink!"]
+        , ["ahhhhh.jpg", "Ahhh!"]
+        , ["truelove.png", "True love!"]
+        , ["badday.png", "Having a bad day!"]
+        , ["boobs1.jpg", "👏 Life is beautiful!"]
     ]
     static let ijomes5 = [
         ["yahoomail.png", "@@@yo372002@yahoo.com"]

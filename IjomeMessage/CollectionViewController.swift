@@ -7,19 +7,29 @@
 //
 
 import UIKit
+import Messages
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "IjomeCell"
 
 class CollectionViewController: UICollectionViewController {
+    var activeConversation: MSConversation?
+    override func collectionView(_ collectionView: UICollectionView,
+                                 didSelectItemAt indexPath: IndexPath) {
+        send(indexPath)
+    }
 
+    let ijomes = Ijomes.msgIjomes
+
+
+//    weak var delegate: UICollectionViewDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(IjomeCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -35,24 +45,27 @@ class CollectionViewController: UICollectionViewController {
     */
 
     // MARK: UICollectionViewDataSource
-
+    let cols = 3
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        // rows
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return ijomes.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
-        return cell
+            as? IjomeCollectionViewCell
+        let i = indexPath.row // * cols + indexPath.section
+        let imageName = ijomes[i][0]
+        cell?.image.image = UIImage(named: imageName)
+        cell?.captionLbl.text = ijomes[i][1]
+        return cell!
     }
 
     // MARK: UICollectionViewDelegate
@@ -80,10 +93,46 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
         return false
     }
+     */
 
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
+    func send(_ indexPath: IndexPath) {
+        let layout = MSMessageTemplateLayout()
+        let ijomes = Ijomes.msgIjomes
+        let i = indexPath.row
+        let caption = ijomes[i][1]
+        let imageName = ijomes[i][0]
+        layout.caption = caption
+        //        layout.imageSubtitle = "imageSubtitle"
+        //        layout.imageTitle = "imageTitle"
+        //        layout.subcaption = "subcaption"
+        //        layout.trailingCaption = "trailingCaption"
+        //        layout.trailingSubcaption = "trailingSubcaption"
+        layout.image = UIImage(named: imageName)
+        let message = MSMessage()
+        message.layout = layout
+        
+        
+        var components = URLComponents()
+        let ijome = Ijome(imageName, caption)
+        components.queryItems = ijome.queryItems
+        message.url = components.url!
+        
+        activeConversation?.insert(message, completionHandler: nil)
+        let p = parent as? MessagesViewController
+        p?.requestPresentationStyle(.compact)
+
+//        p.?requestPresentationStyle
+//        p?.removeAllChildViewControllers()
+//        view.removeFromSuperview()
+//        dismiss(animated: true, completion: nil)
     }
-    */
+    // MARK: Convenience
+}
+// A delegate protocol for the `IceCreamsViewController` class
 
+protocol CollectionViewControllerDelegate: class {
+    
+    /// Called when a user choses to add a new `IceCream` in the `IceCreamsViewController`.
+    
+    func collectionViewControllerDidSelect(_ controller: CollectionViewController)
 }

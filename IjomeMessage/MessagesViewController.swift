@@ -63,26 +63,63 @@ class MessagesViewController: MSMessagesAppViewController {
         // Called after the extension transitions to a new presentation style.
     
         // Use this method to finalize any behaviors associated with the change in presentation style.
-        debLbl.text = (presentationStyle == .compact ? "compact" : presentationStyle == .expanded ? "expanded" : "transcript")
     }
-
+    var currentIjome:Ijome?
     private func presentViewController(for conversation: MSConversation, with presentationStyle: MSMessagesAppPresentationStyle) {
-        debLbl.text = (presentationStyle == .compact ? "compact" : presentationStyle == .expanded ? "expanded" : "transcript")
+
         if let message = conversation.selectedMessage {
-            sendBtn.isHidden = true
-            let ijome = Ijome(message: message)
-            debLbl.text = (ijome?.caption)! + (presentationStyle == .compact ? "compact" : presentationStyle == .expanded ? "expanded" : "transcript")
+            currentIjome = Ijome(message: message)
+            captionTxt.text = (currentIjome?.caption)!
+            image.image = UIImage(named: (currentIjome?.imageName)!)
+        } else {
+            // Remove any child view controllers that have been presented.
+            removeAllChildViewControllers()
+            
+            /// - Tag: PresentViewController
+            let controller: CollectionViewController
+            if presentationStyle == .compact {
+                controller = instantiateViewController() as! CollectionViewController
+            } else {
+                controller = instantiateViewController() as! CollectionViewController
+            }
+            controller.activeConversation = conversation
+            addChild(controller)
+            controller.view.frame = view.bounds
+            controller.view.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(controller.view)
+            
+            NSLayoutConstraint.activate([
+                controller.view.leftAnchor.constraint(equalTo: view.leftAnchor),
+                controller.view.rightAnchor.constraint(equalTo: view.rightAnchor),
+                controller.view.topAnchor.constraint(equalTo: view.topAnchor),
+                controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+                ])
+            
+            controller.didMove(toParent: self)
         }
+
+
+
+
+
+    }
+    private func instantiateViewController() -> UIViewController {
+        guard let controller = storyboard?.instantiateViewController(withIdentifier: "CollectionViewController")
+            as? CollectionViewController
+            else { fatalError("Unable to instantiate an CollectionViewController from the storyboard") }
+        
+//        controller.delegate = self
+        
+        return controller
     }
     @IBOutlet weak var sendBtn: UIButton!
-    @IBOutlet weak var debLbl: UILabel!
+    @IBOutlet weak var captionTxt: UITextField!
+    @IBOutlet weak var image: UIImageView!
     @IBAction func send(_ sender: Any) {
         let layout = MSMessageTemplateLayout()
-        let ijomes = Ijomes.ijomes4
-        let i = 1
-        let caption = ijomes[i][1]
-        let imageName = ijomes[i][0]
-        layout.caption = caption
+        let caption = captionTxt.text
+        let imageName = (currentIjome?.imageName)!
+        layout.caption = captionTxt.text
 //        layout.imageSubtitle = "imageSubtitle"
 //        layout.imageTitle = "imageTitle"
 //        layout.subcaption = "subcaption"
@@ -94,10 +131,20 @@ class MessagesViewController: MSMessagesAppViewController {
         
         
         var components = URLComponents()
-        let ijome = Ijome(imageName, caption)
+        let ijome = Ijome(imageName, caption!)
         components.queryItems = ijome.queryItems
         message.url = components.url!
 
         activeConversation?.insert(message, completionHandler: nil)
+        dismiss()
+    }
+    // MARK: Convenience
+    
+    public func removeAllChildViewControllers() {
+        for child in children {
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
     }
 }

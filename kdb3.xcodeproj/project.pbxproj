@@ -13,11 +13,13 @@
 		B21377742170029C00373754 /* Ijomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377732170029C00373754 /* Ijomes.swift */; };
 		B21377752170029C00373754 /* Ijomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377732170029C00373754 /* Ijomes.swift */; };
 		B21377762170029D00373754 /* Ijomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377732170029C00373754 /* Ijomes.swift */; };
-		B21377782170EC4500373754 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377772170EC4500373754 /* TableViewController.swift */; };
 		B213777A2170ECBC00373754 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21377792170ECBC00373754 /* CollectionViewController.swift */; };
+		B213777C2172605500373754 /* IjomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213777B2172605500373754 /* IjomeCollectionViewCell.swift */; };
+		B213777D2173ABCD00373754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FED7D11F1BB261005AA45F /* Assets.xcassets */; };
+		B213777E2173ABCE00373754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FED7D11F1BB261005AA45F /* Assets.xcassets */; };
+		B21377802173AF7800373754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B213777F2173AF7800373754 /* Assets.xcassets */; };
 		B21B0EE7216D0BAC00150CFB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */; };
 		B21B0EEA216D0BAC00150CFB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */; };
-		B21B0EEC216D0BAE00150CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21B0EEB216D0BAE00150CFB /* Assets.xcassets */; };
 		B21B0EF0216D0BAE00150CFB /* IjomeMessage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B21B0EF4216D174800150CFB /* boobs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */; };
 		B21B0EF5216D174800150CFB /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659901F5F442B00320DE5 /* more.png */; };
@@ -312,12 +314,12 @@
 		B213776F216E611600373754 /* QueryItemRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryItemRepresentable.swift; sourceTree = "<group>"; };
 		B2137771216E652400373754 /* Ijome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ijome.swift; sourceTree = "<group>"; };
 		B21377732170029C00373754 /* Ijomes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ijomes.swift; sourceTree = "<group>"; };
-		B21377772170EC4500373754 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B21377792170ECBC00373754 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		B213777B2172605500373754 /* IjomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IjomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B213777F2173AF7800373754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IjomeMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		B21B0EE9216D0BAC00150CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		B21B0EEB216D0BAE00150CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B21B0EED216D0BAE00150CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22877E81F1FD18700141C72 /* hide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hide.png; path = kdb3/images/hide.png; sourceTree = "<group>"; };
 		B22877EB1F1FD38700141C72 /* Yahoo-Mail-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Yahoo-Mail-logo.png"; path = "kdb3/images/Yahoo-Mail-logo.png"; sourceTree = "<group>"; };
@@ -462,15 +464,15 @@
 		B21B0EE5216D0BAC00150CFB /* IjomeMessage */ = {
 			isa = PBXGroup;
 			children = (
+				B213777F2173AF7800373754 /* Assets.xcassets */,
 				B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */,
 				B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */,
-				B21B0EEB216D0BAE00150CFB /* Assets.xcassets */,
 				B21B0EED216D0BAE00150CFB /* Info.plist */,
 				B213776D216E5F4500373754 /* IjomePart.swift */,
 				B213776F216E611600373754 /* QueryItemRepresentable.swift */,
 				B2137771216E652400373754 /* Ijome.swift */,
-				B21377772170EC4500373754 /* TableViewController.swift */,
 				B21377792170ECBC00373754 /* CollectionViewController.swift */,
+				B213777B2172605500373754 /* IjomeCollectionViewCell.swift */,
 			);
 			path = IjomeMessage;
 			sourceTree = "<group>";
@@ -478,28 +480,14 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
-				B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */,
-				B27659901F5F442B00320DE5 /* more.png */,
-				B27659911F5F442B00320DE5 /* return1.png */,
-				B276598A1F5F399A00320DE5 /* love1.png */,
-				B276598B1F5F399A00320DE5 /* love2.png */,
-				B27C4A351F5C48EB00B16820 /* more2.png */,
-				B2A68B141F5B2EEB0006670C /* trump.jpg */,
-				B2A68B151F5B2EEB0006670C /* trump2.png */,
-				B2A68B0B1F5B29010006670C /* insult.jpg */,
-				B2A68B0C1F5B29010006670C /* insult2.jpg */,
-				B2A68B0D1F5B29010006670C /* insult3.jpg */,
-				B238E4C31F58602300A1C771 /* more1.png */,
-				B26993F81F55DAA000E405D5 /* cervantes2.png */,
-				B26993F51F54AEB200E405D5 /* cervantes.png */,
-				B26993EF1F54A11C00E405D5 /* cervantes.jpg */,
-				B26993F01F54A11C00E405D5 /* shakespeare.jpg */,
-				B24211D71F4CF90A000A10ED /* truelove.png */,
-				B24211D41F4CF7AA000A10ED /* truelove2.png */,
 				B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */,
 				B2CD1D2F1F473B170002090A /* angry.jpeg */,
 				B22877F51F1FD38700141C72 /* back.jpg */,
 				B29722EB1F4C811000B2B00D /* badday.png */,
+				B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */,
+				B26993EF1F54A11C00E405D5 /* cervantes.jpg */,
+				B26993F51F54AEB200E405D5 /* cervantes.png */,
+				B26993F81F55DAA000E405D5 /* cervantes2.png */,
 				B29722C61F4C7DA700B2B00D /* crying.png */,
 				B22F910D1F1D046E00E5E6AC /* fu.png */,
 				B22877ED1F1FD38700141C72 /* funny.png */,
@@ -511,11 +499,19 @@
 				B29DC8051F3626ED00EF277C /* icon.png */,
 				B29722C91F4C7DA700B2B00D /* Image-11.png */,
 				B257CCFF1F293CB5009DD6DD /* imsick.png */,
+				B2A68B0B1F5B29010006670C /* insult.jpg */,
+				B2A68B0C1F5B29010006670C /* insult2.jpg */,
+				B2A68B0D1F5B29010006670C /* insult3.jpg */,
 				B29722CA1F4C7DA700B2B00D /* iwarnyou.png */,
 				B29722CB1F4C7DA700B2B00D /* laugh2.png */,
 				B22877F01F1FD38700141C72 /* lcase.png */,
 				B29722CC1F4C7DA700B2B00D /* lock.png */,
 				B29722CD1F4C7DA700B2B00D /* lock2.png */,
+				B276598A1F5F399A00320DE5 /* love1.png */,
+				B276598B1F5F399A00320DE5 /* love2.png */,
+				B27659901F5F442B00320DE5 /* more.png */,
+				B238E4C31F58602300A1C771 /* more1.png */,
+				B27C4A351F5C48EB00B16820 /* more2.png */,
 				B22877F31F1FD38700141C72 /* next.png */,
 				B22F910E1F1D046E00E5E6AC /* noay.jpg */,
 				B24048311F2680AC00922CDE /* noway.png */,
@@ -527,6 +523,7 @@
 				B2A3ADC11F4BD40E0007400B /* oy.jpeg */,
 				B228781B1F1FDB6F00141C72 /* Phone.png */,
 				B22877F61F1FD38700141C72 /* return.png */,
+				B27659911F5F442B00320DE5 /* return1.png */,
 				B22877EE1F1FD38700141C72 /* sad.png */,
 				B228781E1F1FDEC800141C72 /* secret.png */,
 				B2CD1D3B1F4744CF0002090A /* secret1.png */,
@@ -534,6 +531,7 @@
 				B2CD1D411F475B000002090A /* secret3.png */,
 				B2CD1D441F4787810002090A /* secret4.png */,
 				B2CD1D471F478A8E0002090A /* secret5.png */,
+				B26993F01F54A11C00E405D5 /* shakespeare.jpg */,
 				B257CD011F293CB5009DD6DD /* sohappy.png */,
 				B22877F21F1FD38700141C72 /* space.png */,
 				B29722CE1F4C7DA700B2B00D /* stella.jpg */,
@@ -542,6 +540,10 @@
 				B2CD1D321F473B170002090A /* thebard3.jpeg */,
 				B24048351F2681E000922CDE /* thumbs_down_angry.png */,
 				B22877EC1F1FD38700141C72 /* thumbsdown.gif */,
+				B24211D71F4CF90A000A10ED /* truelove.png */,
+				B24211D41F4CF7AA000A10ED /* truelove2.png */,
+				B2A68B141F5B2EEB0006670C /* trump.jpg */,
+				B2A68B151F5B2EEB0006670C /* trump2.png */,
 				B22877F11F1FD38700141C72 /* ucase.png */,
 				B2A3ADC21F4BD40E0007400B /* waiting.png */,
 				B257CD021F293CB5009DD6DD /* wasntme.png */,
@@ -817,7 +819,6 @@
 				B21B0F05216D174800150CFB /* truelove2.png in Resources */,
 				B21B0F13216D174900150CFB /* Image-11.png in Resources */,
 				B21B0F17216D174900150CFB /* lcase.png in Resources */,
-				B21B0EEC216D0BAE00150CFB /* Assets.xcassets in Resources */,
 				B21B0F25216D174900150CFB /* sad.png in Resources */,
 				B21B0EF9216D174800150CFB /* more2.png in Resources */,
 				B21B0EF7216D174800150CFB /* love1.png in Resources */,
@@ -859,6 +860,8 @@
 				B21B0F26216D174900150CFB /* secret.png in Resources */,
 				B21B0F21216D174900150CFB /* ok.png in Resources */,
 				B21B0F27216D174900150CFB /* secret1.png in Resources */,
+				B213777D2173ABCD00373754 /* Assets.xcassets in Resources */,
+				B21377802173AF7800373754 /* Assets.xcassets in Resources */,
 				B21B0F31216D174900150CFB /* thebard3.jpeg in Resources */,
 				B21B0EF8216D174800150CFB /* love2.png in Resources */,
 				B21B0F39216D174900150CFB /* wtf.png in Resources */,
@@ -1036,6 +1039,7 @@
 				B2A3ADC71F4BD4630007400B /* waiting.png in Resources */,
 				B2CD1D491F478A8E0002090A /* secret5.png in Resources */,
 				B22878061F1FD38700141C72 /* space.png in Resources */,
+				B213777E2173ABCE00373754 /* Assets.xcassets in Resources */,
 				B24048331F2680AC00922CDE /* noway.png in Resources */,
 				B22878001F1FD38700141C72 /* ok.png in Resources */,
 				B29722D21F4C7DA700B2B00D /* ahhhhh.jpg in Resources */,
@@ -1077,8 +1081,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B21377762170029D00373754 /* Ijomes.swift in Sources */,
-				B21377782170EC4500373754 /* TableViewController.swift in Sources */,
 				B2137770216E611600373754 /* QueryItemRepresentable.swift in Sources */,
+				B213777C2172605500373754 /* IjomeCollectionViewCell.swift in Sources */,
 				B21B0EE7216D0BAC00150CFB /* MessagesViewController.swift in Sources */,
 				B213777A2170ECBC00373754 /* CollectionViewController.swift in Sources */,
 				B2137772216E652400373754 /* Ijome.swift in Sources */,
@@ -1194,7 +1198,6 @@
 		B21B0EF1216D0BAE00150CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1227,7 +1230,6 @@
 		B21B0EF2216D0BAE00150CFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;

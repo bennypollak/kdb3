@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:kdb3.xcodeproj">
+      location = "self:../IjomeMessage/Assets.xcassets/iMessage App Icon.stickersiconset">
    </FileRef>
 </Workspace>
