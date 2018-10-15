@@ -17,7 +17,6 @@
 		B213777C2172605500373754 /* IjomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213777B2172605500373754 /* IjomeCollectionViewCell.swift */; };
 		B213777D2173ABCD00373754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FED7D11F1BB261005AA45F /* Assets.xcassets */; };
 		B213777E2173ABCE00373754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FED7D11F1BB261005AA45F /* Assets.xcassets */; };
-		B21377802173AF7800373754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B213777F2173AF7800373754 /* Assets.xcassets */; };
 		B21B0EE7216D0BAC00150CFB /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */; };
 		B21B0EEA216D0BAC00150CFB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */; };
 		B21B0EF0216D0BAE00150CFB /* IjomeMessage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -137,6 +136,7 @@
 		B22F911A1F1D0C3000E5E6AC /* ok.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22F910F1F1D046E00E5E6AC /* ok.jpg */; };
 		B238E4C41F58602300A1C771 /* more1.png in Resources */ = {isa = PBXBuildFile; fileRef = B238E4C31F58602300A1C771 /* more1.png */; };
 		B238E4C51F58602300A1C771 /* more1.png in Resources */ = {isa = PBXBuildFile; fileRef = B238E4C31F58602300A1C771 /* more1.png */; };
+		B23C0A592175190B008D2B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23C0A582175190A008D2B6B /* Assets.xcassets */; };
 		B24048321F2680AC00922CDE /* noway.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048311F2680AC00922CDE /* noway.png */; };
 		B24048331F2680AC00922CDE /* noway.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048311F2680AC00922CDE /* noway.png */; };
 		B24048361F2681E000922CDE /* thumbs_down_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = B24048351F2681E000922CDE /* thumbs_down_angry.png */; };
@@ -316,7 +316,6 @@
 		B21377732170029C00373754 /* Ijomes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ijomes.swift; sourceTree = "<group>"; };
 		B21377792170ECBC00373754 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		B213777B2172605500373754 /* IjomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IjomeCollectionViewCell.swift; sourceTree = "<group>"; };
-		B213777F2173AF7800373754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B21B0EE1216D0BAC00150CFB /* IjomeMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IjomeMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		B21B0EE9216D0BAC00150CFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -343,6 +342,7 @@
 		B22F910E1F1D046E00E5E6AC /* noay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = noay.jpg; path = kdb3/images/noay.jpg; sourceTree = "<group>"; };
 		B22F910F1F1D046E00E5E6AC /* ok.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ok.jpg; path = kdb3/images/ok.jpg; sourceTree = "<group>"; };
 		B238E4C31F58602300A1C771 /* more1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more1.png; path = kdb3/images/more1.png; sourceTree = "<group>"; };
+		B23C0A582175190A008D2B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B24048311F2680AC00922CDE /* noway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noway.png; path = kdb3/images/noway.png; sourceTree = "<group>"; };
 		B24048351F2681E000922CDE /* thumbs_down_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumbs_down_angry.png; path = kdb3/images/thumbs_down_angry.png; sourceTree = "<group>"; };
 		B24211D41F4CF7AA000A10ED /* truelove2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = truelove2.png; path = kdb3/images/truelove2.png; sourceTree = "<group>"; };
@@ -464,7 +464,6 @@
 		B21B0EE5216D0BAC00150CFB /* IjomeMessage */ = {
 			isa = PBXGroup;
 			children = (
-				B213777F2173AF7800373754 /* Assets.xcassets */,
 				B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */,
 				B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */,
 				B21B0EED216D0BAE00150CFB /* Info.plist */,
@@ -483,20 +482,20 @@
 				B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */,
 				B2CD1D2F1F473B170002090A /* angry.jpeg */,
 				B22877F51F1FD38700141C72 /* back.jpg */,
-				B29722EB1F4C811000B2B00D /* badday.png */,
 				B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */,
+				B26993F81F55DAA000E405D5 /* cervantes2.png */,
 				B26993EF1F54A11C00E405D5 /* cervantes.jpg */,
 				B26993F51F54AEB200E405D5 /* cervantes.png */,
-				B26993F81F55DAA000E405D5 /* cervantes2.png */,
 				B29722C61F4C7DA700B2B00D /* crying.png */,
 				B22F910D1F1D046E00E5E6AC /* fu.png */,
 				B22877ED1F1FD38700141C72 /* funny.png */,
 				B228780F1F1FD7C500141C72 /* gmail.jpeg */,
 				B22878121F1FD95200141C72 /* gmail2.png */,
+				B29722EB1F4C811000B2B00D /* badday.png */,
 				B29722C71F4C7DA700B2B00D /* happy.png */,
-				B29722C81F4C7DA700B2B00D /* haveadrink.jpg */,
-				B22877E81F1FD18700141C72 /* hide.png */,
 				B29DC8051F3626ED00EF277C /* icon.png */,
+				B22877E81F1FD18700141C72 /* hide.png */,
+				B29722C81F4C7DA700B2B00D /* haveadrink.jpg */,
 				B29722C91F4C7DA700B2B00D /* Image-11.png */,
 				B257CCFF1F293CB5009DD6DD /* imsick.png */,
 				B2A68B0B1F5B29010006670C /* insult.jpg */,
@@ -566,6 +565,7 @@
 		B2FED7BE1F1BB261005AA45F = {
 			isa = PBXGroup;
 			children = (
+				B23C0A582175190A008D2B6B /* Assets.xcassets */,
 				B257CCF91F292E6C009DD6DD /* Settings.bundle */,
 				B22878151F1FD9D900141C72 /* yahoomail.png */,
 				B22F910C1F1D035300E5E6AC /* images */,
@@ -746,7 +746,7 @@
 					B21B0EE0216D0BAC00150CFB = {
 						CreatedOnToolsVersion = 10.0;
 						DevelopmentTeam = 388X7HA3JM;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					B2FED7C61F1BB261005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -861,7 +861,7 @@
 				B21B0F21216D174900150CFB /* ok.png in Resources */,
 				B21B0F27216D174900150CFB /* secret1.png in Resources */,
 				B213777D2173ABCD00373754 /* Assets.xcassets in Resources */,
-				B21377802173AF7800373754 /* Assets.xcassets in Resources */,
+				B23C0A592175190B008D2B6B /* Assets.xcassets in Resources */,
 				B21B0F31216D174900150CFB /* thebard3.jpeg in Resources */,
 				B21B0EF8216D174800150CFB /* love2.png in Resources */,
 				B21B0F39216D174900150CFB /* wtf.png in Resources */,
@@ -1198,6 +1198,7 @@
 		B21B0EF1216D0BAE00150CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1211,7 +1212,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IjomeMessage/Info.plist;
@@ -1221,6 +1222,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3.IjomeMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "IjomeMessage test";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1230,6 +1232,7 @@
 		B21B0EF2216D0BAE00150CFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -1243,7 +1246,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IjomeMessage/Info.plist;
@@ -1252,6 +1255,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3.IjomeMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.alben.kdb3.IjomeMessage;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1371,7 +1375,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "68b3cd2f-570d-4c20-aea6-b468c33f09a9";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 test";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1391,7 +1394,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b28be00e-39f6-4cc7-ab71-00f0bcc9703b";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 Release";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1467,7 +1469,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e757bda4-fa0e-4e07-b5dd-b6f60aa96714";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb test";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1486,7 +1487,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0b2344eb-d915-4f82-8cf2-0d247a313b0a";
 				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kbd Release";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
