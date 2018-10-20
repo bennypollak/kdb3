@@ -62,12 +62,13 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
             as? IjomeCollectionViewCell
+        let lang = Locale.current.languageCode
         let i = indexPath.row // * cols + indexPath.section
         let imageName = ijomes[i][0]
         let url = Bundle.main.url(forResource: imageName, withExtension: nil)
         cell?.image.image = UIImage(named: imageName)
         let string = ijomes[i][1]
-        let text = string.range(of:"###") != nil  ? "" : Ijomes.textFor(string, [ijomes[i][0]: ijomes[i][1]], true, "en")
+        let text = string.range(of:"###") != nil  ? "" : Ijomes.textFor(string, [ijomes[i][0]: ijomes[i][1]], true, lang ?? "en")
         UIDevice.current.playInputClick()
         cell?.captionLbl.text = text
 //        do {
@@ -113,7 +114,8 @@ class CollectionViewController: UICollectionViewController {
         let i = indexPath.row
         let string = ijomes[i][1]
         //        let z:[String : String] =
-        let caption = Ijomes.textFor(string, [ijomes[i][0]: ijomes[i][1]], true, "en")
+        let lang = Locale.current.languageCode
+        let caption = Ijomes.textFor(string, [ijomes[i][0]: ijomes[i][1]], true, lang ?? "en")
 //        let caption = ijomes[i][1]
         let imageName = ijomes[i][0]
         print("\(string) \(caption)")

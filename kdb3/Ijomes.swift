@@ -9,7 +9,7 @@
 import Foundation
 
 struct Ijomes {
-    static func randomTextFor(_ text: String, _ lang: String = "en") -> String {
+    static func randomTextFor(_ text: String, _ lang: String) -> String {
         let r = text.index(text.startIndex, offsetBy: 3)..<text.endIndex
         var string = ""
         let substring1 = text[r]
@@ -32,7 +32,7 @@ struct Ijomes {
         }
         return string
     }
-    static func textFor(_ itext: String, _ textValues:[String:String], _ isMessage:Bool, _ lang: String = "en") -> String {
+    static func textFor(_ itext: String, _ textValues:[String:String], _ isMessage:Bool, _ lang: String) -> String {
         var ijome = ""
         var space = ""
         var text = itext
@@ -108,30 +108,30 @@ struct Ijomes {
     ]
     static let
     msgIjomes = [
-        ["iwarnyou.png", "Splendid!"]
-        , ["ohno2.png", "Oh no!"]
+          ["ohno2.png", "Oh no!"]
         , ["oy.jpeg", "Oy vei!"]
-        , ["sad.png", "☹️ So fucking sad!"]
         , ["fu.png", "Fuck you!"]
+        , ["tu.jpg", "Thank you!"]
         , ["insult2.jpg", "😤 ###insult"]
         , ["love2.png", "❤️ ###lovism"]
+        , ["sad.png", "So fucking sad!"]
         , ["trump2.png", "###trumpism"]
         , ["shakespeare.jpg", "###bard"]
-        , ["sohappy.png", "😂 So happy!"]
-        , ["imsick.png", "😷 So sick!"]
+        , ["iwarnyou.png", "I warn you!"]
+        , ["sohappy.png", "So happy!"]
+        , ["imsick.png", "So sick!"]
         , ["iwarnyou.png", "I warn you!"]
         , ["happy.png", "I'm very happy!"]
-        , ["emoji_thumb.jpg", "Thank you!"]
         , ["wink.png", "Ok!"]
         , ["waiting.png", "Where the hell are you!"]
         , ["ahhhhh.jpg", "Ahhh!"]
         , ["truelove.png", "True love!"]
         , ["badday.png", "Having a bad day!"]
         , ["stella.jpg", "Stella!"]
-        , ["boobs1.jpg", "👏 Life is beautiful!"]
+        , ["boobs1.jpg", "Life is beautiful!"]
         , ["angry.jpeg", "I'm very angry!"]
         , ["thumbs_down_angry.png", "No way!"]
-        , ["wasntme.png", "😇 It wasn't me!"]
+        , ["wasntme.png", "It wasn't me!"]
         , ["what.png", "What?"]
         , ["wtf.png", "WTF!"]
     ]

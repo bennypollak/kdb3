@@ -189,6 +189,9 @@
 		B28A8B8C217AA7C800D340FE /* emoji_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */; };
 		B28A8B8D217AA7C800D340FE /* emoji_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */; };
 		B28A8B8E217AA7C800D340FE /* emoji_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */; };
+		B28A8B90217B8EB700D340FE /* tu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8F217B8EB700D340FE /* tu.jpg */; };
+		B28A8B91217B8EB700D340FE /* tu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8F217B8EB700D340FE /* tu.jpg */; };
+		B28A8B92217B8EB700D340FE /* tu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8F217B8EB700D340FE /* tu.jpg */; };
 		B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D21F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D51F4C7DA700B2B00D /* crying.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C61F4C7DA700B2B00D /* crying.png */; };
@@ -377,6 +380,7 @@
 		B27659911F5F442B00320DE5 /* return1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = return1.png; path = kdb3/images/return1.png; sourceTree = "<group>"; };
 		B27C4A351F5C48EB00B16820 /* more2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more2.png; path = kdb3/images/more2.png; sourceTree = "<group>"; };
 		B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji_thumb.jpg; sourceTree = "<group>"; };
+		B28A8B8F217B8EB700D340FE /* tu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tu.jpg; sourceTree = "<group>"; };
 		B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ahhhhh.jpg; path = kdb3/images/ahhhhh.jpg; sourceTree = "<group>"; };
 		B29722C61F4C7DA700B2B00D /* crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crying.png; path = kdb3/images/crying.png; sourceTree = "<group>"; };
 		B29722C71F4C7DA700B2B00D /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = kdb3/images/happy.png; sourceTree = "<group>"; };
@@ -488,6 +492,7 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B28A8B8F217B8EB700D340FE /* tu.jpg */,
 				B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */,
 				B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */,
 				B2CD1D2F1F473B170002090A /* angry.jpeg */,
@@ -848,6 +853,7 @@
 				B21B0F22216D174900150CFB /* oy.jpeg in Resources */,
 				B21B0F28216D174900150CFB /* secret2.png in Resources */,
 				B21B0F20216D174900150CFB /* ok.jpg in Resources */,
+				B28A8B92217B8EB700D340FE /* tu.jpg in Resources */,
 				B21B0F06216D174800150CFB /* ahhhhh.jpg in Resources */,
 				B21B0F10216D174800150CFB /* haveadrink.jpg in Resources */,
 				B21B0F08216D174800150CFB /* back.jpg in Resources */,
@@ -936,6 +942,7 @@
 				B2A3ADC51F4BD40E0007400B /* waiting.png in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
 				B2A68B101F5B29010006670C /* insult2.jpg in Resources */,
+				B28A8B90217B8EB700D340FE /* tu.jpg in Resources */,
 				B238E4C41F58602300A1C771 /* more1.png in Resources */,
 				B22877F91F1FD38700141C72 /* thumbsdown.gif in Resources */,
 				B24211D51F4CF7AA000A10ED /* truelove2.png in Resources */,
@@ -1065,6 +1072,7 @@
 				B27C4A371F5C48EB00B16820 /* more2.png in Resources */,
 				B228781A1F1FDA8100141C72 /* ymail.png in Resources */,
 				B22F91181F1D0C2100E5E6AC /* noay.jpg in Resources */,
+				B28A8B91217B8EB700D340FE /* tu.jpg in Resources */,
 				B2CD1D341F473B170002090A /* angry.jpeg in Resources */,
 				B257CD091F293CB5009DD6DD /* sohappy.png in Resources */,
 				B29722DA1F4C7DA700B2B00D /* haveadrink.jpg in Resources */,

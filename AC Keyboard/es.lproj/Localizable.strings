@@ -6,10 +6,12 @@
     "Funny!" = "Que divertido!";
     "So embarrassed!" = "Que vergüenza!";
     "So sad!" = "Que pena!";
+    "So fucking sad!" = "Que pena mierda!";
     "No way!" = "Ni cagando!";
     "Ok!" = "Ok!";
     "Oh no!" = "O no!";
     "Wink!" = "Guiño!";
+    "I warn you!" = "Te advierto!";
     "So sick!" = "Estoy cagado!";
     "Very angry!" = "Estoy empelotado!";
     "So happy!" = "Que felicidad!";
@@ -21,7 +23,12 @@
     "Have a drink!" = "Un traguito!";
     "Ahhh!" = "Ahhh!";
     "True love!" = "Amor!";
+    "Thank you!" = "Gracias!";
     "Having a bad day!" = "Mal dia!";
     "Life is beautiful!" = "La vida es bella!";
     
+    "Where the hell are you!" = "Adonde andas!";
+    "I'm very angry!" = "Estoy emputecido!";
+    "I warn you!" = "Te advierto!";
+    "I'm very happy!" = "Que felicidad!";
 }

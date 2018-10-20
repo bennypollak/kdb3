@@ -49,6 +49,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             }
         }
         // add the rest
+        
         for lang in all {
             languageImages[lang] = UIImage(named: languageImageFiles[lang]!)
             languages.append([lang , ""])
