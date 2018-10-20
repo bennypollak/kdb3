@@ -181,6 +181,14 @@
 		B27659951F5F442B00320DE5 /* return1.png in Resources */ = {isa = PBXBuildFile; fileRef = B27659911F5F442B00320DE5 /* return1.png */; };
 		B27C4A361F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
 		B27C4A371F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
+		B28A8B86217A597100D340FE /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD1D2D1F4730CA0002090A /* Bard.swift */; };
+		B28A8B87217A599600D340FE /* Cervantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A68B081F5B1AD60006670C /* Cervantes.swift */; };
+		B28A8B88217A5A0400D340FE /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD1D2D1F4730CA0002090A /* Bard.swift */; };
+		B28A8B89217A5A4900D340FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B24211E51F4DFBBE000A10ED /* Localizable.strings */; };
+		B28A8B8A217A5C8A00D340FE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D80E581F6C2A5F00CB09B5 /* String.swift */; };
+		B28A8B8C217AA7C800D340FE /* emoji_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */; };
+		B28A8B8D217AA7C800D340FE /* emoji_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */; };
+		B28A8B8E217AA7C800D340FE /* emoji_thumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */; };
 		B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D21F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D51F4C7DA700B2B00D /* crying.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C61F4C7DA700B2B00D /* crying.png */; };
@@ -368,6 +376,7 @@
 		B27659901F5F442B00320DE5 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more.png; path = kdb3/images/more.png; sourceTree = "<group>"; };
 		B27659911F5F442B00320DE5 /* return1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = return1.png; path = kdb3/images/return1.png; sourceTree = "<group>"; };
 		B27C4A351F5C48EB00B16820 /* more2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more2.png; path = kdb3/images/more2.png; sourceTree = "<group>"; };
+		B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji_thumb.jpg; sourceTree = "<group>"; };
 		B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ahhhhh.jpg; path = kdb3/images/ahhhhh.jpg; sourceTree = "<group>"; };
 		B29722C61F4C7DA700B2B00D /* crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crying.png; path = kdb3/images/crying.png; sourceTree = "<group>"; };
 		B29722C71F4C7DA700B2B00D /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = kdb3/images/happy.png; sourceTree = "<group>"; };
@@ -479,6 +488,7 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */,
 				B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */,
 				B2CD1D2F1F473B170002090A /* angry.jpeg */,
 				B22877F51F1FD38700141C72 /* back.jpg */,
@@ -872,6 +882,7 @@
 				B21B0F19216D174900150CFB /* lock2.png in Resources */,
 				B21B0F32216D174900150CFB /* thumbs_down_angry.png in Resources */,
 				B21B0F3B216D174900150CFB /* ymail.png in Resources */,
+				B28A8B8E217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
 				B21B0F0D216D174800150CFB /* gmail.jpeg in Resources */,
 				B21B0F29216D174900150CFB /* secret3.png in Resources */,
 				B21B0F38216D174900150CFB /* wink.png in Resources */,
@@ -885,6 +896,7 @@
 				B21B0F2C216D174900150CFB /* sohappy.png in Resources */,
 				B21B0F07216D174800150CFB /* angry.jpeg in Resources */,
 				B21B0F33216D174900150CFB /* thumbsdown.gif in Resources */,
+				B28A8B89217A5A4900D340FE /* Localizable.strings in Resources */,
 				B21B0EFA216D174800150CFB /* trump.jpg in Resources */,
 				B21B0EFD216D174800150CFB /* insult2.jpg in Resources */,
 			);
@@ -915,6 +927,7 @@
 				B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */,
 				B22878161F1FD9D900141C72 /* yahoomail.png in Resources */,
 				B228781C1F1FDB6F00141C72 /* Phone.png in Resources */,
+				B28A8B8C217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
 				B228780B1F1FD38700141C72 /* back.jpg in Resources */,
 				B2A68B0E1F5B29010006670C /* insult.jpg in Resources */,
 				B2A3ADC31F4BD40E0007400B /* ohno2.png in Resources */,
@@ -1002,6 +1015,7 @@
 				B22877F81F1FD38700141C72 /* Yahoo-Mail-logo.png in Resources */,
 				B228780E1F1FD38700141C72 /* return.png in Resources */,
 				B29722D61F4C7DA700B2B00D /* crying.png in Resources */,
+				B28A8B8D217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
 				B29722E41F4C7DA700B2B00D /* lock2.png in Resources */,
 				B2CD1D401F4754F60002090A /* secret2.png in Resources */,
 				B29722D81F4C7DA700B2B00D /* happy.png in Resources */,
@@ -1082,10 +1096,13 @@
 			files = (
 				B21377762170029D00373754 /* Ijomes.swift in Sources */,
 				B2137770216E611600373754 /* QueryItemRepresentable.swift in Sources */,
+				B28A8B8A217A5C8A00D340FE /* String.swift in Sources */,
 				B213777C2172605500373754 /* IjomeCollectionViewCell.swift in Sources */,
 				B21B0EE7216D0BAC00150CFB /* MessagesViewController.swift in Sources */,
 				B213777A2170ECBC00373754 /* CollectionViewController.swift in Sources */,
 				B2137772216E652400373754 /* Ijome.swift in Sources */,
+				B28A8B87217A599600D340FE /* Cervantes.swift in Sources */,
+				B28A8B86217A597100D340FE /* Bard.swift in Sources */,
 				B213776E216E5F4500373754 /* IjomePart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1094,6 +1111,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28A8B88217A5A0400D340FE /* Bard.swift in Sources */,
 				B21377742170029C00373754 /* Ijomes.swift in Sources */,
 				B2A68B091F5B1AD60006670C /* Cervantes.swift in Sources */,
 				B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */,

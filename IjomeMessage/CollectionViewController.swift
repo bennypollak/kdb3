@@ -13,6 +13,7 @@ private let reuseIdentifier = "IjomeCell"
 
 class CollectionViewController: UICollectionViewController {
     var activeConversation: MSConversation?
+    var sticker:MSSticker?
     override func collectionView(_ collectionView: UICollectionView,
                                  didSelectItemAt indexPath: IndexPath) {
         send(indexPath)
@@ -63,8 +64,19 @@ class CollectionViewController: UICollectionViewController {
             as? IjomeCollectionViewCell
         let i = indexPath.row // * cols + indexPath.section
         let imageName = ijomes[i][0]
+        let url = Bundle.main.url(forResource: imageName, withExtension: nil)
         cell?.image.image = UIImage(named: imageName)
-        cell?.captionLbl.text = ijomes[i][1]
+        let string = ijomes[i][1]
+        let text = string.range(of:"###") != nil  ? "" : Ijomes.textFor(string, [ijomes[i][0]: ijomes[i][1]], true, "en")
+        UIDevice.current.playInputClick()
+        cell?.captionLbl.text = text
+//        do {
+            sticker = try? MSSticker(contentsOfFileURL: url!, localizedDescription: text)
+        
+//        cell?.stickerView.sticker = sticker
+//        } catch {
+        
+//        }
         return cell!
     }
 
@@ -99,8 +111,13 @@ class CollectionViewController: UICollectionViewController {
         let layout = MSMessageTemplateLayout()
         let ijomes = Ijomes.msgIjomes
         let i = indexPath.row
-        let caption = ijomes[i][1]
+        let string = ijomes[i][1]
+        //        let z:[String : String] =
+        let caption = Ijomes.textFor(string, [ijomes[i][0]: ijomes[i][1]], true, "en")
+//        let caption = ijomes[i][1]
         let imageName = ijomes[i][0]
+        print("\(string) \(caption)")
+
         layout.caption = caption
         //        layout.imageSubtitle = "imageSubtitle"
         //        layout.imageTitle = "imageTitle"
@@ -117,14 +134,12 @@ class CollectionViewController: UICollectionViewController {
         components.queryItems = ijome.queryItems
         message.url = components.url!
         
+        let url = sticker?.imageFileURL
+        message.url = url
+        
         activeConversation?.insert(message, completionHandler: nil)
         let p = parent as? MessagesViewController
         p?.requestPresentationStyle(.compact)
-
-//        p.?requestPresentationStyle
-//        p?.removeAllChildViewControllers()
-//        view.removeFromSuperview()
-//        dismiss(animated: true, completion: nil)
     }
     // MARK: Convenience
 }

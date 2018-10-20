@@ -137,7 +137,7 @@ extension String {
         let start = index(startIndex, offsetBy: r.lowerBound)
         let end = index(startIndex, offsetBy: r.upperBound)
         let range: Range<Index> = start..<end
-        return self[range]
+        return String(self[range])
     }
 }
 

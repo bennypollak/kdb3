@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Messages
 
 class IjomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var captionLbl: UILabel!
+    @IBOutlet weak var stickerView: MSStickerView!
     
 }

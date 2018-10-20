@@ -9,6 +9,58 @@
 import Foundation
 
 struct Ijomes {
+    static func randomTextFor(_ text: String, _ lang: String = "en") -> String {
+        let r = text.index(text.startIndex, offsetBy: 3)..<text.endIndex
+        var string = ""
+        let substring1 = text[r]
+        if substring1 == "bard" {
+            string = Bard.bardInsult()
+        } else if substring1 == "trumpism" {
+            string = Bard.trumpism()
+        } else if substring1 == "insult" {
+            if lang == "en" {
+                string = Bard.insult()
+            } else {
+                string = Cervantes.insult()
+            }
+        } else if substring1 == "lovism" {
+            if lang == "en" {
+                string = Bard.lovism()
+            } else {
+                string = Cervantes.lovism()
+            }
+        }
+        return string
+    }
+    static func textFor(_ itext: String, _ textValues:[String:String], _ isMessage:Bool, _ lang: String = "en") -> String {
+        var ijome = ""
+        var space = ""
+        var text = itext
+        if text[0].containsEmoji {
+            ijome = text[0]
+            if text != ijome {
+                let r = text.index(text.startIndex, offsetBy: 2)..<text.endIndex
+                text = String(text[r])
+            }
+        }
+        if (text.hasPrefix("@@@")) {
+            let r = text.index(text.startIndex, offsetBy: 3)..<text.endIndex
+            let substring1:String = String(text[r])
+            let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
+            text = SharedDefaults.string(forKey: substring1) ?? substring1
+        } else if (text.hasPrefix("###")) {
+            text = Ijomes.randomTextFor(text, lang)
+            space = " "
+            //        } else if string.characters.count == 1 {
+            //            space = ""
+        } else {
+            text = (textValues[text] ?? text).localized(lang)
+            space = " "
+        }
+        
+        text = ijome == "" || isMessage ? "\(text)\(space)" : "\(ijome) (\(text)\(space))"
+        return text
+    }
     static let emoticons = [
         // must add leading space
         [" :)", "😂 Smiled!"]
@@ -53,7 +105,6 @@ struct Ijomes {
         , ["ahhhhh.jpg", "Ahhh!"]
         , ["truelove.png", "True love!"]
         , ["badday.png", "Having a bad day!"]
-        , ["boobs1.jpg", "👏 Life is beautiful!"]
     ]
     static let
     msgIjomes = [
@@ -62,10 +113,15 @@ struct Ijomes {
         , ["oy.jpeg", "Oy vei!"]
         , ["sad.png", "☹️ So fucking sad!"]
         , ["fu.png", "Fuck you!"]
+        , ["insult2.jpg", "😤 ###insult"]
+        , ["love2.png", "❤️ ###lovism"]
+        , ["trump2.png", "###trumpism"]
+        , ["shakespeare.jpg", "###bard"]
         , ["sohappy.png", "😂 So happy!"]
         , ["imsick.png", "😷 So sick!"]
         , ["iwarnyou.png", "I warn you!"]
         , ["happy.png", "I'm very happy!"]
+        , ["emoji_thumb.jpg", "Thank you!"]
         , ["wink.png", "Ok!"]
         , ["waiting.png", "Where the hell are you!"]
         , ["ahhhhh.jpg", "Ahhh!"]

@@ -71,6 +71,13 @@ class MessagesViewController: MSMessagesAppViewController {
             currentIjome = Ijome(message: message)
             captionTxt.text = (currentIjome?.caption)!
             image.image = UIImage(named: (currentIjome?.imageName)!)
+//            do {
+//                let url = message.url
+////                let sticker = try MSSticker(contentsOfFileURL: url!, localizedDescription: "hi")
+////                stickerView?.sticker = sticker
+//            } catch {
+//
+//            }
         } else {
             // Remove any child view controllers that have been presented.
             removeAllChildViewControllers()
@@ -113,6 +120,7 @@ class MessagesViewController: MSMessagesAppViewController {
         return controller
     }
     @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var stickerView: MSStickerView!
     @IBOutlet weak var captionTxt: UITextField!
     @IBOutlet weak var image: UIImageView!
     @IBAction func send(_ sender: Any) {

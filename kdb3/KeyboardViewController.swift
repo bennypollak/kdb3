@@ -18,70 +18,6 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
         
         // Add custom view sizing constraints here
     }
-    let emoticons = [
-        // must add leading space
-        [" :)", "😂 Smiled!"]
-        , [" :'-)", "😩 So sad!"]
-        , [" >:(", "Fuck you!"]
-        , ["😠", "Fuck you!"]
-        , [" :-*", "Kisses!"]
-        , [" ;)", "Wink!"]
-        , [" :-D", "Funny!"]
-        , [" :$", "So embarrassed!"]
-        ]
-    
-    let ijomes1 = [
-        ["🖕", "Fuck you!"]
-        , ["sad.png", "☹️ So sad!"]
-        , ["love2.png", "❤️ ###lovism"]
-        , ["trump2.png", "###trumpism"]
-        , ["insult2.jpg", "😤 ###insult"]
-        , ["shakespeare.jpg", "###bard"]
-        ]
-    
-    let ijomes2 = [
-            ["secret1.png", "@@@secret1"]
-            , ["secret2.png", "@@@secret2"]
-            , ["secret3.png", "@@@secret3"]
-            , ["secret4.png", "@@@secret4"]
-            , ["secret5.png", "@@@secret5"]
-        ]
-    
-    let ijomes3 = [
-        ["imsick.png", "😷 So sick!"]
-        , ["💘", "Love you!"]
-        , ["sohappy.png", "😂 So happy!"]
-        , ["boobs1.jpg", "👏 Life is beautiful!"]
-        , ["what.png", " What?"]
-        , ["😱", "WTF!"]
-    ]
-    let ijomes4 = [
-        ["stella.jpg", "Stella!"]
-        , ["truelove2.png", "We'll always have Paris!"]
-        , ["haveadrink.jpg", "Have a drink!"]
-        , ["ahhhhh.jpg", "Ahhh!"]
-        , ["truelove.png", "True love!"]
-        , ["badday.png", "Having a bad day!"]
-    ]
-    let ijomes5 = [
-        ["yahoomail.png", "@@@yo372002@yahoo.com"]
-        , ["gmail2.png", "@@@bpollak@gmail.com"]
-        , ["Phone.png", "@@@+1-347-416-1525"]
-        , ["👍", "Ok!"]
-        , ["😫", "Oh no!"]
-        , ["wink.png", "Wink!"]
-    ]
-    
-    
-    let ijomes6 = [
-        ["imsick.png", "So sick!"]
-        , ["angry.jpeg", "Very angry!"]
-        , ["thumbs_down_angry.png", "No way!"]
-        , ["wasntme.png", "😇 It wasn't me!"]
-        , ["what.png", "What?"]
-        , ["wtf.png", "WTF!"]
-    ]
-
     var textValues:[String:String] = [:]
     var languages:[[String]] = [[]]
     var language = 0
@@ -145,8 +81,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
 //
         keyboards.removeAll()
         var lastKdb:UIView = UIView()
-        lastKdb = addKeyboard( [ijomes1, ijomes3, ijomes4, ijomes2])
-        lastKdb = addKeyboard([ijomes5, ijomes6, emoticons, ijomes2])
+        lastKdb = addKeyboard( [Ijomes.ijomes1, Ijomes.ijomes3, Ijomes.ijomes4, Ijomes.ijomes2])
+        lastKdb = addKeyboard([Ijomes.ijomes5, Ijomes.ijomes6, Ijomes.emoticons, Ijomes.ijomes2])
         setupKeyboard()
         
         view.addConstraint(NSLayoutConstraint(item: lastKdb, attribute: .bottom, relatedBy: .equal, toItem: bottomRow, attribute: .top, multiplier: 1.0, constant: 0.0))
@@ -317,55 +253,25 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
 
     @IBAction func ijomePressed(_ button: UIButton) {
         let bstring = button.titleLabel!.text
-        var string:String = ""+bstring!
-        var space = " "
+        let string:String = ""+bstring!
+//        var space = " "
         var lang:String = languages[language][0]
         if languageImageFiles[lang] == nil {
             lang = preferredLanguage
         }
-        var ijome = ""
-        if string[0].containsEmoji {
-            ijome = string[0]
-            if string != ijome {
-                let r = string.index(string.startIndex, offsetBy: 2)..<string.endIndex
-                string = string[r]
-            }
-        }
-        if (string.hasPrefix("@@@")) {
-            let r = string.index(string.startIndex, offsetBy: 3)..<string.endIndex
-            let substring1 = string[r]
-            let SharedDefaults = UserDefaults.init(suiteName: "group.com.alben.kdb3")!
-            string = SharedDefaults.string(forKey: substring1) ?? substring1
-            space = ""
-        } else if (string.hasPrefix("###")) {
-            let r = string.index(string.startIndex, offsetBy: 3)..<string.endIndex
-            let substring1 = string[r]
-            if substring1 == "bard" {
-                string = Bard.bardInsult()
-            } else if substring1 == "trumpism" {
-                string = Bard.trumpism()
-            } else if substring1 == "insult" {
-                if lang == "en" {
-                    string = Bard.insult()
-                } else {
-                    string = Cervantes.insult()
-                }
-            } else if substring1 == "lovism" {
-                if lang == "en" {
-                    string = Bard.lovism()
-                } else {
-                    string = Cervantes.lovism()
-                }
-            }
-            space = " "
-//        } else if string.characters.count == 1 {
-//            space = ""
-        } else {
-            string = (textValues[string] ?? string).localized(lang)
-        }
+//        var ijome = ""
+//        if string[0].containsEmoji {
+//            ijome = string[0]
+//            if string != ijome {
+//                let r = string.index(string.startIndex, offsetBy: 2)..<string.endIndex
+//                string = string[r]
+//            }
+//        }
+
+        let text = Ijomes.textFor(string, textValues, false, "en")
         UIDevice.current.playInputClick()
-        let text = ijome == "" ? "\(string)\(space)" : "\(ijome) (\(string)\(space))"
-        backCount.append(text.characters.count)
+//        let ktext = ijome == "" ? "\(text)\(space)" : "\(ijome) (\(text)\(space))"
+        backCount.append(text.count)
         (textDocumentProxy as UIKeyInput).insertText(text)
     }
     @IBAction func nextKeyboardPressed(_ sender: Any) {
