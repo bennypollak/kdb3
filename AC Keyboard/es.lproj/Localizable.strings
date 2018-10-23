@@ -5,10 +5,10 @@
     "Kisses!" = "Besos!";
     "Funny!" = "Que divertido!";
     "So embarrassed!" = "Que vergüenza!";
+    "Ok!" = "Ok!";
     "So sad!" = "Que pena!";
     "So fucking sad!" = "Que pena mierda!";
     "No way!" = "Ni cagando!";
-    "Ok!" = "Ok!";
     "Oh no!" = "O no!";
     "Wink!" = "Guiño!";
     "I warn you!" = "Te advierto!";
@@ -18,9 +18,7 @@
     "It wasn't me!" = "No fuí yo!";
     "What?" = "Que?";
     "WTF!" = "Chucha!";
-    "Stella!" = "Stella!";
-    "We'll always have Paris!" = "We'll always have Paris!";
-    "Have a drink!" = "Un traguito!";
+    "Have a drink!" = "Un traguito?";
     "Ahhh!" = "Ahhh!";
     "True love!" = "Amor!";
     "Thank you!" = "Gracias!";
@@ -31,4 +29,11 @@
     "I'm very angry!" = "Estoy emputecido!";
     "I warn you!" = "Te advierto!";
     "I'm very happy!" = "Que felicidad!";
+    
+    "Yes!" = "Si!";
+    "That's weird!" = "Que raro!";
+    "I'm busy!" = "Estoy ocupado!";
+    "That's embarrasing!" = "Que verguenza!";
+    "Very cute!" = "Que bonita!";
+
 }
