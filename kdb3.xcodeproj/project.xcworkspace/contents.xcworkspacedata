@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:../Assets1.xcassets">
+      location = "group:../kdb3/images/timeout.jpg">
+   </FileRef>
+   <FileRef
+      location = "group:../kdb3/images/tp.jpg">
+   </FileRef>
+   <FileRef
+      location = "group:../kdb3/images/yell.jpg">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

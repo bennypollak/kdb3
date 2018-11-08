@@ -132,18 +132,42 @@
 		B28A8B94217E8A2100D340FE /* tu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B93217E8A2000D340FE /* tu.jpg */; };
 		B28A8B95217E8A2100D340FE /* tu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B93217E8A2000D340FE /* tu.jpg */; };
 		B28A8B96217E8A2100D340FE /* tu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8B93217E8A2000D340FE /* tu.jpg */; };
-		B28A8BAB217E8AD900D340FE /* Imbusy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA7217E8AD900D340FE /* Imbusy.jpg */; };
-		B28A8BAC217E8AD900D340FE /* Imbusy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA7217E8AD900D340FE /* Imbusy.jpg */; };
-		B28A8BAD217E8AD900D340FE /* Imbusy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA7217E8AD900D340FE /* Imbusy.jpg */; };
-		B28A8BAE217E8AD900D340FE /* thatsweird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA8217E8AD900D340FE /* thatsweird.jpg */; };
-		B28A8BAF217E8AD900D340FE /* thatsweird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA8217E8AD900D340FE /* thatsweird.jpg */; };
-		B28A8BB0217E8AD900D340FE /* thatsweird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA8217E8AD900D340FE /* thatsweird.jpg */; };
 		B28A8BB1217E8AD900D340FE /* 370-pretty-large-eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA9217E8AD900D340FE /* 370-pretty-large-eyes.png */; };
 		B28A8BB2217E8AD900D340FE /* 370-pretty-large-eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA9217E8AD900D340FE /* 370-pretty-large-eyes.png */; };
 		B28A8BB3217E8AD900D340FE /* 370-pretty-large-eyes.png in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BA9217E8AD900D340FE /* 370-pretty-large-eyes.png */; };
-		B28A8BB4217E8AD900D340FE /* embarassing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BAA217E8AD900D340FE /* embarassing.jpg */; };
-		B28A8BB5217E8AD900D340FE /* embarassing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BAA217E8AD900D340FE /* embarassing.jpg */; };
-		B28A8BB6217E8AD900D340FE /* embarassing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28A8BAA217E8AD900D340FE /* embarassing.jpg */; };
+		B28F8CA42188EC5400DF759F /* dontlike.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA12188EC5300DF759F /* dontlike.png */; };
+		B28F8CA52188EC5400DF759F /* happy-smiley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA22188EC5300DF759F /* happy-smiley.jpg */; };
+		B28F8CA62188EC5400DF759F /* shhh.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA32188EC5400DF759F /* shhh.png */; };
+		B28F8CAF2188F35200DF759F /* Imbusy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA72188F35000DF759F /* Imbusy.jpg */; };
+		B28F8CB02188F35200DF759F /* thatsweird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA82188F35100DF759F /* thatsweird.jpg */; };
+		B28F8CB12188F35200DF759F /* doh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA92188F35100DF759F /* doh.jpeg */; };
+		B28F8CB22188F35200DF759F /* embarassing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAA2188F35100DF759F /* embarassing.jpg */; };
+		B28F8CB32188F35200DF759F /* loveit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAB2188F35100DF759F /* loveit.jpg */; };
+		B28F8CB42188F35200DF759F /* tired.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAC2188F35200DF759F /* tired.jpg */; };
+		B28F8CB52188F35200DF759F /* urwelcome.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAD2188F35200DF759F /* urwelcome.png */; };
+		B28F8CB62188F35200DF759F /* welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAE2188F35200DF759F /* welcome.jpg */; };
+		B28F8CB72188F3B300DF759F /* doh.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA92188F35100DF759F /* doh.jpeg */; };
+		B28F8CB82188F3B300DF759F /* embarassing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAA2188F35100DF759F /* embarassing.jpg */; };
+		B28F8CB92188F3B300DF759F /* Imbusy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA72188F35000DF759F /* Imbusy.jpg */; };
+		B28F8CBA2188F3B300DF759F /* loveit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAB2188F35100DF759F /* loveit.jpg */; };
+		B28F8CBB2188F3B300DF759F /* thatsweird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA82188F35100DF759F /* thatsweird.jpg */; };
+		B28F8CBC2188F3B300DF759F /* tired.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAC2188F35200DF759F /* tired.jpg */; };
+		B28F8CBD2188F3B300DF759F /* urwelcome.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAD2188F35200DF759F /* urwelcome.png */; };
+		B28F8CBE2188F3B300DF759F /* welcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CAE2188F35200DF759F /* welcome.jpg */; };
+		B28F8CBF2188F3B300DF759F /* dontlike.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA12188EC5300DF759F /* dontlike.png */; };
+		B28F8CC02188F3B300DF759F /* happy-smiley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA22188EC5300DF759F /* happy-smiley.jpg */; };
+		B28F8CC12188F3B300DF759F /* shhh.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CA32188EC5400DF759F /* shhh.png */; };
+		B28F8CC32188F5E000DF759F /* sosweet.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CC22188F5DF00DF759F /* sosweet.png */; };
+		B28F8CC42188F62300DF759F /* sosweet.png in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CC22188F5DF00DF759F /* sosweet.png */; };
+		B28F8CDB2188F79600DF759F /* sleeping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CDA2188F79500DF759F /* sleeping.jpg */; };
+		B28F8CDC2188F79600DF759F /* sleeping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CDA2188F79500DF759F /* sleeping.jpg */; };
+		B28F8CEC2188F88500DF759F /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F8CDE2188F88200DF759F /* Bard.swift */; };
+		B28F8CED2188F88500DF759F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CDF2188F88200DF759F /* Assets.xcassets */; };
+		B28F8CEE2188F88500DF759F /* Cervantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F8CE02188F88300DF759F /* Cervantes.swift */; };
+		B28F8CEF2188F88500DF759F /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28F8CE12188F88300DF759F /* KeyboardView.swift */; };
+		B28F8CF02188F88500DF759F /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CE22188F88300DF759F /* KeyboardView.xib */; };
+		B28F8CF32188F88500DF759F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CE72188F88400DF759F /* Localizable.strings */; };
+		B28F8CF42188F88500DF759F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B28F8CEA2188F88500DF759F /* Localizable.strings */; };
 		B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D21F4C7DA700B2B00D /* ahhhhh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */; };
 		B29722D51F4C7DA700B2B00D /* crying.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722C61F4C7DA700B2B00D /* crying.png */; };
@@ -162,6 +186,36 @@
 		B29722E61F4C7DA700B2B00D /* stella.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B29722CE1F4C7DA700B2B00D /* stella.jpg */; };
 		B29722EC1F4C811000B2B00D /* badday.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722EB1F4C811000B2B00D /* badday.png */; };
 		B29722ED1F4C811000B2B00D /* badday.png in Resources */ = {isa = PBXBuildFile; fileRef = B29722EB1F4C811000B2B00D /* badday.png */; };
+		B2975AB82193DC6A009A5DE9 /* timeout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AB52193DC69009A5DE9 /* timeout.jpg */; };
+		B2975AB92193DC6A009A5DE9 /* timeout.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AB52193DC69009A5DE9 /* timeout.jpg */; };
+		B2975ABA2193DC6A009A5DE9 /* tp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AB62193DC69009A5DE9 /* tp.jpg */; };
+		B2975ABB2193DC6A009A5DE9 /* tp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AB62193DC69009A5DE9 /* tp.jpg */; };
+		B2975ABC2193DC6A009A5DE9 /* yell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AB72193DC6A009A5DE9 /* yell.jpg */; };
+		B2975ABD2193DC6A009A5DE9 /* yell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AB72193DC6A009A5DE9 /* yell.jpg */; };
+		B2975AC12193DF01009A5DE9 /* goingtosleep.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975ABE2193DF00009A5DE9 /* goingtosleep.png */; };
+		B2975AC22193DF01009A5DE9 /* goingtosleep.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975ABE2193DF00009A5DE9 /* goingtosleep.png */; };
+		B2975AC32193DF01009A5DE9 /* right-on.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975ABF2193DF00009A5DE9 /* right-on.png */; };
+		B2975AC42193DF01009A5DE9 /* right-on.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975ABF2193DF00009A5DE9 /* right-on.png */; };
+		B2975AC52193DF01009A5DE9 /* watching-you.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC02193DF01009A5DE9 /* watching-you.png */; };
+		B2975AC62193DF01009A5DE9 /* watching-you.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC02193DF01009A5DE9 /* watching-you.png */; };
+		B2975ACA2193E197009A5DE9 /* studying.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC72193E196009A5DE9 /* studying.jpg */; };
+		B2975ACB2193E197009A5DE9 /* studying.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC72193E196009A5DE9 /* studying.jpg */; };
+		B2975ACC2193E197009A5DE9 /* cookoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC82193E196009A5DE9 /* cookoo.jpg */; };
+		B2975ACD2193E197009A5DE9 /* cookoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC82193E196009A5DE9 /* cookoo.jpg */; };
+		B2975ACE2193E197009A5DE9 /* cryer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC92193E196009A5DE9 /* cryer.jpg */; };
+		B2975ACF2193E197009A5DE9 /* cryer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AC92193E196009A5DE9 /* cryer.jpg */; };
+		B2975AD32193E2ED009A5DE9 /* pray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD02193E2EC009A5DE9 /* pray.jpg */; };
+		B2975AD42193E2ED009A5DE9 /* pray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD02193E2EC009A5DE9 /* pray.jpg */; };
+		B2975AD52193E2ED009A5DE9 /* horror.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD12193E2EC009A5DE9 /* horror.jpg */; };
+		B2975AD62193E2ED009A5DE9 /* horror.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD12193E2EC009A5DE9 /* horror.jpg */; };
+		B2975AD72193E2ED009A5DE9 /* notaword.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD22193E2ED009A5DE9 /* notaword.jpg */; };
+		B2975AD82193E2ED009A5DE9 /* notaword.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD22193E2ED009A5DE9 /* notaword.jpg */; };
+		B2975ADA2193E4BE009A5DE9 /* scram.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD92193E4BD009A5DE9 /* scram.png */; };
+		B2975ADB2193E4BE009A5DE9 /* scram.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975AD92193E4BD009A5DE9 /* scram.png */; };
+		B2975ADE2193EA14009A5DE9 /* dont-speak-smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975ADC2193EA13009A5DE9 /* dont-speak-smiley.png */; };
+		B2975ADF2193EA14009A5DE9 /* dont-speak-smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = B2975ADC2193EA13009A5DE9 /* dont-speak-smiley.png */; };
+		B2975AE02193EA14009A5DE9 /* no.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975ADD2193EA13009A5DE9 /* no.jpg */; };
+		B2975AE12193EA14009A5DE9 /* no.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2975ADD2193EA13009A5DE9 /* no.jpg */; };
 		B29DC8061F3626ED00EF277C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B29DC8051F3626ED00EF277C /* icon.png */; };
 		B29DC8071F3626ED00EF277C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B29DC8051F3626ED00EF277C /* icon.png */; };
 		B2A01E801F2984FE00BF1F7C /* wink.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A01E7F1F2984FE00BF1F7C /* wink.png */; };
@@ -180,6 +234,10 @@
 		B2A68B111F5B29010006670C /* insult2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B0C1F5B29010006670C /* insult2.jpg */; };
 		B2A68B181F5B2EEB0006670C /* trump2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B151F5B2EEB0006670C /* trump2.png */; };
 		B2A68B191F5B2EEB0006670C /* trump2.png in Resources */ = {isa = PBXBuildFile; fileRef = B2A68B151F5B2EEB0006670C /* trump2.png */; };
+		B2BE2FA52189011900E883BE /* goodluck.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2BE2FA32189011900E883BE /* goodluck.gif */; };
+		B2BE2FA62189011900E883BE /* goodluck.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2BE2FA32189011900E883BE /* goodluck.gif */; };
+		B2BE2FA72189011900E883BE /* gotcha.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE2FA42189011900E883BE /* gotcha.png */; };
+		B2BE2FA82189011900E883BE /* gotcha.png in Resources */ = {isa = PBXBuildFile; fileRef = B2BE2FA42189011900E883BE /* gotcha.png */; };
 		B2CD1D2E1F4730CA0002090A /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD1D2D1F4730CA0002090A /* Bard.swift */; };
 		B2CD1D331F473B170002090A /* angry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D2F1F473B170002090A /* angry.jpeg */; };
 		B2CD1D341F473B170002090A /* angry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D2F1F473B170002090A /* angry.jpeg */; };
@@ -301,10 +359,28 @@
 		B27C4A351F5C48EB00B16820 /* more2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more2.png; path = kdb3/images/more2.png; sourceTree = "<group>"; };
 		B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji_thumb.jpg; sourceTree = "<group>"; };
 		B28A8B93217E8A2000D340FE /* tu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tu.jpg; path = kdb3/images/tu.jpg; sourceTree = "<group>"; };
-		B28A8BA7217E8AD900D340FE /* Imbusy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Imbusy.jpg; sourceTree = "<group>"; };
-		B28A8BA8217E8AD900D340FE /* thatsweird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thatsweird.jpg; sourceTree = "<group>"; };
 		B28A8BA9217E8AD900D340FE /* 370-pretty-large-eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "370-pretty-large-eyes.png"; sourceTree = "<group>"; };
-		B28A8BAA217E8AD900D340FE /* embarassing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = embarassing.jpg; sourceTree = "<group>"; };
+		B28F8CA12188EC5300DF759F /* dontlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dontlike.png; path = kdb3/images/dontlike.png; sourceTree = "<group>"; };
+		B28F8CA22188EC5300DF759F /* happy-smiley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "happy-smiley.jpg"; path = "kdb3/images/happy-smiley.jpg"; sourceTree = "<group>"; };
+		B28F8CA32188EC5400DF759F /* shhh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shhh.png; path = kdb3/images/shhh.png; sourceTree = "<group>"; };
+		B28F8CA72188F35000DF759F /* Imbusy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Imbusy.jpg; path = kdb3/images/Imbusy.jpg; sourceTree = "<group>"; };
+		B28F8CA82188F35100DF759F /* thatsweird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thatsweird.jpg; path = kdb3/images/thatsweird.jpg; sourceTree = "<group>"; };
+		B28F8CA92188F35100DF759F /* doh.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = doh.jpeg; path = kdb3/images/doh.jpeg; sourceTree = "<group>"; };
+		B28F8CAA2188F35100DF759F /* embarassing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = embarassing.jpg; path = kdb3/images/embarassing.jpg; sourceTree = "<group>"; };
+		B28F8CAB2188F35100DF759F /* loveit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = loveit.jpg; path = kdb3/images/loveit.jpg; sourceTree = "<group>"; };
+		B28F8CAC2188F35200DF759F /* tired.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tired.jpg; path = kdb3/images/tired.jpg; sourceTree = "<group>"; };
+		B28F8CAD2188F35200DF759F /* urwelcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = urwelcome.png; path = kdb3/images/urwelcome.png; sourceTree = "<group>"; };
+		B28F8CAE2188F35200DF759F /* welcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = welcome.jpg; path = kdb3/images/welcome.jpg; sourceTree = "<group>"; };
+		B28F8CC22188F5DF00DF759F /* sosweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sosweet.png; path = kdb3/images/sosweet.png; sourceTree = "<group>"; };
+		B28F8CDA2188F79500DF759F /* sleeping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sleeping.jpg; path = kdb3/images/sleeping.jpg; sourceTree = "<group>"; };
+		B28F8CDD2188F88200DF759F /* AC Keyboard.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "AC Keyboard.entitlements"; sourceTree = "<group>"; };
+		B28F8CDE2188F88200DF759F /* Bard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bard.swift; sourceTree = "<group>"; };
+		B28F8CDF2188F88200DF759F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B28F8CE02188F88300DF759F /* Cervantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cervantes.swift; sourceTree = "<group>"; };
+		B28F8CE12188F88300DF759F /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		B28F8CE22188F88300DF759F /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		B28F8CE82188F88400DF759F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		B28F8CEB2188F88500DF759F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ahhhhh.jpg; path = kdb3/images/ahhhhh.jpg; sourceTree = "<group>"; };
 		B29722C61F4C7DA700B2B00D /* crying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crying.png; path = kdb3/images/crying.png; sourceTree = "<group>"; };
 		B29722C71F4C7DA700B2B00D /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = kdb3/images/happy.png; sourceTree = "<group>"; };
@@ -314,6 +390,21 @@
 		B29722CB1F4C7DA700B2B00D /* laugh2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = laugh2.png; path = kdb3/images/laugh2.png; sourceTree = "<group>"; };
 		B29722CE1F4C7DA700B2B00D /* stella.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stella.jpg; path = kdb3/images/stella.jpg; sourceTree = "<group>"; };
 		B29722EB1F4C811000B2B00D /* badday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = badday.png; path = kdb3/images/badday.png; sourceTree = "<group>"; };
+		B2975AB52193DC69009A5DE9 /* timeout.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = timeout.jpg; path = kdb3/images/timeout.jpg; sourceTree = "<group>"; };
+		B2975AB62193DC69009A5DE9 /* tp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tp.jpg; path = kdb3/images/tp.jpg; sourceTree = "<group>"; };
+		B2975AB72193DC6A009A5DE9 /* yell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yell.jpg; path = kdb3/images/yell.jpg; sourceTree = "<group>"; };
+		B2975ABE2193DF00009A5DE9 /* goingtosleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goingtosleep.png; path = kdb3/images/goingtosleep.png; sourceTree = "<group>"; };
+		B2975ABF2193DF00009A5DE9 /* right-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-on.png"; path = "kdb3/images/right-on.png"; sourceTree = "<group>"; };
+		B2975AC02193DF01009A5DE9 /* watching-you.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "watching-you.png"; path = "kdb3/images/watching-you.png"; sourceTree = "<group>"; };
+		B2975AC72193E196009A5DE9 /* studying.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = studying.jpg; path = kdb3/images/studying.jpg; sourceTree = "<group>"; };
+		B2975AC82193E196009A5DE9 /* cookoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cookoo.jpg; path = kdb3/images/cookoo.jpg; sourceTree = "<group>"; };
+		B2975AC92193E196009A5DE9 /* cryer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cryer.jpg; path = kdb3/images/cryer.jpg; sourceTree = "<group>"; };
+		B2975AD02193E2EC009A5DE9 /* pray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pray.jpg; path = kdb3/images/pray.jpg; sourceTree = "<group>"; };
+		B2975AD12193E2EC009A5DE9 /* horror.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = horror.jpg; path = kdb3/images/horror.jpg; sourceTree = "<group>"; };
+		B2975AD22193E2ED009A5DE9 /* notaword.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = notaword.jpg; path = kdb3/images/notaword.jpg; sourceTree = "<group>"; };
+		B2975AD92193E4BD009A5DE9 /* scram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scram.png; path = kdb3/images/scram.png; sourceTree = "<group>"; };
+		B2975ADC2193EA13009A5DE9 /* dont-speak-smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dont-speak-smiley.png"; path = "kdb3/images/dont-speak-smiley.png"; sourceTree = "<group>"; };
+		B2975ADD2193EA13009A5DE9 /* no.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = no.jpg; path = kdb3/images/no.jpg; sourceTree = "<group>"; };
 		B29DC8051F3626ED00EF277C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = kdb3/icon.png; sourceTree = "<group>"; };
 		B2A01E7F1F2984FE00BF1F7C /* wink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wink.png; path = kdb3/images/wink.png; sourceTree = "<group>"; };
 		B2A01E821F29866300BF1F7C /* wtf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wtf.png; path = kdb3/images/wtf.png; sourceTree = "<group>"; };
@@ -323,6 +414,8 @@
 		B2A68B081F5B1AD60006670C /* Cervantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cervantes.swift; sourceTree = "<group>"; };
 		B2A68B0C1F5B29010006670C /* insult2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = insult2.jpg; path = kdb3/images/insult2.jpg; sourceTree = "<group>"; };
 		B2A68B151F5B2EEB0006670C /* trump2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trump2.png; path = kdb3/images/trump2.png; sourceTree = "<group>"; };
+		B2BE2FA32189011900E883BE /* goodluck.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = goodluck.gif; path = kdb3/images/goodluck.gif; sourceTree = "<group>"; };
+		B2BE2FA42189011900E883BE /* gotcha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gotcha.png; path = kdb3/images/gotcha.png; sourceTree = "<group>"; };
 		B2CD1D2D1F4730CA0002090A /* Bard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bard.swift; sourceTree = "<group>"; };
 		B2CD1D2F1F473B170002090A /* angry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = angry.jpeg; path = kdb3/images/angry.jpeg; sourceTree = "<group>"; };
 		B2CD1D321F473B170002090A /* thebard3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thebard3.jpeg; path = kdb3/images/thebard3.jpeg; sourceTree = "<group>"; };
@@ -348,7 +441,6 @@
 		B2FED7EC1F1BB261005AA45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2FED7FC1F1BB37B005AA45F /* AC Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AC Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7FE1F1BB37B005AA45F /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		B2FED8001F1BB37B005AA45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -409,11 +501,24 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B2975ADC2193EA13009A5DE9 /* dont-speak-smiley.png */,
+				B2975ADD2193EA13009A5DE9 /* no.jpg */,
+				B2975AD92193E4BD009A5DE9 /* scram.png */,
+				B2975AD12193E2EC009A5DE9 /* horror.jpg */,
+				B2975AD22193E2ED009A5DE9 /* notaword.jpg */,
+				B2975AD02193E2EC009A5DE9 /* pray.jpg */,
+				B2975AC82193E196009A5DE9 /* cookoo.jpg */,
+				B2975AC92193E196009A5DE9 /* cryer.jpg */,
+				B2975AC72193E196009A5DE9 /* studying.jpg */,
+				B2975ABE2193DF00009A5DE9 /* goingtosleep.png */,
+				B2975ABF2193DF00009A5DE9 /* right-on.png */,
+				B2975AC02193DF01009A5DE9 /* watching-you.png */,
+				B2975AB52193DC69009A5DE9 /* timeout.jpg */,
+				B2975AB62193DC69009A5DE9 /* tp.jpg */,
+				B2975AB72193DC6A009A5DE9 /* yell.jpg */,
+				B2BE2FA32189011900E883BE /* goodluck.gif */,
+				B2BE2FA42189011900E883BE /* gotcha.png */,
 				B28A8BA9217E8AD900D340FE /* 370-pretty-large-eyes.png */,
-				B28A8BAA217E8AD900D340FE /* embarassing.jpg */,
-				B28A8BA7217E8AD900D340FE /* Imbusy.jpg */,
-				B28A8BA8217E8AD900D340FE /* thatsweird.jpg */,
-				B28A8B93217E8A2000D340FE /* tu.jpg */,
 				B29722C41F4C7DA700B2B00D /* ahhhhh.jpg */,
 				B2CD1D2F1F473B170002090A /* angry.jpeg */,
 				B22877F51F1FD38700141C72 /* back.jpg */,
@@ -421,24 +526,30 @@
 				B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */,
 				B26993F51F54AEB200E405D5 /* cervantes.png */,
 				B29722C61F4C7DA700B2B00D /* crying.png */,
+				B28F8CA92188F35100DF759F /* doh.jpeg */,
+				B28F8CA12188EC5300DF759F /* dontlike.png */,
+				B28F8CAA2188F35100DF759F /* embarassing.jpg */,
 				B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */,
 				B22F910D1F1D046E00E5E6AC /* fu.png */,
 				B22877ED1F1FD38700141C72 /* funny.png */,
+				B28F8CA22188EC5300DF759F /* happy-smiley.jpg */,
 				B29722C71F4C7DA700B2B00D /* happy.png */,
 				B29722C81F4C7DA700B2B00D /* haveadrink.jpg */,
 				B22877E81F1FD18700141C72 /* hide.png */,
 				B29DC8051F3626ED00EF277C /* icon.png */,
 				B29722C91F4C7DA700B2B00D /* Image-11.png */,
+				B28F8CA72188F35000DF759F /* Imbusy.jpg */,
 				B257CCFF1F293CB5009DD6DD /* imsick.png */,
 				B2A68B0C1F5B29010006670C /* insult2.jpg */,
 				B29722CA1F4C7DA700B2B00D /* iwarnyou.png */,
 				B29722CB1F4C7DA700B2B00D /* laugh2.png */,
-				B22F910F1F1D046E00E5E6AC /* ok.jpg */,
 				B276598B1F5F399A00320DE5 /* love2.png */,
+				B28F8CAB2188F35100DF759F /* loveit.jpg */,
+				B27C4A351F5C48EB00B16820 /* more2.png */,
 				B22877F31F1FD38700141C72 /* next.png */,
 				B257CCFC1F2938E7009DD6DD /* ohno.png */,
 				B2A3ADC01F4BD40E0007400B /* ohno2.png */,
-				B27C4A351F5C48EB00B16820 /* more2.png */,
+				B22F910F1F1D046E00E5E6AC /* ok.jpg */,
 				B22877EF1F1FD38700141C72 /* ok.png */,
 				B2A3ADC11F4BD40E0007400B /* oy.jpeg */,
 				B22877F61F1FD38700141C72 /* return.png */,
@@ -449,17 +560,25 @@
 				B2CD1D441F4787810002090A /* secret4.png */,
 				B2CD1D471F478A8E0002090A /* secret5.png */,
 				B26993F01F54A11C00E405D5 /* shakespeare.jpg */,
+				B28F8CA32188EC5400DF759F /* shhh.png */,
+				B28F8CDA2188F79500DF759F /* sleeping.jpg */,
 				B257CD011F293CB5009DD6DD /* sohappy.png */,
+				B28F8CC22188F5DF00DF759F /* sosweet.png */,
 				B22877F21F1FD38700141C72 /* space.png */,
 				B29722CE1F4C7DA700B2B00D /* stella.jpg */,
+				B28F8CA82188F35100DF759F /* thatsweird.jpg */,
 				B2CD1D321F473B170002090A /* thebard3.jpeg */,
 				B24048351F2681E000922CDE /* thumbs_down_angry.png */,
+				B28F8CAC2188F35200DF759F /* tired.jpg */,
 				B24211D71F4CF90A000A10ED /* truelove.png */,
 				B24211D41F4CF7AA000A10ED /* truelove2.png */,
 				B2A68B151F5B2EEB0006670C /* trump2.png */,
-				B2A3ADC21F4BD40E0007400B /* waiting.png */,
+				B28A8B93217E8A2000D340FE /* tu.jpg */,
 				B22877F11F1FD38700141C72 /* ucase.png */,
+				B28F8CAD2188F35200DF759F /* urwelcome.png */,
+				B2A3ADC21F4BD40E0007400B /* waiting.png */,
 				B257CD021F293CB5009DD6DD /* wasntme.png */,
+				B28F8CAE2188F35200DF759F /* welcome.jpg */,
 				B257CD031F293CB5009DD6DD /* what.png */,
 				B2A01E7F1F2984FE00BF1F7C /* wink.png */,
 				B2A01E821F29866300BF1F7C /* wtf.png */,
@@ -472,6 +591,22 @@
 			children = (
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B28F8CE42188F88400DF759F /* es.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B28F8CE72188F88400DF759F /* Localizable.strings */,
+			);
+			path = es.lproj;
+			sourceTree = "<group>";
+		};
+		B28F8CE92188F88500DF759F /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				B28F8CEA2188F88500DF759F /* Localizable.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 		B2FED7BE1F1BB261005AA45F = {
@@ -541,8 +676,15 @@
 			children = (
 				B2A68B081F5B1AD60006670C /* Cervantes.swift */,
 				B24211DC1F4DD9BC000A10ED /* Supporting Files */,
+				B28F8CDD2188F88200DF759F /* AC Keyboard.entitlements */,
+				B28F8CDF2188F88200DF759F /* Assets.xcassets */,
+				B28F8CDE2188F88200DF759F /* Bard.swift */,
+				B28F8CE02188F88300DF759F /* Cervantes.swift */,
+				B28F8CE92188F88500DF759F /* en.lproj */,
+				B28F8CE42188F88400DF759F /* es.lproj */,
+				B28F8CE12188F88300DF759F /* KeyboardView.swift */,
+				B28F8CE22188F88300DF759F /* KeyboardView.xib */,
 				B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */,
-				B2FED8001F1BB37B005AA45F /* Info.plist */,
 				B2FED8081F1BB6EF005AA45F /* KeyboardView.xib */,
 				B2F2F4441F21627900804898 /* KeyboardView.swift */,
 				B2CD1D2D1F4730CA0002090A /* Bard.swift */,
@@ -724,39 +866,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				B21B0F0B216D174800150CFB /* fu.png in Resources */,
+				B2975ABB2193DC6A009A5DE9 /* tp.jpg in Resources */,
 				B21B0F34216D174900150CFB /* ucase.png in Resources */,
+				B2975AC22193DF01009A5DE9 /* goingtosleep.png in Resources */,
 				B21B0F0A216D174800150CFB /* crying.png in Resources */,
+				B2975AD82193E2ED009A5DE9 /* notaword.jpg in Resources */,
 				B21B0F2E216D174900150CFB /* stella.jpg in Resources */,
+				B28F8CDC2188F79600DF759F /* sleeping.jpg in Resources */,
+				B2975ADB2193E4BE009A5DE9 /* scram.png in Resources */,
 				B21B0F05216D174800150CFB /* truelove2.png in Resources */,
 				B21B0F13216D174900150CFB /* Image-11.png in Resources */,
 				B21B0F25216D174900150CFB /* sad.png in Resources */,
 				B21B0EF9216D174800150CFB /* more2.png in Resources */,
 				B21B0F03216D174800150CFB /* shakespeare.jpg in Resources */,
 				B21B0F0F216D174800150CFB /* happy.png in Resources */,
+				B28F8CBF2188F3B300DF759F /* dontlike.png in Resources */,
 				B21B0F2A216D174900150CFB /* secret4.png in Resources */,
 				B21B0F1E216D174900150CFB /* ohno.png in Resources */,
+				B28F8CBE2188F3B300DF759F /* welcome.jpg in Resources */,
 				B21B0F14216D174900150CFB /* imsick.png in Resources */,
 				B28A8BB3217E8AD900D340FE /* 370-pretty-large-eyes.png in Resources */,
+				B28F8CB92188F3B300DF759F /* Imbusy.jpg in Resources */,
+				B2975ADF2193EA14009A5DE9 /* dont-speak-smiley.png in Resources */,
+				B2975ACF2193E197009A5DE9 /* cryer.jpg in Resources */,
 				B21B0EEA216D0BAC00150CFB /* MainInterface.storyboard in Resources */,
+				B28F8CBC2188F3B300DF759F /* tired.jpg in Resources */,
+				B2975ACB2193E197009A5DE9 /* studying.jpg in Resources */,
+				B2975ACD2193E197009A5DE9 /* cookoo.jpg in Resources */,
+				B2BE2FA62189011900E883BE /* goodluck.gif in Resources */,
 				B21B0F1F216D174900150CFB /* ohno2.png in Resources */,
 				B21B0F04216D174800150CFB /* truelove.png in Resources */,
 				B21B0F37216D174900150CFB /* what.png in Resources */,
 				B21B0F15216D174900150CFB /* iwarnyou.png in Resources */,
+				B28F8CB72188F3B300DF759F /* doh.jpeg in Resources */,
 				B21B0F22216D174900150CFB /* oy.jpeg in Resources */,
+				B28F8CBA2188F3B300DF759F /* loveit.jpg in Resources */,
 				B21B0F28216D174900150CFB /* secret2.png in Resources */,
 				B21B0F20216D174900150CFB /* ok.jpg in Resources */,
 				B21B0F06216D174800150CFB /* ahhhhh.jpg in Resources */,
 				B21B0F10216D174800150CFB /* haveadrink.jpg in Resources */,
 				B21B0F08216D174800150CFB /* back.jpg in Resources */,
 				B21B0F2B216D174900150CFB /* secret5.png in Resources */,
+				B28F8CBB2188F3B300DF759F /* thatsweird.jpg in Resources */,
 				B21B0F09216D174800150CFB /* badday.png in Resources */,
-				B28A8BAD217E8AD900D340FE /* Imbusy.jpg in Resources */,
 				B21B0F12216D174800150CFB /* icon.png in Resources */,
 				B21B0EFB216D174800150CFB /* trump2.png in Resources */,
 				B21B0F36216D174900150CFB /* wasntme.png in Resources */,
 				B21B0F11216D174800150CFB /* hide.png in Resources */,
+				B2975AB92193DC6A009A5DE9 /* timeout.jpg in Resources */,
 				B21B0F1A216D174900150CFB /* next.png in Resources */,
 				B21B0F21216D174900150CFB /* ok.png in Resources */,
+				B28F8CBD2188F3B300DF759F /* urwelcome.png in Resources */,
+				B2BE2FA82189011900E883BE /* gotcha.png in Resources */,
+				B28F8CC42188F62300DF759F /* sosweet.png in Resources */,
+				B2975AD42193E2ED009A5DE9 /* pray.jpg in Resources */,
 				B21B0F27216D174900150CFB /* secret1.png in Resources */,
 				B213777D2173ABCD00373754 /* Assets.xcassets in Resources */,
 				B23C0A592175190B008D2B6B /* Assets.xcassets in Resources */,
@@ -764,21 +927,27 @@
 				B21B0EF8216D174800150CFB /* love2.png in Resources */,
 				B21B0F39216D174900150CFB /* wtf.png in Resources */,
 				B21B0F35216D174900150CFB /* waiting.png in Resources */,
+				B28F8CB82188F3B300DF759F /* embarassing.jpg in Resources */,
+				B2975AD62193E2ED009A5DE9 /* horror.jpg in Resources */,
 				B21B0F24216D174900150CFB /* return.png in Resources */,
 				B21B0F16216D174900150CFB /* laugh2.png in Resources */,
 				B21B0F32216D174900150CFB /* thumbs_down_angry.png in Resources */,
 				B28A8B8E217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
 				B21B0F29216D174900150CFB /* secret3.png in Resources */,
 				B21B0F38216D174900150CFB /* wink.png in Resources */,
+				B2975AC62193DF01009A5DE9 /* watching-you.png in Resources */,
 				B28A8B96217E8A2100D340FE /* tu.jpg in Resources */,
 				B21B0F01216D174800150CFB /* cervantes.png in Resources */,
 				B21B0EF4216D174800150CFB /* boobs1.jpg in Resources */,
 				B21B0F2D216D174900150CFB /* space.png in Resources */,
-				B28A8BB6217E8AD900D340FE /* embarassing.jpg in Resources */,
+				B2975AE12193EA14009A5DE9 /* no.jpg in Resources */,
+				B28F8CC02188F3B300DF759F /* happy-smiley.jpg in Resources */,
 				B21B0F0C216D174800150CFB /* funny.png in Resources */,
 				B21B0F2C216D174900150CFB /* sohappy.png in Resources */,
+				B2975AC42193DF01009A5DE9 /* right-on.png in Resources */,
 				B21B0F07216D174800150CFB /* angry.jpeg in Resources */,
-				B28A8BB0217E8AD900D340FE /* thatsweird.jpg in Resources */,
+				B2975ABD2193DC6A009A5DE9 /* yell.jpg in Resources */,
+				B28F8CC12188F3B300DF759F /* shhh.png in Resources */,
 				B28A8B89217A5A4900D340FE /* Localizable.strings in Resources */,
 				B21B0EFD216D174800150CFB /* insult2.jpg in Resources */,
 			);
@@ -793,38 +962,56 @@
 				B22F91101F1D046E00E5E6AC /* fu.png in Resources */,
 				B22F91121F1D046E00E5E6AC /* ok.jpg in Resources */,
 				B257CD041F293CB5009DD6DD /* imsick.png in Resources */,
+				B28F8CA42188EC5400DF759F /* dontlike.png in Resources */,
+				B2975ABA2193DC6A009A5DE9 /* tp.jpg in Resources */,
 				B29722D51F4C7DA700B2B00D /* crying.png in Resources */,
 				B29722DF1F4C7DA700B2B00D /* laugh2.png in Resources */,
+				B28F8CB42188F35200DF759F /* tired.jpg in Resources */,
+				B2975AB82193DC6A009A5DE9 /* timeout.jpg in Resources */,
+				B28F8CA62188EC5400DF759F /* shhh.png in Resources */,
 				B26993F31F54A11C00E405D5 /* shakespeare.jpg in Resources */,
+				B2975AD52193E2ED009A5DE9 /* horror.jpg in Resources */,
+				B2975AC12193DF01009A5DE9 /* goingtosleep.png in Resources */,
 				B2CD1D421F475B000002090A /* secret3.png in Resources */,
-				B28A8BB4217E8AD900D340FE /* embarassing.jpg in Resources */,
+				B28F8CB22188F35200DF759F /* embarassing.jpg in Resources */,
 				B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */,
+				B2975AD72193E2ED009A5DE9 /* notaword.jpg in Resources */,
 				B28A8B8C217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
+				B28F8CC32188F5E000DF759F /* sosweet.png in Resources */,
 				B228780B1F1FD38700141C72 /* back.jpg in Resources */,
-				B28A8BAB217E8AD900D340FE /* Imbusy.jpg in Resources */,
 				B2A3ADC31F4BD40E0007400B /* ohno2.png in Resources */,
 				B2CD1D391F473B170002090A /* thebard3.jpeg in Resources */,
+				B2975AE02193EA14009A5DE9 /* no.jpg in Resources */,
+				B2BE2FA72189011900E883BE /* gotcha.png in Resources */,
 				B2A3ADC51F4BD40E0007400B /* waiting.png in Resources */,
+				B2975ACA2193E197009A5DE9 /* studying.jpg in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
+				B28F8CB12188F35200DF759F /* doh.jpeg in Resources */,
 				B2A68B101F5B29010006670C /* insult2.jpg in Resources */,
 				B24211D51F4CF7AA000A10ED /* truelove2.png in Resources */,
 				B2CD1D481F478A8E0002090A /* secret5.png in Resources */,
 				B22878051F1FD38700141C72 /* space.png in Resources */,
 				B22877E91F1FD18700141C72 /* hide.png in Resources */,
+				B2975ADA2193E4BE009A5DE9 /* scram.png in Resources */,
 				B257CD081F293CB5009DD6DD /* sohappy.png in Resources */,
+				B28F8CB52188F35200DF759F /* urwelcome.png in Resources */,
 				B228780D1F1FD38700141C72 /* return.png in Resources */,
 				B29DC8061F3626ED00EF277C /* icon.png in Resources */,
+				B2975ADE2193EA14009A5DE9 /* dont-speak-smiley.png in Resources */,
 				B2CD1D3C1F4744CF0002090A /* secret1.png in Resources */,
 				B2A68B181F5B2EEB0006670C /* trump2.png in Resources */,
 				B257CD0C1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FD1F1FD38700141C72 /* sad.png in Resources */,
+				B28F8CB62188F35200DF759F /* welcome.jpg in Resources */,
 				B2CD1D451F4787810002090A /* secret4.png in Resources */,
 				B22878071F1FD38700141C72 /* next.png in Resources */,
 				B22877FB1F1FD38700141C72 /* funny.png in Resources */,
 				B29722DD1F4C7DA700B2B00D /* iwarnyou.png in Resources */,
+				B28F8CDB2188F79600DF759F /* sleeping.jpg in Resources */,
 				B29722E51F4C7DA700B2B00D /* stella.jpg in Resources */,
 				B2FED7D01F1BB261005AA45F /* Main.storyboard in Resources */,
 				B29722D11F4C7DA700B2B00D /* ahhhhh.jpg in Resources */,
+				B2975AD32193E2ED009A5DE9 /* pray.jpg in Resources */,
 				B26EDEFE1F65ABA900EFAEBF /* boobs1.jpg in Resources */,
 				B2CD1D3F1F4754F60002090A /* secret2.png in Resources */,
 				B22877FF1F1FD38700141C72 /* ok.png in Resources */,
@@ -836,17 +1023,26 @@
 				B27C4A361F5C48EB00B16820 /* more2.png in Resources */,
 				B22878031F1FD38700141C72 /* ucase.png in Resources */,
 				B276598E1F5F399A00320DE5 /* love2.png in Resources */,
+				B2975ACC2193E197009A5DE9 /* cookoo.jpg in Resources */,
+				B2975AC32193DF01009A5DE9 /* right-on.png in Resources */,
+				B28F8CAF2188F35200DF759F /* Imbusy.jpg in Resources */,
 				B28A8B94217E8A2100D340FE /* tu.jpg in Resources */,
 				B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */,
 				B257CD0A1F293CB5009DD6DD /* wasntme.png in Resources */,
 				B2CD1D331F473B170002090A /* angry.jpeg in Resources */,
 				B24211D81F4CF90A000A10ED /* truelove.png in Resources */,
 				B2A3ADC41F4BD40E0007400B /* oy.jpeg in Resources */,
+				B2975ABC2193DC6A009A5DE9 /* yell.jpg in Resources */,
 				B2A01E801F2984FE00BF1F7C /* wink.png in Resources */,
-				B28A8BAE217E8AD900D340FE /* thatsweird.jpg in Resources */,
+				B28F8CA52188EC5400DF759F /* happy-smiley.jpg in Resources */,
+				B28F8CB02188F35200DF759F /* thatsweird.jpg in Resources */,
 				B26993F61F54AEB200E405D5 /* cervantes.png in Resources */,
 				B29722EC1F4C811000B2B00D /* badday.png in Resources */,
 				B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */,
+				B2BE2FA52189011900E883BE /* goodluck.gif in Resources */,
+				B2975ACE2193E197009A5DE9 /* cryer.jpg in Resources */,
+				B28F8CB32188F35200DF759F /* loveit.jpg in Resources */,
+				B2975AC52193DF01009A5DE9 /* watching-you.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,12 +1069,12 @@
 				B22878081F1FD38700141C72 /* next.png in Resources */,
 				B22877FE1F1FD38700141C72 /* sad.png in Resources */,
 				B24048371F2681E000922CDE /* thumbs_down_angry.png in Resources */,
+				B28F8CF02188F88500DF759F /* KeyboardView.xib in Resources */,
 				B228780E1F1FD38700141C72 /* return.png in Resources */,
 				B29722D61F4C7DA700B2B00D /* crying.png in Resources */,
 				B28A8B8D217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
 				B2CD1D401F4754F60002090A /* secret2.png in Resources */,
 				B29722D81F4C7DA700B2B00D /* happy.png in Resources */,
-				B28A8BB5217E8AD900D340FE /* embarassing.jpg in Resources */,
 				B276598F1F5F399A00320DE5 /* love2.png in Resources */,
 				B2A01E841F29866300BF1F7C /* wtf.png in Resources */,
 				B2A3ADC61F4BD4440007400B /* ohno2.png in Resources */,
@@ -898,6 +1094,7 @@
 				B26EDEFF1F65ABA900EFAEBF /* boobs1.jpg in Resources */,
 				B228780C1F1FD38700141C72 /* back.jpg in Resources */,
 				B2CD1D3A1F473B170002090A /* thebard3.jpeg in Resources */,
+				B28F8CF32188F88500DF759F /* Localizable.strings in Resources */,
 				B29722ED1F4C811000B2B00D /* badday.png in Resources */,
 				B2A3ADC71F4BD4630007400B /* waiting.png in Resources */,
 				B2CD1D491F478A8E0002090A /* secret5.png in Resources */,
@@ -906,17 +1103,17 @@
 				B22878001F1FD38700141C72 /* ok.png in Resources */,
 				B29722D21F4C7DA700B2B00D /* ahhhhh.jpg in Resources */,
 				B2A01E811F2984FE00BF1F7C /* wink.png in Resources */,
+				B28F8CED2188F88500DF759F /* Assets.xcassets in Resources */,
 				B257CD0D1F293CB5009DD6DD /* what.png in Resources */,
 				B22877FC1F1FD38700141C72 /* funny.png in Resources */,
 				B27C4A371F5C48EB00B16820 /* more2.png in Resources */,
+				B28F8CF42188F88500DF759F /* Localizable.strings in Resources */,
 				B2CD1D341F473B170002090A /* angry.jpeg in Resources */,
 				B257CD091F293CB5009DD6DD /* sohappy.png in Resources */,
 				B29722DA1F4C7DA700B2B00D /* haveadrink.jpg in Resources */,
 				B22878041F1FD38700141C72 /* ucase.png in Resources */,
 				B2FED8091F1BB6EF005AA45F /* KeyboardView.xib in Resources */,
-				B28A8BAF217E8AD900D340FE /* thatsweird.jpg in Resources */,
 				B29722E61F4C7DA700B2B00D /* stella.jpg in Resources */,
-				B28A8BAC217E8AD900D340FE /* Imbusy.jpg in Resources */,
 				B2CD1D461F4787810002090A /* secret4.png in Resources */,
 				B26993F71F54AEB200E405D5 /* cervantes.png in Resources */,
 				B257CCFB1F292E6C009DD6DD /* Settings.bundle in Resources */,
@@ -984,8 +1181,11 @@
 			files = (
 				B21377752170029C00373754 /* Ijomes.swift in Sources */,
 				B2CD1D2E1F4730CA0002090A /* Bard.swift in Sources */,
+				B28F8CEC2188F88500DF759F /* Bard.swift in Sources */,
+				B28F8CEF2188F88500DF759F /* KeyboardView.swift in Sources */,
 				B2A68B0A1F5B1AD60006670C /* Cervantes.swift in Sources */,
 				B2D80E5A1F6C2A5F00CB09B5 /* String.swift in Sources */,
+				B28F8CEE2188F88500DF759F /* Cervantes.swift in Sources */,
 				B2FED7FF1F1BB37B005AA45F /* KeyboardViewController.swift in Sources */,
 				B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */,
 			);
@@ -1030,6 +1230,22 @@
 			children = (
 				B24211E41F4DFBBE000A10ED /* en */,
 				B24211E61F4DFBC4000A10ED /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B28F8CE72188F88400DF759F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28F8CE82188F88400DF759F /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B28F8CEA2188F88500DF759F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B28F8CEB2188F88500DF759F /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1325,7 +1541,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
-				INFOPLIST_FILE = "AC Keyboard/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1343,7 +1559,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
-				INFOPLIST_FILE = "AC Keyboard/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
