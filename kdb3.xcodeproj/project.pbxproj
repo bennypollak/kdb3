@@ -121,6 +121,16 @@
 		B276598F1F5F399A00320DE5 /* love2.png in Resources */ = {isa = PBXBuildFile; fileRef = B276598B1F5F399A00320DE5 /* love2.png */; };
 		B27C4A361F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
 		B27C4A371F5C48EB00B16820 /* more2.png in Resources */ = {isa = PBXBuildFile; fileRef = B27C4A351F5C48EB00B16820 /* more2.png */; };
+		B288EAE12198D7A100D7F067 /* MsgIIjomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B288EAE02198D7A100D7F067 /* MsgIIjomes.swift */; };
+		B288EAE22198D7A100D7F067 /* MsgIIjomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B288EAE02198D7A100D7F067 /* MsgIIjomes.swift */; };
+		B288EAE62198ED4500D7F067 /* cry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EAE32198ED4400D7F067 /* cry.jpg */; };
+		B288EAE72198ED4500D7F067 /* cry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EAE32198ED4400D7F067 /* cry.jpg */; };
+		B288EAE82198ED4500D7F067 /* Dreammmmyyyy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EAE42198ED4400D7F067 /* Dreammmmyyyy.jpg */; };
+		B288EAE92198ED4500D7F067 /* Dreammmmyyyy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EAE42198ED4400D7F067 /* Dreammmmyyyy.jpg */; };
+		B288EAEA2198ED4500D7F067 /* Nahnahnahnahnahnah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EAE52198ED4400D7F067 /* Nahnahnahnahnahnah.jpg */; };
+		B288EAEB2198ED4500D7F067 /* Nahnahnahnahnahnah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EAE52198ED4400D7F067 /* Nahnahnahnahnahnah.jpg */; };
+		B288EC562198EF6B00D7F067 /* Einstein_tongue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EC552198EF6B00D7F067 /* Einstein_tongue.jpg */; };
+		B288EC572198EF6B00D7F067 /* Einstein_tongue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B288EC552198EF6B00D7F067 /* Einstein_tongue.jpg */; };
 		B28A8B86217A597100D340FE /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD1D2D1F4730CA0002090A /* Bard.swift */; };
 		B28A8B87217A599600D340FE /* Cervantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A68B081F5B1AD60006670C /* Cervantes.swift */; };
 		B28A8B88217A5A0400D340FE /* Bard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD1D2D1F4730CA0002090A /* Bard.swift */; };
@@ -357,6 +367,11 @@
 		B26EDEFD1F65ABA900EFAEBF /* boobs1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = boobs1.jpg; path = kdb3/images/boobs1.jpg; sourceTree = "<group>"; };
 		B276598B1F5F399A00320DE5 /* love2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love2.png; path = kdb3/images/love2.png; sourceTree = "<group>"; };
 		B27C4A351F5C48EB00B16820 /* more2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = more2.png; path = kdb3/images/more2.png; sourceTree = "<group>"; };
+		B288EAE02198D7A100D7F067 /* MsgIIjomes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgIIjomes.swift; sourceTree = "<group>"; };
+		B288EAE32198ED4400D7F067 /* cry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cry.jpg; path = kdb3/images/cry.jpg; sourceTree = "<group>"; };
+		B288EAE42198ED4400D7F067 /* Dreammmmyyyy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Dreammmmyyyy.jpg; path = kdb3/images/Dreammmmyyyy.jpg; sourceTree = "<group>"; };
+		B288EAE52198ED4400D7F067 /* Nahnahnahnahnahnah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Nahnahnahnahnahnah.jpg; path = kdb3/images/Nahnahnahnahnahnah.jpg; sourceTree = "<group>"; };
+		B288EC552198EF6B00D7F067 /* Einstein_tongue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Einstein_tongue.jpg; path = kdb3/images/Einstein_tongue.jpg; sourceTree = "<group>"; };
 		B28A8B8B217AA7C800D340FE /* emoji_thumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji_thumb.jpg; sourceTree = "<group>"; };
 		B28A8B93217E8A2000D340FE /* tu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tu.jpg; path = kdb3/images/tu.jpg; sourceTree = "<group>"; };
 		B28A8BA9217E8AD900D340FE /* 370-pretty-large-eyes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "370-pretty-large-eyes.png"; sourceTree = "<group>"; };
@@ -501,6 +516,10 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B288EC552198EF6B00D7F067 /* Einstein_tongue.jpg */,
+				B288EAE32198ED4400D7F067 /* cry.jpg */,
+				B288EAE42198ED4400D7F067 /* Dreammmmyyyy.jpg */,
+				B288EAE52198ED4400D7F067 /* Nahnahnahnahnahnah.jpg */,
 				B2975ADC2193EA13009A5DE9 /* dont-speak-smiley.png */,
 				B2975ADD2193EA13009A5DE9 /* no.jpg */,
 				B2975AD92193E4BD009A5DE9 /* scram.png */,
@@ -649,6 +668,7 @@
 				B2FED7D61F1BB261005AA45F /* Info.plist */,
 				B2D80E581F6C2A5F00CB09B5 /* String.swift */,
 				B21377732170029C00373754 /* Ijomes.swift */,
+				B288EAE02198D7A100D7F067 /* MsgIIjomes.swift */,
 			);
 			path = kdb3;
 			sourceTree = "<group>";
@@ -865,6 +885,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B288EAE72198ED4500D7F067 /* cry.jpg in Resources */,
 				B21B0F0B216D174800150CFB /* fu.png in Resources */,
 				B2975ABB2193DC6A009A5DE9 /* tp.jpg in Resources */,
 				B21B0F34216D174900150CFB /* ucase.png in Resources */,
@@ -923,6 +944,7 @@
 				B21B0F27216D174900150CFB /* secret1.png in Resources */,
 				B213777D2173ABCD00373754 /* Assets.xcassets in Resources */,
 				B23C0A592175190B008D2B6B /* Assets.xcassets in Resources */,
+				B288EAE92198ED4500D7F067 /* Dreammmmyyyy.jpg in Resources */,
 				B21B0F31216D174900150CFB /* thebard3.jpeg in Resources */,
 				B21B0EF8216D174800150CFB /* love2.png in Resources */,
 				B21B0F39216D174900150CFB /* wtf.png in Resources */,
@@ -932,6 +954,7 @@
 				B21B0F24216D174900150CFB /* return.png in Resources */,
 				B21B0F16216D174900150CFB /* laugh2.png in Resources */,
 				B21B0F32216D174900150CFB /* thumbs_down_angry.png in Resources */,
+				B288EC572198EF6B00D7F067 /* Einstein_tongue.jpg in Resources */,
 				B28A8B8E217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
 				B21B0F29216D174900150CFB /* secret3.png in Resources */,
 				B21B0F38216D174900150CFB /* wink.png in Resources */,
@@ -942,6 +965,7 @@
 				B21B0F2D216D174900150CFB /* space.png in Resources */,
 				B2975AE12193EA14009A5DE9 /* no.jpg in Resources */,
 				B28F8CC02188F3B300DF759F /* happy-smiley.jpg in Resources */,
+				B288EAEB2198ED4500D7F067 /* Nahnahnahnahnahnah.jpg in Resources */,
 				B21B0F0C216D174800150CFB /* funny.png in Resources */,
 				B21B0F2C216D174900150CFB /* sohappy.png in Resources */,
 				B2975AC42193DF01009A5DE9 /* right-on.png in Resources */,
@@ -984,10 +1008,12 @@
 				B2975AE02193EA14009A5DE9 /* no.jpg in Resources */,
 				B2BE2FA72189011900E883BE /* gotcha.png in Resources */,
 				B2A3ADC51F4BD40E0007400B /* waiting.png in Resources */,
+				B288EAE82198ED4500D7F067 /* Dreammmmyyyy.jpg in Resources */,
 				B2975ACA2193E197009A5DE9 /* studying.jpg in Resources */,
 				B2FED7D21F1BB261005AA45F /* Assets.xcassets in Resources */,
 				B28F8CB12188F35200DF759F /* doh.jpeg in Resources */,
 				B2A68B101F5B29010006670C /* insult2.jpg in Resources */,
+				B288EAEA2198ED4500D7F067 /* Nahnahnahnahnahnah.jpg in Resources */,
 				B24211D51F4CF7AA000A10ED /* truelove2.png in Resources */,
 				B2CD1D481F478A8E0002090A /* secret5.png in Resources */,
 				B22878051F1FD38700141C72 /* space.png in Resources */,
@@ -1033,11 +1059,13 @@
 				B24211D81F4CF90A000A10ED /* truelove.png in Resources */,
 				B2A3ADC41F4BD40E0007400B /* oy.jpeg in Resources */,
 				B2975ABC2193DC6A009A5DE9 /* yell.jpg in Resources */,
+				B288EC562198EF6B00D7F067 /* Einstein_tongue.jpg in Resources */,
 				B2A01E801F2984FE00BF1F7C /* wink.png in Resources */,
 				B28F8CA52188EC5400DF759F /* happy-smiley.jpg in Resources */,
 				B28F8CB02188F35200DF759F /* thatsweird.jpg in Resources */,
 				B26993F61F54AEB200E405D5 /* cervantes.png in Resources */,
 				B29722EC1F4C811000B2B00D /* badday.png in Resources */,
+				B288EAE62198ED4500D7F067 /* cry.jpg in Resources */,
 				B257CCFD1F2938E7009DD6DD /* ohno.png in Resources */,
 				B2BE2FA52189011900E883BE /* goodluck.gif in Resources */,
 				B2975ACE2193E197009A5DE9 /* cryer.jpg in Resources */,
@@ -1139,6 +1167,7 @@
 				B213777C2172605500373754 /* IjomeCollectionViewCell.swift in Sources */,
 				B21B0EE7216D0BAC00150CFB /* MessagesViewController.swift in Sources */,
 				B213777A2170ECBC00373754 /* CollectionViewController.swift in Sources */,
+				B288EAE22198D7A100D7F067 /* MsgIIjomes.swift in Sources */,
 				B2137772216E652400373754 /* Ijome.swift in Sources */,
 				B28A8B87217A599600D340FE /* Cervantes.swift in Sources */,
 				B28A8B86217A597100D340FE /* Bard.swift in Sources */,
@@ -1151,6 +1180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B28A8B88217A5A0400D340FE /* Bard.swift in Sources */,
+				B288EAE12198D7A100D7F067 /* MsgIIjomes.swift in Sources */,
 				B21377742170029C00373754 /* Ijomes.swift in Sources */,
 				B2A68B091F5B1AD60006670C /* Cervantes.swift in Sources */,
 				B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */,

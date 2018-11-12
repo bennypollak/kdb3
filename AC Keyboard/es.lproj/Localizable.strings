@@ -1,5 +1,4 @@
 {
-	Hi = Hola;
     "Fuck you!" = "Culiado!";
     "Smiled!" = "Sonrisa!";
     "Kisses!" = "Besos!";
@@ -24,16 +23,13 @@
     "Thank you!" = "Gracias!";
     "Having a bad day!" = "Mal dia!";
     "Life is beautiful!" = "La vida es bella!";
-    
     "Where the hell are you!" = "Adonde andas!";
     "I'm very angry!" = "Estoy emputecido!";
     "I warn you!" = "Te advierto!";
     "I'm very happy!" = "Que felicidad!";
-    
     "Yes!" = "Si!";
     "That's weird!" = "Que raro!";
     "I'm busy!" = "Estoy ocupado!";
     "That's embarrasing!" = "Que verguenza!";
     "Very cute!" = "Que bonita!";
-
 }

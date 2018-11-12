@@ -11,7 +11,7 @@ import Messages
 
 private let reuseIdentifier = "IjomeCell"
 
-class CollectionViewController: UICollectionViewController, UIGestureRecognizerDelegate {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate {
     var activeConversation: MSConversation?
     var sticker:MSSticker?
     override func collectionView(_ collectionView: UICollectionView,
@@ -19,7 +19,7 @@ class CollectionViewController: UICollectionViewController, UIGestureRecognizerD
         send(indexPath)
     }
     
-    let ijomes = Ijomes.msgIjomes
+    let ijomes = MsgIjomes.msgIjomes
     let languages = ["en", "es"]
     var currentLanguage = 0
     
@@ -53,8 +53,21 @@ class CollectionViewController: UICollectionViewController, UIGestureRecognizerD
      // Pass the selected object to the new view controller.
      }
      */
+    let numberOfItemsPerRow = 4
+ 
     
-    // MARK: UICollectionViewDataSource
+    func collectionView(_ collectionView: UICollectionView,
+                                 layout collectionViewLayout: UICollectionViewLayout,
+                                 sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cols = collectionView.bounds.width < 400 ? 3 : 4
+        let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        let totalSpace = flowLayout.sectionInset.left
+            + flowLayout.sectionInset.right
+            + (flowLayout.minimumInteritemSpacing * CGFloat(cols - 1))
+        let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(cols))
+        return CGSize(width: size, height: size)
+    }
+   // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         // rows
@@ -139,7 +152,7 @@ class CollectionViewController: UICollectionViewController, UIGestureRecognizerD
     
     func send(_ indexPath: IndexPath) {
         let layout = MSMessageTemplateLayout()
-        let ijomes = Ijomes.msgIjomes
+        let ijomes = MsgIjomes.msgIjomes
         let i = indexPath.row
         if i == ijomes.count {
             toggleLanguage()
