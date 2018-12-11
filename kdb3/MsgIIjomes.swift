@@ -16,6 +16,7 @@ struct MsgIjomes {
         , ["oy.jpeg", "Oy vei!"]
         , ["fu.png", "Fuck you!"]
         , ["tu.jpg", "Thank you!"]
+        , ["urwelcome.png", "You're welcome!"]
         , ["insult2.jpg", "😤 ###insult"]
         , ["love2.png", "❤️ ###lovism"]
         , ["sad.png", "So fucking sad!"]
@@ -58,8 +59,7 @@ struct MsgIjomes {
         , ["tu.jpg", "Thank you!"]
         , ["sleeping.jpg", "I'm sleeping"]
         
-        , ["welcome.jpg", "Werlcome!"]
-        , ["urwelcome.png", "You're welcome!"]
+        , ["welcome.jpg", "Welcome!"]
         , ["tired.jpg", "I'm beat!"]
         , ["tp.jpg", "What? I'm busy"]
         , ["yell.jpg", "WHAT?!"]
@@ -81,6 +81,8 @@ struct MsgIjomes {
         , ["Dreammmmyyyy.jpg", "Dreammmmyyyy!"]
         , ["Nahnahnahnahnahnah.jpg", "Nahnahnahnahnahnah!"]
         , ["Einstein_tongue.jpg", "Yes, but I'm smarter than you!"]
+                , ["empty-toilet-paper-roll.jpg", "Oh, crap!"]
+                , ["notagain.gif", "Not again!"]
         //        , ["", ""]
     ]
 }

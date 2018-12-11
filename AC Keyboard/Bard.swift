@@ -64,6 +64,9 @@ class Bard {
         , "HUUUGE!"
         , "Bigly!"
         , "That I can tell you!"
+        , "It's a disgrace!"
+        , "It's a hoax!"
+        , "No colusion!"
     ]
     
     // http://www.renfaire.com/Language/insults.html

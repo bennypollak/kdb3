@@ -265,6 +265,10 @@
 		B2CD1D491F478A8E0002090A /* secret5.png in Resources */ = {isa = PBXBuildFile; fileRef = B2CD1D471F478A8E0002090A /* secret5.png */; };
 		B2D80E591F6C2A5F00CB09B5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D80E581F6C2A5F00CB09B5 /* String.swift */; };
 		B2D80E5A1F6C2A5F00CB09B5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D80E581F6C2A5F00CB09B5 /* String.swift */; };
+		B2D8725121A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2D8725021A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg */; };
+		B2D8725221A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2D8725021A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg */; };
+		B2D9405C21BEF8F100DD804E /* notagain.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2D9405B21BEF8F100DD804E /* notagain.gif */; };
+		B2D9405D21BEFAAF00DD804E /* notagain.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2D9405B21BEF8F100DD804E /* notagain.gif */; };
 		B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F4441F21627900804898 /* KeyboardView.swift */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
@@ -440,6 +444,8 @@
 		B2CD1D441F4787810002090A /* secret4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret4.png; path = kdb3/images/secret4.png; sourceTree = "<group>"; };
 		B2CD1D471F478A8E0002090A /* secret5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = secret5.png; path = kdb3/images/secret5.png; sourceTree = "<group>"; };
 		B2D80E581F6C2A5F00CB09B5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B2D8725021A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "empty-toilet-paper-roll.jpg"; path = "kdb3/images/empty-toilet-paper-roll.jpg"; sourceTree = "<group>"; };
+		B2D9405B21BEF8F100DD804E /* notagain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = notagain.gif; path = kdb3/images/notagain.gif; sourceTree = "<group>"; };
 		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -516,6 +522,8 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B2D9405B21BEF8F100DD804E /* notagain.gif */,
+				B2D8725021A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg */,
 				B288EC552198EF6B00D7F067 /* Einstein_tongue.jpg */,
 				B288EAE32198ED4400D7F067 /* cry.jpg */,
 				B288EAE42198ED4400D7F067 /* Dreammmmyyyy.jpg */,
@@ -923,7 +931,9 @@
 				B21B0F22216D174900150CFB /* oy.jpeg in Resources */,
 				B28F8CBA2188F3B300DF759F /* loveit.jpg in Resources */,
 				B21B0F28216D174900150CFB /* secret2.png in Resources */,
+				B2D8725221A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg in Resources */,
 				B21B0F20216D174900150CFB /* ok.jpg in Resources */,
+				B2D9405D21BEFAAF00DD804E /* notagain.gif in Resources */,
 				B21B0F06216D174800150CFB /* ahhhhh.jpg in Resources */,
 				B21B0F10216D174800150CFB /* haveadrink.jpg in Resources */,
 				B21B0F08216D174800150CFB /* back.jpg in Resources */,
@@ -998,6 +1008,7 @@
 				B2975AC12193DF01009A5DE9 /* goingtosleep.png in Resources */,
 				B2CD1D421F475B000002090A /* secret3.png in Resources */,
 				B28F8CB22188F35200DF759F /* embarassing.jpg in Resources */,
+				B2D9405C21BEF8F100DD804E /* notagain.gif in Resources */,
 				B2FED7D51F1BB261005AA45F /* LaunchScreen.storyboard in Resources */,
 				B2975AD72193E2ED009A5DE9 /* notaword.jpg in Resources */,
 				B28A8B8C217AA7C800D340FE /* emoji_thumb.jpg in Resources */,
@@ -1032,6 +1043,7 @@
 				B2CD1D451F4787810002090A /* secret4.png in Resources */,
 				B22878071F1FD38700141C72 /* next.png in Resources */,
 				B22877FB1F1FD38700141C72 /* funny.png in Resources */,
+				B2D8725121A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg in Resources */,
 				B29722DD1F4C7DA700B2B00D /* iwarnyou.png in Resources */,
 				B28F8CDB2188F79600DF759F /* sleeping.jpg in Resources */,
 				B29722E51F4C7DA700B2B00D /* stella.jpg in Resources */,
