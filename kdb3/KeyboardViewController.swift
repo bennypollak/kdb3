@@ -151,7 +151,7 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
             if (info[0].hasPrefix(" ")) {
                 let r = info[0].index(info[0].startIndex, offsetBy: 1)..<info[0].endIndex
                 let substring = info[0][r]
-                buttons.append(createTextButton(title: substring, target: info[1]))
+                buttons.append(createTextButton(title: String(substring), target: info[1]))
             } else if info[0].containsEmoji {
                 buttons.append(createTextButton(title: info[0], target: info[1]))
             } else {
@@ -165,8 +165,8 @@ class KeyboardViewController: UIInputViewController, UIGestureRecognizerDelegate
     func createImgButton(named: String, imgNamed: String, action: Selector = #selector(KeyboardViewController.ijomePressed(_:))) -> UIButton  {
         let button = UIButton(type: .custom)
         let image = UIImage(named: imgNamed)
-        button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
-        button.setImage(image, for: UIControlState.normal)
+        button.imageView?.contentMode = UIView.ContentMode.scaleAspectFit
+        button.setImage(image, for: UIControl.State.normal)
         button.sizeToFit()
         button.backgroundColor = .white
         button.setTitle(named, for: .normal)

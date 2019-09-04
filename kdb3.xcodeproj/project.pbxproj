@@ -269,6 +269,8 @@
 		B2D8725221A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2D8725021A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg */; };
 		B2D9405C21BEF8F100DD804E /* notagain.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2D9405B21BEF8F100DD804E /* notagain.gif */; };
 		B2D9405D21BEFAAF00DD804E /* notagain.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2D9405B21BEF8F100DD804E /* notagain.gif */; };
+		B2F29A8B21C091D40069898A /* imhungry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2F29A8A21C091D40069898A /* imhungry.jpg */; };
+		B2F29A8C21C091D40069898A /* imhungry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2F29A8A21C091D40069898A /* imhungry.jpg */; };
 		B2F2F4451F21627900804898 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2F4441F21627900804898 /* KeyboardView.swift */; };
 		B2FED7CB1F1BB261005AA45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */; };
 		B2FED7CD1F1BB261005AA45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FED7CC1F1BB261005AA45F /* ViewController.swift */; };
@@ -329,6 +331,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B209C89023200DC200D8BC9B /* IjomeMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IjomeMessage.entitlements; sourceTree = "<group>"; };
 		B20B86CB1F20FB660067E08B /* kdb3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kdb3.entitlements; sourceTree = "<group>"; };
 		B20B86CC1F20FCA70067E08B /* AC Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AC Keyboard.entitlements"; sourceTree = "<group>"; };
 		B213776D216E5F4500373754 /* IjomePart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IjomePart.swift; sourceTree = "<group>"; };
@@ -446,6 +449,7 @@
 		B2D80E581F6C2A5F00CB09B5 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		B2D8725021A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "empty-toilet-paper-roll.jpg"; path = "kdb3/images/empty-toilet-paper-roll.jpg"; sourceTree = "<group>"; };
 		B2D9405B21BEF8F100DD804E /* notagain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = notagain.gif; path = kdb3/images/notagain.gif; sourceTree = "<group>"; };
+		B2F29A8A21C091D40069898A /* imhungry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imhungry.jpg; path = kdb3/images/imhungry.jpg; sourceTree = "<group>"; };
 		B2F2F4441F21627900804898 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		B2FED7C71F1BB261005AA45F /* kdb3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kdb3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FED7CA1F1BB261005AA45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -507,6 +511,7 @@
 		B21B0EE5216D0BAC00150CFB /* IjomeMessage */ = {
 			isa = PBXGroup;
 			children = (
+				B209C89023200DC200D8BC9B /* IjomeMessage.entitlements */,
 				B21B0EE6216D0BAC00150CFB /* MessagesViewController.swift */,
 				B21B0EE8216D0BAC00150CFB /* MainInterface.storyboard */,
 				B21B0EED216D0BAE00150CFB /* Info.plist */,
@@ -522,6 +527,7 @@
 		B22F910C1F1D035300E5E6AC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				B2F29A8A21C091D40069898A /* imhungry.jpg */,
 				B2D9405B21BEF8F100DD804E /* notagain.gif */,
 				B2D8725021A25DEF00DAE9DA /* empty-toilet-paper-roll.jpg */,
 				B288EC552198EF6B00D7F067 /* Einstein_tongue.jpg */,
@@ -827,13 +833,18 @@
 					B21B0EE0216D0BAC00150CFB = {
 						CreatedOnToolsVersion = 10.0;
 						DevelopmentTeam = 388X7HA3JM;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					B2FED7C61F1BB261005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -848,15 +859,14 @@
 					};
 					B2FED7E51F1BB261005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 388X7HA3JM;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = B2FED7C61F1BB261005AA45F;
 					};
 					B2FED7FB1F1BB37B005AA45F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 388X7HA3JM;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -870,6 +880,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				es,
@@ -895,6 +906,7 @@
 			files = (
 				B288EAE72198ED4500D7F067 /* cry.jpg in Resources */,
 				B21B0F0B216D174800150CFB /* fu.png in Resources */,
+				B2F29A8C21C091D40069898A /* imhungry.jpg in Resources */,
 				B2975ABB2193DC6A009A5DE9 /* tp.jpg in Resources */,
 				B21B0F34216D174900150CFB /* ucase.png in Resources */,
 				B2975AC22193DF01009A5DE9 /* goingtosleep.png in Resources */,
@@ -1064,6 +1076,7 @@
 				B2975ACC2193E197009A5DE9 /* cookoo.jpg in Resources */,
 				B2975AC32193DF01009A5DE9 /* right-on.png in Resources */,
 				B28F8CAF2188F35200DF759F /* Imbusy.jpg in Resources */,
+				B2F29A8B21C091D40069898A /* imhungry.jpg in Resources */,
 				B28A8B94217E8A2100D340FE /* tu.jpg in Resources */,
 				B257CCFA1F292E6C009DD6DD /* Settings.bundle in Resources */,
 				B257CD0A1F293CB5009DD6DD /* wasntme.png in Resources */,
@@ -1330,17 +1343,17 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IjomeMessage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3.IjomeMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "IjomeMessage test";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1363,17 +1376,17 @@
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = IjomeMessage/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3.IjomeMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = com.alben.kdb3.IjomeMessage;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1423,7 +1436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1470,7 +1483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1487,14 +1500,14 @@
 				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 test";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1505,15 +1518,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kdb3/kdb3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = kdb3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.kdb3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 Release";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1527,7 +1540,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.t1.kdb3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kdb3.app/kdb3";
 			};
 			name = Debug;
@@ -1542,7 +1555,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.t1.kdb3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kdb3.app/kdb3";
 			};
 			name = Release;
@@ -1551,12 +1564,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kdb3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.t1.kdb3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = kdb3;
 			};
 			name = Debug;
@@ -1565,12 +1580,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 388X7HA3JM;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = kdb3UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alben.t1.kdb3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = kdb3;
 			};
 			name = Release;
@@ -1581,15 +1598,15 @@
 				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = "$(SRCROOT)/AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kdb test";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1598,16 +1615,16 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "AC Keyboard/AC Keyboard.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 388X7HA3JM;
 				INFOPLIST_FILE = "$(SRCROOT)/AC Keyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alben.kdb3.AC-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "kdb3 kbd Release";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

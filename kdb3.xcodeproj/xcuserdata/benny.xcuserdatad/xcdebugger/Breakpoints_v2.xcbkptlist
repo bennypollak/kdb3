@@ -41,13 +41,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IjomeMessage/CollectionViewController.swift"
-            timestampString = "566166466.6942739"
+            timestampString = "566520577.274646"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "107"
             endingLineNumber = "107"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,13 +57,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kdb3/MsgIIjomes.swift"
-            timestampString = "566166466.6950099"
+            timestampString = "566520577.274986"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "MsgIjomes"
-            landmarkType = "14">
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

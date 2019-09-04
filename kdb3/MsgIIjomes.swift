@@ -83,6 +83,7 @@ struct MsgIjomes {
         , ["Einstein_tongue.jpg", "Yes, but I'm smarter than you!"]
                 , ["empty-toilet-paper-roll.jpg", "Oh, crap!"]
                 , ["notagain.gif", "Not again!"]
+                , ["imhungry.jpg", "I was very hungry!"]
         //        , ["", ""]
     ]
 }
